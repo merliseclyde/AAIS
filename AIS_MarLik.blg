@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: AIS_MarLik.aux
+The style file: imsart-nameyear.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sais_bib.bib
+Repeated entry---line 69 of file sais_bib.bib
+ : @article{biernacki2003degeneracy
+ :                                 ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 433 of file sais_bib.bib
+ :   
+ :   publisher={American Economic Association}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 451 of file sais_bib.bib
+ :   
+ :   organization={Society for Industrial \& Applied}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Clyd:Geor:2004"
+Warning--I didn't find a database entry for "Clyd:etal:2005"
+You've used 26 entries,
+            4166 wiz_defined-function locations,
+            939 strings with 9282 characters,
+and the built_in function-call counts, 31202 in all, are:
+= -- 3390
+> -- 425
+< -- 43
++ -- 159
+- -- 151
+* -- 3607
+:= -- 5752
+add.period$ -- 72
+call.type$ -- 26
+change.case$ -- 121
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 821
+empty$ -- 2605
+format.name$ -- 578
+if$ -- 6307
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 277
+num.names$ -- 117
+pop$ -- 452
+preamble$ -- 1
+purify$ -- 121
+quote$ -- 0
+skip$ -- 1890
+stack$ -- 0
+substring$ -- 2710
+swap$ -- 271
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 541
+warning$ -- 0
+while$ -- 96
+width$ -- 0
+write$ -- 589
+(There were 3 error messages)

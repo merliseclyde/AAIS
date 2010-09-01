@@ -1,0 +1,26 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Radial Velocity Models in the Search for Exoplanets}{}
+\BOOKMARK [2][-]{subsection.2.1}{Bayesian Methods for Identifying the Number of Planets}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Priors Distributions}{section.2}
+\BOOKMARK [1][-]{section.3}{Importance Sampling for Marginal Likelihood Estimation}{}
+\BOOKMARK [1][-]{section.4}{Annealed Adaptive IS Method for Constructing Importance Function}{}
+\BOOKMARK [2][-]{subsection.4.1}{Multivariate Student's T-mixture Model}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Proposal Adaptation via IS plus EM}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Online Approach to Tune the Number of the Mixture Components}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Components Merging}{subsection.4.3}
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Component-splitting}{subsection.4.3}
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Component-Deletion}{subsection.4.3}
+\BOOKMARK [2][-]{subsection.4.4}{Practical Issues to be Considered}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{Relationships to Existing Methods}{section.4}
+\BOOKMARK [1][-]{section.5}{Simulation Studies}{}
+\BOOKMARK [2][-]{subsection.5.1}{Three Dimensional Flared Helix}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{ Outer Product of Seven Univariate Densities}{section.5}
+\BOOKMARK [1][-]{section.6}{Exo-Planet Examples}{}
+\BOOKMARK [2][-]{subsection.6.1}{Star HD73526}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Star HD73526}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{The HD217107 Data Case}{section.6}
+\BOOKMARK [2][-]{subsection.6.4}{The HD37124 Data Case}{section.6}
+\BOOKMARK [2][-]{subsection.6.5}{The 47 Ursae Majoris \(47 UMa\) Data Case}{section.6}
+\BOOKMARK [1][-]{section.7}{Discussions and Conclusions}{}
+\BOOKMARK [1][-]{section*.1}{References}{}
+\BOOKMARK [1][-]{section*.3}{Author's addresses}{}

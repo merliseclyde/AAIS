@@ -1,0 +1,350 @@
+\begin{thebibliography}{26}
+
+\bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
+  Dijk}{2008}]{ardia2008adaptive}
+\begin{barticle}[author]
+\bauthor{\bsnm{Ardia},~\bfnm{D.}\binits{D.}},
+  \bauthor{\bsnm{Hoogerheide},~\bfnm{L.~F.}\binits{L.~F.}} \AND
+  \bauthor{\bparticle{van }\bsnm{Dijk},~\bfnm{H.~K.}\binits{H.~K.}}
+(\byear{2008}).
+\btitle{{Adaptive Mixture of Student-t Distributions as a Flexible Candidate
+  Distribution for Efficient Simulation}}.
+\bjournal{Tinbergen Institute Discussion Papers}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Biernacki and
+  Chr{\'e}tien}{2003}]{biernacki2003degeneracy}
+\begin{barticle}[author]
+\bauthor{\bsnm{Biernacki},~\bfnm{C.}\binits{C.}} \AND
+  \bauthor{\bsnm{Chr{\'e}tien},~\bfnm{S.}\binits{S.}}
+(\byear{2003}).
+\btitle{{Degeneracy in the maximum likelihood estimation of univariate Gaussian
+  mixtures with EM}}.
+\bjournal{Statistics \& Probability Letters}
+\bvolume{61}
+\bpages{373--382}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Bishop}{2005}]{bishop2005neural}
+\begin{bbook}[author]
+\bauthor{\bsnm{Bishop},~\bfnm{C.~M.}\binits{C.~M.}}
+(\byear{2005}).
+\btitle{{Neural networks for pattern recognition}}.
+\bpublisher{Oxford Univ Pr}.
+\end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Bullard}{2009}]{bullard2009edc}
+\begin{bphdthesis}[author]
+\bauthor{\bsnm{Bullard},~\bfnm{F.}\binits{F.}}
+(\byear{2009}).
+\btitle{{Exoplanet Detection: a Comparison of Three Statistics or How Long
+  Should It Take to Find a Small Planet?}}
+\btype{PhD thesis}, \bschool{Duke University}.
+\end{bphdthesis}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Cappe {\it et~al.}}{2004}]{cappe2004pmc}
+\begin{barticle}[author]
+\bauthor{\bsnm{Cappe},~\bfnm{O.}\binits{O.}},
+  \bauthor{\bsnm{Guillin},~\bfnm{A.}\binits{A.}},
+  \bauthor{\bsnm{Marin},~\bfnm{J.~M.}\binits{J.~M.}} \AND
+  \bauthor{\bsnm{Robert},~\bfnm{C.~P.}\binits{C.~P.}}
+(\byear{2004}).
+\btitle{{Population Monte Carlo}}.
+\bjournal{Journal of Computational and Graphical Statistics}
+\bvolume{13}
+\bpages{907--929}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Capp{\'e} {\it et~al.}}{2008}]{cappe2008ais}
+\begin{barticle}[author]
+\bauthor{\bsnm{Capp{\'e}},~\bfnm{O.}\binits{O.}},
+  \bauthor{\bsnm{Douc},~\bfnm{R.}\binits{R.}},
+  \bauthor{\bsnm{Guillin},~\bfnm{A.}\binits{A.}},
+  \bauthor{\bsnm{Marin},~\bfnm{J.~M.}\binits{J.~M.}} \AND
+  \bauthor{\bsnm{Robert},~\bfnm{C.~P.}\binits{C.~P.}}
+(\byear{2008}).
+\btitle{{Adaptive importance sampling in general mixture classes}}.
+\bjournal{Statistics and Computing}
+\bvolume{18}
+\bpages{447--459}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Cornebise, Moulines and
+  Olsson}{2008}]{cornebise2008adaptive}
+\begin{barticle}[author]
+\bauthor{\bsnm{Cornebise},~\bfnm{J.}\binits{J.}},
+  \bauthor{\bsnm{Moulines},~\bfnm{E.}\binits{E.}} \AND
+  \bauthor{\bsnm{Olsson},~\bfnm{J.}\binits{J.}}
+(\byear{2008}).
+\btitle{{Adaptive methods for sequential importance sampling with application
+  to state space models}}.
+\bjournal{Statistics and Computing}
+\bvolume{18}
+\bpages{461--480}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Del~Moral, Doucet and
+  Jasra}{2006}]{del2006sequential}
+\begin{barticle}[author]
+\bauthor{\bsnm{Del~Moral},~\bfnm{P.}\binits{P.}},
+  \bauthor{\bsnm{Doucet},~\bfnm{A.}\binits{A.}} \AND
+  \bauthor{\bsnm{Jasra},~\bfnm{A.}\binits{A.}}
+(\byear{2006}).
+\btitle{{Sequential monte carlo samplers}}.
+\bjournal{Journal of the Royal Statistical Society: Series B(Statistical
+  Methodology)}
+\bvolume{68}
+\bpages{411--436}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Del~Moral, Doucet and
+  Jasra}{2007}]{del2007sequential}
+\begin{barticle}[author]
+\bauthor{\bsnm{Del~Moral},~\bfnm{P.}\binits{P.}},
+  \bauthor{\bsnm{Doucet},~\bfnm{A.}\binits{A.}} \AND
+  \bauthor{\bsnm{Jasra},~\bfnm{A.}\binits{A.}}
+(\byear{2007}).
+\btitle{{Sequential monte carlo for bayesian computation}}.
+\bjournal{Bayesian Statistics}
+\bvolume{8}
+\bpages{115--148}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Evans}{1991}]{evans1991chaining}
+\begin{barticle}[author]
+\bauthor{\bsnm{Evans},~\bfnm{M.}\binits{M.}}
+(\byear{1991}).
+\btitle{{Chaining via annealing}}.
+\bjournal{The Annals of Statistics}
+\bvolume{19}
+\bpages{382--393}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Ford and Gregory}{2006}]{ford2006bms}
+\begin{barticle}[author]
+\bauthor{\bsnm{Ford},~\bfnm{E.~B.}\binits{E.~B.}} \AND
+  \bauthor{\bsnm{Gregory},~\bfnm{P.~C.}\binits{P.~C.}}
+(\byear{2006}).
+\btitle{{Bayesian Model Selection and Extrasolar Planet Detection}}.
+\bjournal{Arxiv preprint astro-ph/0608328}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Gelman and Meng}{1998}]{gelman1998simulating}
+\begin{barticle}[author]
+\bauthor{\bsnm{Gelman},~\bfnm{A.}\binits{A.}} \AND
+  \bauthor{\bsnm{Meng},~\bfnm{X.~L.}\binits{X.~L.}}
+(\byear{1998}).
+\btitle{{Simulating normalizing constants: From importance sampling to bridge
+  sampling to path sampling}}.
+\bjournal{Statistical Science}
+\bpages{163--185}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Gregory}{2005}]{gregory2005bayesian}
+\begin{barticle}[author]
+\bauthor{\bsnm{Gregory},~\bfnm{P.~C.}\binits{P.~C.}}
+(\byear{2005}).
+\btitle{{A Bayesian Analysis of Extrasolar Planet Data for HD 73526}}.
+\bjournal{The Astrophysical Journal}
+\bvolume{631}
+\bpages{1198--1214}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Gregory and
+  Fischer}{2010}]{gregory2010bayesian}
+\begin{barticle}[author]
+\bauthor{\bsnm{Gregory},~\bfnm{P.~C.}\binits{P.~C.}} \AND
+  \bauthor{\bsnm{Fischer},~\bfnm{D.~A.}\binits{D.~A.}}
+(\byear{2010}).
+\btitle{{A Bayesian periodogram finds evidence for three planets in 47 Ursae
+  Majoris}}.
+\bjournal{Monthly Notices of the Royal Astronomical Society}
+\bvolume{9999}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Kong, Liu and Wong}{1994}]{kong1994sequential}
+\begin{barticle}[author]
+\bauthor{\bsnm{Kong},~\bfnm{A.}\binits{A.}},
+  \bauthor{\bsnm{Liu},~\bfnm{J.~S.}\binits{J.~S.}} \AND
+  \bauthor{\bsnm{Wong},~\bfnm{W.~H.}\binits{W.~H.}}
+(\byear{1994}).
+\btitle{{Sequential imputations and Bayesian missing data problems}}.
+\bjournal{Journal of the American Statistical Association}
+\bvolume{89}
+\bpages{278--288}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Lefebvre {\it
+  et~al.}}{2009}]{lefebvre2009path}
+\begin{barticle}[author]
+\bauthor{\bsnm{Lefebvre},~\bfnm{G.}\binits{G.}},
+  \bauthor{\bsnm{Steele},~\bfnm{R.}\binits{R.}},
+  \bauthor{\bsnm{Vandal},~\bfnm{A.~C.}\binits{A.~C.}},
+  \bauthor{\bsnm{Narayanan},~\bfnm{S.}\binits{S.}} \AND
+  \bauthor{\bsnm{Arnold},~\bfnm{D.~L.}\binits{D.~L.}}
+(\byear{2009}).
+\btitle{{Path Sampling to Compute Integrated Likelihoods: An Adaptive
+  Approach}}.
+\bjournal{Journal of Computational and Graphical Statistics}
+\bvolume{18}
+\bpages{415--437}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Neal}{2001}]{neal2001ais}
+\begin{barticle}[author]
+\bauthor{\bsnm{Neal},~\bfnm{R.~M.}\binits{R.~M.}}
+(\byear{2001}).
+\btitle{{Annealing importance sampling}}.
+\bjournal{Statistics and Computing}
+\bvolume{11}
+\bpages{125--139}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Oh and Berger}{1993}]{oh1993imf}
+\begin{barticle}[author]
+\bauthor{\bsnm{Oh},~\bfnm{M.~S.}\binits{M.~S.}} \AND
+  \bauthor{\bsnm{Berger},~\bfnm{J.~O.}\binits{J.~O.}}
+(\byear{1993}).
+\btitle{{Integration of multimodal functions by Monte Carlo importance
+  sampling}}.
+\bjournal{Journal of the American Statistical Association}
+\bpages{450--456}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Peel and McLachlan}{2000}]{peel2000rmm}
+\begin{barticle}[author]
+\bauthor{\bsnm{Peel},~\bfnm{D.}\binits{D.}} \AND
+  \bauthor{\bsnm{McLachlan},~\bfnm{G.~J.}\binits{G.~J.}}
+(\byear{2000}).
+\btitle{{Robust mixture modelling using the t distribution}}.
+\bjournal{Statistics and Computing}
+\bvolume{10}
+\bpages{339--348}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Tinney {\it et~al.}}{2003}]{tinney2003four}
+\begin{barticle}[author]
+\bauthor{\bsnm{Tinney},~\bfnm{CG}\binits{C.}},
+  \bauthor{\bsnm{Butler},~\bfnm{R.~P.}\binits{R.~P.}},
+  \bauthor{\bsnm{Marcy},~\bfnm{G.~W.}\binits{G.~W.}},
+  \bauthor{\bsnm{Jones},~\bfnm{H.~R.~A.}\binits{H.~R.~A.}},
+  \bauthor{\bsnm{Penny},~\bfnm{A.~J.}\binits{A.~J.}},
+  \bauthor{\bsnm{McCarthy},~\bfnm{C.}\binits{C.}},
+  \bauthor{\bsnm{Carter},~\bfnm{B.~D.}\binits{B.~D.}} \AND
+  \bauthor{\bsnm{Bond},~\bfnm{J.}\binits{J.}}
+(\byear{2003}).
+\btitle{{Four New Planets Orbiting Metal-enriched Stars}}.
+\bjournal{The Astrophysical Journal}
+\bvolume{587}
+\bpages{423--428}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Tinney {\it et~al.}}{2006}]{tinney20062}
+\begin{barticle}[author]
+\bauthor{\bsnm{Tinney},~\bfnm{C.~G.}\binits{C.~G.}},
+  \bauthor{\bsnm{Butler},~\bfnm{R.~P.}\binits{R.~P.}},
+  \bauthor{\bsnm{Marcy},~\bfnm{G.~W.}\binits{G.~W.}},
+  \bauthor{\bsnm{Jones},~\bfnm{H.~R.~A.}\binits{H.~R.~A.}},
+  \bauthor{\bsnm{Laughlin},~\bfnm{G.}\binits{G.}},
+  \bauthor{\bsnm{Carter},~\bfnm{B.~D.}\binits{B.~D.}},
+  \bauthor{\bsnm{Bailey},~\bfnm{J.~A.}\binits{J.~A.}} \AND
+  \bauthor{\bsnm{O¡¯Toole},~\bfnm{S.}\binits{S.}}
+(\byear{2006}).
+\btitle{{2: 1 Resonant Exoplanetary System HD 73526}}.
+\bjournal{The Astrophysical Journal}
+\bvolume{647}
+\bpages{594--599}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Ueda {\it et~al.}}{2000}]{ueda2000sam}
+\begin{barticle}[author]
+\bauthor{\bsnm{Ueda},~\bfnm{N.}\binits{N.}},
+  \bauthor{\bsnm{Nakano},~\bfnm{R.}\binits{R.}},
+  \bauthor{\bsnm{Ghahramani},~\bfnm{Z.}\binits{Z.}} \AND
+  \bauthor{\bsnm{Hinton},~\bfnm{G.~E.}\binits{G.~E.}}
+(\byear{2000}).
+\btitle{{SMEM algorithm for mixture models}}.
+\bjournal{Neural computation}
+\bvolume{12}
+\bpages{2109--2128}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Vogt {\it et~al.}}{2005}]{vogt2005five}
+\begin{barticle}[author]
+\bauthor{\bsnm{Vogt},~\bfnm{S.~S.}\binits{S.~S.}},
+  \bauthor{\bsnm{Butler},~\bfnm{R.~P.}\binits{R.~P.}},
+  \bauthor{\bsnm{Marcy},~\bfnm{G.~W.}\binits{G.~W.}},
+  \bauthor{\bsnm{Fischer},~\bfnm{D.~A.}\binits{D.~A.}},
+  \bauthor{\bsnm{Henry},~\bfnm{G.~W.}\binits{G.~W.}},
+  \bauthor{\bsnm{Laughlin},~\bfnm{G.}\binits{G.}},
+  \bauthor{\bsnm{Wright},~\bfnm{J.~T.}\binits{J.~T.}} \AND
+  \bauthor{\bsnm{Johnson},~\bfnm{J.~A.}\binits{J.~A.}}
+(\byear{2005}).
+\btitle{{Five new multicomponent planetary systems}}.
+\bjournal{The Astrophysical Journal}
+\bvolume{632}
+\bpages{638--658}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Wang {\it et~al.}}{2004}]{wang2004estimation}
+\begin{barticle}[author]
+\bauthor{\bsnm{Wang},~\bfnm{H.~X.}\binits{H.~X.}},
+  \bauthor{\bsnm{Luo},~\bfnm{B.}\binits{B.}},
+  \bauthor{\bsnm{Zhang},~\bfnm{Q.~B.}\binits{Q.~B.}} \AND
+  \bauthor{\bsnm{Wei},~\bfnm{S.}\binits{S.}}
+(\byear{2004}).
+\btitle{{Estimation for the number of components in a mixture model using
+  stepwise split-and-merge EM algorithm}}.
+\bjournal{Pattern Recognition Letters}
+\bvolume{25}
+\bpages{1799--1809}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{West}{1993}]{west1993mixture}
+\begin{barticle}[author]
+\bauthor{\bsnm{West},~\bfnm{M.}\binits{M.}}
+(\byear{1993}).
+\btitle{{Mixture Models, Monte Carlo, Bayesian Updating, and Dynamic Models}}.
+\bjournal{Computing Science and Statistics}
+\bpages{325--325}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Zeevi and Meir}{1997}]{zeevi1997det}
+\begin{barticle}[author]
+\bauthor{\bsnm{Zeevi},~\bfnm{A.~J.}\binits{A.~J.}} \AND
+  \bauthor{\bsnm{Meir},~\bfnm{R.}\binits{R.}}
+(\byear{1997}).
+\btitle{{Density estimation through convex combinations of densities:
+  approximation and estimation bounds}}.
+\bjournal{Neural Networks}
+\bvolume{10}
+\bpages{99--110}.
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
