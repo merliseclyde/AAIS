@@ -1,0 +1,538 @@
+\section{Importance Sampling for Marginal Likelihood Estimation}
+\label{sec:IS}
+Beyond conjugate models, the integrals defining the marginal
+likelihood in Equation (\ref{marginal_lik}) are generally intractable
+and must be estimated by numerical methods.  Importance sampling (IS)
+\citep{Gewe:1989} is a well known Monte Carlo technique for estimating
+such integrals.  Given an importance distribution $Q$ that is
+abolutely continuous with respect to the target posterior distribution
+the marginal likelihood may be re-expressed as an expectation with
+respect to $Q$
+\begin{equation}\label{IS_for_marginal_lik}
+m(\M ) = \mathbb{E}_Q\left[ \frac{p(\v \mid \theta, \M)p(\theta \mid.
+    \M)} {q(\theta)}\right]
+\end{equation}
+$q(\theta)$ is the associated probability density function for
+distribution $Q$ from which samples may be obtained
+relatively easily.
+Given a random sample of size $N$   $\theta^{(1)},
+\ldots, \theta^{(N)}$ from $Q$,
+an  unbiased and simulation consistent Monte Carlo
+estimate of the marginal likelihood is provided by
+\begin{equation}\label{IS_solution_marlik}
+\hat{m}(\M)=\frac{1}{N} \sum_{i=1}^N\frac{p(\v \mid \theta^{(i)},
+  \M) p(\theta^{(i)}\mid \M)} {q(\theta^{(i)})} = \frac{1}{N}\sum_{i=1}^N
+w^{(i)}
+\end{equation}
+where $w^{(i)}$ are known as the IS weights. 
+The distribution of the error
+$|\hat{m}(\M)-m(\M)|$ can be approximated via the central limit theorem
+\begin{equation}
+\mbox{Var}_q\left\{\hat{\Z}\right\}=\mathbb{E}_q\left\{\left(\hat{\Z}-\Z\right)^2\right\}=\frac{\sigma_q^2}{N}<\infty,
+\end{equation}
+when $\hat{\Z}$ has finite variance. Here
+\begin{equation}
+\sigma_q^2=\mbox{Var}_q\left\{\frac{L(\theta|y)p(\theta|\mathcal{M})}{q(\theta)}\right\}=\int_{R^d}\left(\frac{L(\theta|y)p(\theta|\mathcal{M})}{q(\theta)}-\Z\right)^2
+q(\theta)d\theta=\Z^2\mathbb{E}_q\left\{\left(\frac{\pi(\theta)-q(\theta)}{q(\theta)}\right)^2\right\}.
+\end{equation}
+If the importance density is such that $\sigma_q^2<\infty$, then via
+the central limit theorem
+\begin{equation}
+\frac{\hat{\Z}-\Z}{\sigma_q/\sqrt{N}}\rightarrow X
+\end{equation}
+as $N\rightarrow\infty$, where $X\sim \mathcal{N}(0,1)$. The above
+results then implies that
+$\hat{Z}-Z=\mathcal{O}(\frac{1}{\sqrt{N}})$.
+
+One can construct confidence intervals to assess the quality of a
+particular estimate of $\Z$ \citep{lefebvre2009path}. With a large
+degree of certainty, the interval $\hat{\Z}\pm3\sigma_q/\sqrt{N}$
+contains $\Z$ when $N$ is large and so the half length
+$3\sigma_q/\sqrt{N}$ indicates how accurate $\hat{\Z}$ is. Since
+$\sigma_q$ is unknown, a natural estimator of $\sigma_q^2$ is the
+usual consistent variance estimator
+\begin{equation}
+\sigma_q^2\simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^i-\hat{\Z}\right)^2.
+\end{equation}
+
+The efficiency of importance sampling depends largely on how closely
+the importance function mimics the shape of the target,
+$L(y|\theta)p(\theta)$. A number of things can go wrong. If the
+importance function has thinner tails than the target, the estimate
+will tend to be unstable because the weights can be arbitrarily
+large; on the other hand if the importance function has much fatter
+tails than the target, too many of the $\theta_i$'s will be drawn
+from the tails, resulting in a seemingly stable but biased estimate.
+The best case is an importance function with slightly heavier tails
+than the target. Of course asymptotically it should not matter which
+importance function is used; for samples of practical size, though,
+a poor choice can be disastrous.
+
+These problems are only compounded in high-dimensional settings
+where the target is often extremely complicated. Unless one is very
+lucky indeed it is usually impossible to get accurate results in
+real-life situations with dimension greater than 3.
+
+\section{Annealed Adaptive IS Method for Constructing Importance
+  Function} \label{sec:AAIS}
+In this section, we propose the adaptive mixture modeling approach,
+which is used for constructing importance function that resembles
+the posterior and then is used in (\ref{IS_solution_marlik}) for
+calculating the marginal likelihood.
+
+Let $\pi(\theta)$ denote the posterior distribution, which is
+proportional to $L(y|\theta)p(\theta)$. Note that computing
+$L(y|\theta)p(\theta)$ for any $\theta$ is feasible, but that we are
+not able to directly sample from the distribution it defines, i.e.
+$\pi(\theta)$. The aim is to find a distribution, $q(\theta)$, that
+approximates $\pi(\theta)$, which we are also able to evaluate.
+
+We first select an initial proposal distribution $q_0(\theta)$, then
+define a series of intermediate distributions between $q_0(\theta)$
+and $\pi(\theta)$, by
+\begin{equation}
+\pi_t(\theta)\propto
+q_0(\theta)^{1-\lambda_t}\pi(\theta)^{\lambda_t}, \quad\quad
+t=1,\ldots,T, \quad \mbox{and}\quad
+0<\lambda_1<\lambda_2<\dots<\lambda_T=1.
+\end{equation}
+Finally we propose an iterative method to construct $q(\theta)$, as
+shown in Algorithm 1.
+\begin{center}
+\textbf{Algorithm 1. Sequential Proposal Construction}
+\end{center}
+\begin{itemize}
+\item Use $\pi_1(\theta)$ as the target distribution, with $q_0(\theta)$
+as the proposal. Tune parameters of $q_0(\theta)$ to obtain an
+updated mixture density function, denoted $q_1(\theta)$, which
+approximates $\pi_1(\theta)$.
+\item Similarly as in step 1, tune parameters of $q_1(\theta)$ to
+obtain an updated proposal,$q_2(\theta)$, which is used to
+approximate $\pi_2(\theta)$.
+\item iterates the above process, i.e., tuning parameters of $q_t(\theta)$ and then getting the updated mixture density function $q_{t+1}(\theta)$, from $t=2$ to $t=T-2$.
+\item Use $\pi_T(\theta)$ as the target distribution, tune parameters of
+$q_{T-1}(\theta)$ to obtain $q_{T}(\theta)$, which approximates
+$\pi_T(\theta)=\pi(\theta)$. Then $q_{T}(\theta)$ is actually the
+importance function which we want.
+\end{itemize}
+
+We see that the annealing strategy is adopted in the above iterative
+procedure. In what follows, we propose an adaptive method to handle
+the task of updating $q_{t-1}(\theta)$ to $q_{t}(\theta)$ in
+Algorithm 1.
+
+\subsection{Multivariate Student's T-mixture Model}
+Considering possible complexities in the structure of
+$\pi_t(\theta)$, we employ a mixture model to define
+$q_{t}(\theta)$. Note that any continuous probability density
+function can be approximated by a finite mixture model, provided
+that the mixture has a sufficient number of components along with
+correctly estimated parameters
+\citep{bishop2005neural,zeevi1997det}. In particular, we equip
+$q_{t}(\theta)$ with the Student's T distribution as the mixture
+component, making it easier to detect modes that are far apart
+thanks to its fat tail structure. Let $\mathcal{S}_d(\mu,\Sigma,v)$
+denote a $d$-variate Student's T distribution, where $\mu$ is the
+center, $\Sigma$ the positive definite inner product matrix, and $v$
+is the degrees of freedom. We just fix $v$ to be a constant, e.g., 5
+in the following. So the mixture model we use is:
+\begin{equation}\label{Definition_mixture}
+q(\theta|\psi)=\sum\limits_{m=1}^M \alpha_{m}
+\mathcal{S}_d(\theta|\mu_m,\Sigma_m)
+\end{equation}
+where
+$\psi=\{M,\alpha_1,\ldots,\alpha_M,\mu_1,\ldots,\mu_M,\Sigma_1,\ldots,\Sigma_M\}$
+is the mixture parameter. Here $\alpha_m$ is the probability mass of
+the $m$th component. It satisfies that $\alpha_{m}\geq
+0,\sum_{m=1}^M \alpha_{m}=1$. So the task of fitting a T-mixture
+model to a probability density translates into seeking suitable
+parameter values for $\psi$.
+
+\subsection {Proposal Adaptation via IS plus EM}\label{sec:IS_EM}
+Let's focus on iteration $t$ in Algorithm 1. We first simulate an
+random sample, $\theta^n$, from $q_{t-1}(\theta)$, with the
+importance weight calculated by
+\begin{equation}
+w^n=\frac{\frac{\pi_{t}(\theta^n)}{q_{t-1}(\theta^n)}}{\sum_{n=1}^N\frac{\pi_{t}(\theta^n)}{q_{t-1}(\theta^n)}},
+\end{equation}
+where $N$ denotes the sample size. The resulting weighted particle
+set then can be seen as a particle approximation to the current
+target distribution $\pi_t(\theta)$, i.e.
+\begin{equation}\label{delta_mass_approx}
+\pi_t(\theta)\simeq\sum\limits_{n=1}^Nw^i\delta(\theta^i),
+\end{equation}
+where $\delta(\cdot)$ is the delta mass function.
+
+Here we adopt the Kullback-Leibler (KL) divergence to measure the
+distance between any two distributions. Then the aim is to obtain a
+proposal, $q_t(\theta)$, that minimizes the KL distance with respect
+to $\pi_t(\theta)$, which is shown to be
+\begin{equation}\label{KL}
+\mathcal{D}[\pi_t(\theta)||q_t(\theta|\psi)]=\mathbb{E}_{\pi_t(\theta)}\left[\log\frac{\pi_t(\theta)}{\sum\limits_{m=1}^M
+\alpha_m\mathcal{S}_d(\theta|\mu_m,\Sigma_m)}\right].
+\end{equation}
+where $\mathbb{E}_f$ denotes expectation with respect to a function
+$f$. It's clear that minimizing (\ref{KL}) in $(\alpha,\mu,\Sigma)$
+is equivalent to maximizing
+\begin{equation}\label{MLE}
+\int\pi_t(\theta)\log\left(\sum\limits_{m=1}^M
+\alpha_m\mathcal{S}_d(\theta|\mu_m,\Sigma_m)\right).
+\end{equation}
+Substituting Equation (\ref{delta_mass_approx}) in the above, we
+have
+\begin{equation}\label{Max_log_lik}
+\sum_{i=1}^N w^i\log\left(\sum\limits_{m=1}^M
+\alpha_m\mathcal{S}_d(\theta^i|\mu_m,\Sigma_m)\right).
+\end{equation}
+
+At this stage, the task translates into a mixture-density parameter
+estimation problem, that is, how to optimize the parameter values of
+$\psi$ to make the resulting mixture density function fit the data
+$\{\theta^n,w^n\}_{n=1}^N$ as well as possible.
+
+Given data component $\theta^n$, the posterior probability of each
+mixture component can be obtained according to the Bayes rule:
+\begin{equation}\label{posterior_prob_component}
+\rho_m(\theta^n)=\alpha_m
+\mathcal{S}_d(\theta^n;\mu_m,\Sigma_m)/q(\theta^n),
+\end{equation}
+where $\alpha_m$ is regarded as the prior, and
+$\mathcal{S}_d(\theta^n;\mu_m,\Sigma_m)$ is the associated
+likelihood. The proportion mass of this component can then be
+updated by
+\begin{equation}\label{MLE_alpha}
+\alpha_m=\sum\limits_{n=1}^N w^n \rho_m(\theta^n).
+\end{equation}
+And each pair of $\{\mu_m,\Sigma_m\}$ can be updated by the
+following Equations:
+\begin{equation}
+\mu_m=\frac{\sum\limits_{n=1}^N w^n
+\rho_m(\theta^n)u_m(\theta^n)\theta^n}{\sum\limits_{n=1}^N w^n
+\rho_m(\theta^n)u_m(\theta^n)},
+\end{equation}
+\begin{equation}\label{MLE_Sigma}
+\Sigma_m=\frac{\sum\limits_{n=1}^N w^n
+\rho_m(\theta^n)u_m(\theta^n)C_n }{\sum\limits_{n=1}^N w^n
+\rho_m(\theta^n)},
+\end{equation}
+where
+\begin{equation}
+u_m(\theta)=\frac{v+d}{v+(\theta-\mu_m)^T(\Sigma_m)^{-1}(\theta-\mu_m)}
+\end{equation}
+and $C_n=(\theta^n-\mu_m)(\theta^n-\mu_m)'$, where $'$ denotes
+matrix transposition.
+
+The operations from (\ref{posterior_prob_component}) to
+(\ref{MLE_Sigma}) constitute one iteration of the EM algorithm,
+which is used to do mixture density parameter estimation
+\citep{peel2000rmm}. Let $q_t(\theta)$ be a T-mixture model, with
+the updated parameter values $\{\alpha_m,\mu_m,\Sigma_m\}$, and it's
+expected to be an approximation to $\pi_t(\theta)$. The efficiency
+of $q_t(\theta)$, as an approximation of $\pi_t(\theta)$, can be
+measured by the KL divergence using (\ref{Max_log_lik}), or the
+effective sample size, which is defined to be
+\begin{equation}\label{ESS}
+\ESS=\frac{1}{\sum_{n=1}^N w_n^2}.
+\end{equation}
+Note that these importance weights are associated with the random
+sample drawn from $q_t(\theta)$. The \ESS was originally proposed by
+\cite{kong1994sequential} to measure the overall efficiency of an IS
+algorithm. Heuristically it measures how many i.i.d samples are
+equivalent to the $N$ weighted samples. The \ESS is related to the
+coefficient of variation (CV) of the importance weights (see
+\cite{kong1994sequential}), which finds applications in
+\cite{ardia2008adaptive,cappe2008ais,cornebise2008adaptive}. It's
+shown that \ESS is determined by the associated proposal and the
+particle size, $N$, while, once $N$ is big enough, the ratio of \ESS
+to $N$ should be stable. So in this paper, we use \ESS$/N$ as a
+quantity to monitor the efficiency of $q_t(\theta)$. When \ESS$/N$
+is big enough, let Algorithm 1 go to next iteration. If \ESS$/N$ is
+smaller than a given threshold, we continue to update $q_t(\theta)$
+until it satisfies the requirement, i.e. the resulting \ESS$/N$ is
+big enough. In this way, we can make sure that the finally obtained
+$q_t(\theta)$ is really a good approximation to $\pi_t(\theta)$.
+
+Suppose that currently \ESS$/N$ is not big enough, we consider two
+approaches that are used to update $q_t(\theta)$ again. First we
+check whether the particle with the biggest importance weight,
+denoted $\theta^{W}, W\in\{1,\ldots,N\}$, is located in the tail of
+the proposal. If it is, which means $q_t(\theta^{W})$ is smaller
+than the proposal densities of most other particles, we then select
+to perform an operation called component-splitting (see Section
+\ref{sec:split}), otherwise, we perform the IS plus EM procedure
+again. The reason for doing this is that the IS plus EM procedure is
+exactly a local search approach, because it fixes the number of
+mixture components to be a constant and the EM itself is a local
+optimization method, while the component-splitting procedure will
+break the local model structure by splitting one mixture component
+into two, thus facilitates to find the global or, at least a better
+local optimum (see Section \ref{sec:split}).
+
+
+\subsection {Online Approach to Tune the Number of the Mixture Components}
+
+In the above IS plus EM procedure, the number of components $M$ is
+imposed to be constant, while this assumption is of course not
+reasonable. To deal with this issue, we propose a series of adaptive
+mechanisms to adapt $M$ online, which include operations called
+components-merging, components-splitting and components-deletion,
+respectively. We'll provide respective conditions, on which each of
+these procedures needs to be performed.
+
+\subsubsection{Components Merging}
+This step targets for merging mixture components that have much
+mutual information among each other. To begin with, we first
+introduce the concept, mutual information. Suppose that a set of
+equally weighted data components $\{\theta^n\}_{n=1}^N$ are
+available, whose distribution is modeled by a mixture density
+function $q=\sum_{m=1}^M\alpha_mf_m$. Given any data component
+$\theta^n$, the posterior probability of each mixture component
+$f_m$ can be calculated by
+\begin{equation}
+\rho_m(\theta^n)=\alpha_m f_m(\theta^n)/q(\theta^n).
+\end{equation}
+If there are two mixture components $f_i$, $f_j$, for which it
+satisfies that $\rho_i(\theta^n)=\rho_j(\theta^n)$ for any
+$n\in\{1,\ldots,N\}$, then $f_i$ and $f_j$ are regarded to contain
+completely overlapped information. Inspired by the components
+merging criterion proposed in \cite{ueda2000sam,wang2004estimation},
+we define the mutual information between $f_i$ and $f_j$ to be:
+\begin{equation}\label{mutual_info}
+\MI(i,j)=\frac{(\Upsilon_i-\bar{\Upsilon}_i)^T(\Upsilon_j-\bar{\Upsilon}_j)}{\|\Upsilon_i-\bar{\Upsilon}_i\|\cdot\|\Upsilon_j-\bar{\Upsilon}_j\|},
+\end{equation}
+ where
+$\Upsilon_m=[\rho_m(\theta^1),\ldots,\rho_m(\theta^N)]'$, $'$
+denotes transposition of a matrix, $\|\cdot\|$ denotes the Euclidean
+norm, and $\bar{\Upsilon}_m=\frac{1}{N}\sum_{n=1}^N
+\rho_m(\theta^n)\textbf{1}_N$. Here $\textbf{1}_n$ denotes the
+$n-$dimensional column vector with all elements being $1$.
+
+Note that $\MI(i,j)\in[-1,1]$, and $\MI(i,j)=1$ iff $f_i$ and $f_j$
+contain completely overlapped information.
+
+In our algorithm framework, each data point $\theta^n$ is weighted
+by $w^n$. Accordingly, $\Upsilon_m$ should be $\sum_{n=1}^N w^n
+\rho_m(\theta^n)$, and the mutual information between $i$, $j$ turns
+out to be:
+\begin{equation}\label{Merge_criterion_correlation}
+\MI(i,j)=\frac{(\Upsilon_i-\bar{\Upsilon}_i)'
+D(w)(\Upsilon_j-\bar{\Upsilon}_j)}{\sqrt{\sum_{n=1}^N
+w^n(\Upsilon_i(\theta^{n})-\bar{\Upsilon}_i)^2}\sqrt{\sum_{n=1}^N
+w^n(\Upsilon_j(\theta^{n})-\bar{\Upsilon}_j)^2}}
+\end{equation}
+where
+\begin{equation}
+D(w)=diag([w^1,\ldots,w^N])
+\end{equation}
+We judge if two components, $i$ and $j$, need to be merged into one
+by comparing $\MI(i,j)$ with a threshold $0<T_{merge}<1$. If
+$\MI(j,k)>T_{merge}$, we then merge the $i$th component into $j$,
+and set $M=M-1$; otherwise, we maintain the original mixture. The
+merging operation is specified to be:
+\begin{eqnarray}\label{Linear_combination_components}
+\alpha_{j}&=&\alpha_{i}+\alpha_{j}\\
+\mu_{j}&=&\frac{\alpha_{i}\mu_{i}+\alpha_{j}\mu_{j}}{\alpha_{j}}\\
+\Sigma_{j}&=&\frac{\Sigma_{i}\mu_{i}+\Sigma_{j}\mu_{j}}{\alpha_{j}}
+\end{eqnarray}
+which is a linear combination of the two old components, and has
+been used in \cite{wang2004estimation}. We traverse each pair of the
+original components to do the merging judgements and perform the
+above merging operation if the merging condition satisfies.
+
+We execute the above merging operation when superfluous components
+may exist, e.g., when $q_0(\theta)$ is initialized with too many
+overlapped components, or too many new components appear at one
+iteration of Algorithm 1 via component-splitting (see Section
+\ref{sec:split}).
+
+\subsubsection{Component-splitting}\label{sec:split}
+As mentioned in Section \ref{sec:IS_EM}, it may happen that, after
+performing the IS plus EM procedure, \ESS$/N$ was not big enough,
+and the maximum weight particle was located in the tail of
+$q_t(\theta)$. In that case, we perform the mechanism proposed here,
+called component-splitting. This procedure is used to break the
+local structure of $q_t(\theta)$ by splitting one component into
+two, whereby the component number, $M$, will increase to $M+1$.
+
+This Component-splitting approach is performed as follows. First,
+when we simulate draws from $q_t(\theta)$ for evaluating the
+efficiency of $q_t(\theta)$, we record the component origination of
+each draw. We then see the parent component of the maximum weight
+sample, $\theta^W$, denoted
+$f_p=\mathcal{S}_d(\theta|\mu_p,\Sigma_p)$, and know that which
+samples were originated from $f_p$. We encapsulate the samples that
+come from $f_p$ to a data array,
+$\mathcal{\theta}_{local}=\{\theta^{1},\ldots,\theta^{pN}\}$, then
+split $f_p$ into two components$-$
+$f_{c1}=\mathcal{S}_d(\theta|\mu_{c1},\Sigma_{c1})$ and
+$f_{c2}=\mathcal{S}_d(\theta|\mu_{c2},\Sigma_{c2})$, and finally
+replace $f_p$ in $q_t(\theta)$ by $f_{c1}$ and $f_{c2}$.
+
+Next we give operations to get
+$\mu_{c1},\Sigma_{c1},\mu_{c2},\Sigma_{c2}$. We first initialize
+$\mu_{c1}=\theta^W$, $\mu_{c2}=\mu_p$,
+$\Sigma_{c1}=\Sigma_{c2}=\Sigma_p$, and then specify a local mixture
+$q_{local}=\alpha_{c1}f_{c1}+\alpha_{c2}f_{c2}$, where
+$\alpha_{c1}=\alpha_{c1}=0.5$, finally we perform a local IS plus EM
+procedure to update
+$\alpha_{c1},\alpha_{c2},\mu_{c1},\Sigma_{c1},\mu_{c2},\Sigma_{c2}$.
+Such local IS plus EM procedure starts by evaluating the local
+weight for each $\theta^{i}$ in $\mathcal{\theta}_{local}$ via
+\begin{equation}
+w^i=\frac{\frac{\pi_{t}(\theta^{i})}{q_{local}(\theta^{i})}}{\sum_{n=1}^{pN}\frac{\pi_{t}(\theta^n)}{q_{local}(\theta^n)}}.
+\end{equation}
+Substituting $\{\theta^i,w^i\}_{i=1}^{pN}$ and the local mixture
+parameters,
+$\alpha_{c1},\alpha_{c2},\mu_{c1},\Sigma_{c1},\mu_{c2},\Sigma_{c2}$
+in the Equations from (\ref{MLE_alpha}) to (\ref{MLE_Sigma}), we
+then can obtain the updated parameter values for the local mixture
+$q_{local}$. Suppose that $f_p$ is assigned a proportion mass
+$\alpha_p$ in $q_t(\theta)$, we assign $f_{c1}$ and $f_{c2}$
+proportion masses $\alpha_{c1}=\alpha_p\alpha_{c1}$ and
+$\alpha_p\alpha_{c2}$, respectively, for the updated $q_t(\theta)$,
+in which $f_p$ is replaced by $f_{c1}$ and $f_{c2}$.
+
+This component-splitting method makes use of the local behavior of
+the target distribution around the maximum weight sample. It adds
+mixture proposal probability mass to those areas of the parameter
+space which is near the maximum weight sample, where there is
+relatively little mixture proposal probability mass. As the local IS
+plus EM procedure is actually a local mixture learning process, by
+which the local structure around the maximum weight sample will be
+modeled well by the updated local mixture, which then will elicit a
+better global mixture representation of the whole target
+distribution, which may lead to a satisfactory \ESS$/N$ value. Note
+that the above component-splitting procedure may be repeated
+provided that the condition of executing it satisfies.
+
+\subsubsection{Component-Deletion} \label{sec:deletion}
+As mentioned above, when simulating draws from $q_t(\theta)$, we can
+record the component origination of each sample. For any mixture
+component that generates no sample, we deem it has taken no effect
+in modeling the current target distribution, thus we just delete it
+in current mixture proposal. Its probability masses is then
+redistributed strengthening the remaining components.
+
+\subsection{Practical Issues to be Considered}
+EM based mixture modeling approach provides a convenient and
+flexible utility for estimating or approximating distributions,
+while the mixture log-likelihood presents a well known problem,
+i.e., degeneracy toward infinity \citep{biernacki2003degeneracy}
+(actually EM also suffers from the problem of slow convergence, so
+it may converge to a local optimum \citep{biernacki2003degeneracy},
+however, we don't need to worry about that, because on one side the
+proposed component-splitting procedure facilitates to search the
+global optimum, and, one the other side, the objective here is just
+to find a good mixture importance function, which is not necessary
+to be the global optimum). To prevent the mixture log-likelihood
+from arising to infinity, we assign an inverse-wishart prior on the
+covariance matrix of each mixture component, then perform EM to get
+the \emph{maximum a posterior} (instead of maximum likelihood)
+estimate of the covariance matrix.
+
+In the component-splitting step, the parameter updating of $f_{c1}$
+and $f_{c2}$ is based upon $pN$ particles originated from $f_p$. In
+case of $pN$ being too small, e.g. smaller than a threshold
+specified beforehand, denoted $N_s$, we need to generate another set
+of $N_s-pN$ samples from $f_p$, then do the parameter updating for
+$f_{local}$ based upon the $N_s$ particles. By doing this, we can
+guarantee that we are using a sufficient number of random draws to
+capture the local structure in the posterior, that will then be
+represented by $f_{local}$.
+
+In the above mentioned component-splitting step, when we replace
+$f_p$ in $q_t(\theta)$ by $f_{c1}$ and $f_{c2}$, we assign the
+proportion mass of $f_p$ to $f_{c1}$ and $f_{c2}$ proportionally to
+their original weights, i.e. $\alpha_{c1}$ and $\alpha_{c2}$,
+respectively. Note that if $\alpha_p$ is a very small value, e.g.,
+$0.0001$, the new added mixture components, $f_{c1}$ and $f_{c2}$,
+will only take an insignificant effect in the updated $q_t(\theta)$,
+while $f_{c1}$ and $f_{c2}$ may contain new and important
+information about the posterior. To guarantee that $f_{c1}$ and
+$f_{c2}$ can play a role in $q_t(\theta)$, at lease to some extent,
+we propose the following operations. We first specify a threshold
+$\alpha_{threshold}$, which may be, e.g., 0.1 or 0.2. Then, if
+$\alpha_p>\alpha_{threshold}$, we assign weights to $f_{c1}$ and
+$f_{c2}$ as usual as shown in Section \ref{sec:split}. Otherwise, we
+assign $\alpha_{threshold}\alpha_{c1}$ and
+$\alpha_{threshold}\alpha_{c2}$ to $f_{c1}$ and $f_{c2}$,
+respectively. So the sum of weights of $f_{c1}$ and $f_{c2}$ in
+$q_t(\theta)$ will be $\alpha_{threshold}$. To make sure the sum of
+the weights of the mixture components equals to 1, we reduce the
+weights of the components, other than $f_{c1}$ and $f_{c2}$,
+proportionally to their original weights.
+
+\subsection{Relationships to Existing Methods}
+
+As the proposed AAIS method utilizes the idea of 'annealing' as a
+way of searching isolated modes, it has close relationships to a
+series of MCMC methods, which are based on the "thermodynamic
+integration" technique for computing marginal likelihoods, and are
+discussed under the name of Bridge and Path sampling in
+\cite{gelman1998simulating}, parallel tempering MCMC in
+\cite{gregory2010bayesian,gregory2005bayesian} and Annealed
+Importance Sampling (AIS) in \cite{neal2001ais}. The central idea of
+these methods is to divide the ratio of two normalization constants,
+which we can think of for our purposes as the ratio of marginal
+likelihoods, $\Z_t$ and $\Z_0$, which are associated to
+$\pi(\theta)$ and $q_0(\theta)$, respectively, into a series of
+easier ones, parameterised by inverse temperature, $\lambda$. In
+detail:
+\begin{equation}
+\frac{\Z_t}{\Z_0}=\frac{\Z_1}{\Z_0}\frac{\Z_2}{\Z_1}\dots\frac{\Z_t}{\Z_{t-1}}.
+\end{equation}
+Each of the ratios is estimated using samples from a MCMC method.
+For example, to compute $\frac{\Z_t}{\Z_{t-1}}$, we should have
+samples that are drawn from equilibrium from the distribution
+defined by
+$\pi_{t-1}(\theta)\propto\pi(\theta)^{\lambda_{t-1}}q_0(\theta)^{1-\lambda_{t-1}}$.
+Therefore, these methods require us to devise a single Metropolis
+proposal at each temperature, which should be a troublesome issue in
+practice, since it is not prior known the target distribution's
+structure at each temperature. In addition, the involvement of MCMC
+results in annoying questions, e.g. how long should the 'burn-in'
+period last, and how many samples are needed to get a reliable
+estimate, which should be considered at each temperature.
+
+Striking differently, the proposed AAIS is developed from the
+perspective of mixture modeling, that is, how to adapt a mixture
+model to resemble the posterior, while the similar temperature idea,
+i.e., 'annealing', is also involved target for searching isolated
+peaky modes. We only need to select an initial mixture proposal
+$q_0$, the annealing temperatures $\lambda_t$, and up to three
+thresholds, after which, the mixture adaptation process is
+completely adaptive, and finally the marginal likelihood is simply
+obtained by substituting the resulting mixture as the importance
+function in (\ref{IS_for_marginal_lik}). Such property of
+easy-to-implementation results from the adaptive techniques involved
+in the algorithm, including the EM based parameter estimation for
+each mixture component, and the proposed online approach used for
+adjusting the cardinality of the mixture, i.e. the number of mixture
+components.
+
+This AAIS algorithm falls within a general algorithmic framework,
+called Sequential Monte Carlo Sampler (SMCS), which is proposed in
+\cite{del2007sequential,del2006sequential}. However, SMCS utilizes
+the same "thermodynamic integration" technique for calculating
+marginal likelihoods, so it inherits all drawbacks mentioned above.
+Exactly, the proposed AAIS method can be seen as a special case of
+SMCS, which adopts adaptive independent mixture proposals as the
+transition kernels (see details in
+\cite{del2007sequential,del2006sequential}), and the IS, instead of
+MCMC, for particle generation.
+
+Finally, AAIS has connections to a bunch of existing adaptive IS
+methods in the literature, for example,
+\cite{evans1991chaining,oh1993imf,cappe2008ais,cappe2004pmc,west1993mixture,ardia2008adaptive},
+to name just a few. The most distinguishing point lies in that our
+method adopts the annealing strategy, which is well recognized as a
+powerful approach to search separated, especially peaky, modes in
+the posterior. From the mixture modeling point of view, the proposed
+mixture adaptation technique can be seen as an intermediate between
+the completely non-parametric method in \cite{west1993mixture} and
+the EM based semi-parametric methods, which is used in the adaptive
+mixture importance sampling (AMIS) approach \citep{cappe2008ais}.
+The AMIS approach employs a fixed number of mixture components,
+while our method and the nonparametric method
+\citep{west1993mixture} can let the data speak for themselves how
+many components should be contained in the mixture.

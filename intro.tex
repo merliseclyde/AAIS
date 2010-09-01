@@ -1,0 +1,78 @@
+\section{Introduction}
+
+Since the beginning of recorded time we have wondered whether we are
+alone or whether there are other planets that might support life. The
+scientific quest for extrasolar or exoplanets (planets beyond our own
+solar system) began in the mid 19th century, but it was only as recent
+as 1992 that astonomers have been able to confirm the existence of
+other planetary systems.  Since then {\tt describe resources,
+  telescopes, etc} have been devoted to identifying stars with
+orbiting planets, and in particular, those that might have earth-like
+planets. As of June 2010 over 450 exoplanets have been detected, the
+majority using techniques that rely on measurements of a star's radial
+velocity The presence of a planet orbiting a star will lead to a
+periodic wobble in the the star's radial velocity, while if there are
+no planets present the expected velocity is constant although
+measurements fluctuate because of stellar jitter and {\tt other
+  explanations for noise}.  Based on a short sequence of noisy
+measurements, the challenge is to detemine whether there are no
+planets or one, two or more planets, and if there are planets to
+characterize their orbital parameters.  {\tt cite work of Gregory and
+  Ford, but mention limitations?}  If the data do not provide strong
+evidence either in favor or against the presence of planets,
+additional observations may be needed to provide confirmation.
+Determining which stars to observe and when to schedule scarce
+telescope time optimally is critical given limited resources; Bayesian methods in particular
+are ideally suited for such sequential updating of
+information/evidence and decision making in such sampling problems.
+
+
+The primary question of whether there are no planets or one or more
+may be poised as a Bayesian model selection problem, where the
+collection of models under consideration are the zero-planet mode
+$\M_0$, one-planet $\M_1$, two-planet $\M_2$, etc.  In Bayesian
+statistics, the posterior probability of a model $\M_j$ requires
+accurately calculating the integrated or marginal likelihood and in
+the setting of exo-planet is extremely challenging; see
+\citet{Clyd:Geor:2004} for a general overview or \cite{Clyd:etal:2005}
+for some of the issues that arise in astronomy. Out of available
+methods, importance sampling (IS) generally produces the best
+estimates of marginal likelihoods in terms of bias and variance. The
+key to building an efficient IS algorithm is to design an importance
+function that mimics the integrand.  Building such a function can be
+quite challenging even in lower to modest dimensional settings, with
+multi-modal posterior distributions that arise in the exo-planet
+setting the task is all the more difficult. 
+
+In this paper, we propose a novel adaptive method for constructing an
+importance function using a mixture of Student-$t$ distributions that
+evolves to the target posterior distribution. We present in Section
+\ref{sec:exo} an overview of the scientific issues that inspired this
+work, namely inferring the number of planets around distant stars. In
+the exoplanet application, each model $\M_p$ has $2+5p$ parameters
+where $p$ is the number of planets in the model, so even the simplest
+single planet model has a seven dimensional parameter space to
+integrate over. While low dimensional compared to many modern problems
+of model selection, the models are highly nonlinear making Laplace
+approximations untenable given the modest sample sizes and multi-modal
+posterior distribution; even sampling from posterior distributions
+using Markov chain Monte Carlo methods is in itself a challenging
+problem.  In Section \ref{sec:IS} we review importance sampling and
+how it may be used to calculate marginal likelihoods for model
+selection. In Section \ref{sec:AAIS} we describe the Adaptive Annealed
+Importance Sampling method developed for the exoplanet problem. This
+method integrates several key features of other methods: mixture
+models, annealling, and adaptation via a sequence of distributions to
+build a flexible importance distribution that mimics the posterior
+distribution, but incorporates ideas successfully used in
+trans-dimensional methods to adapt the number of kernels in the
+mixture by utilizing split and merge moves.  In Section
+\ref{sec:simulation} we present two simulation studies that
+demonstrate the efficiency of the method compared to other approaches.
+The first involves a challenging flared helix in three dimensions,
+while the second seven dimensional problem that was selected to reflex
+the target function in the exoplanet problem.  In Section
+\ref{sec:app} we illustrate the method in the analysis of
+several real star systems with one and two planets. Finally, we conclude with
+discussion of possible extensions of the method in Section
+\ref{sec:disc}.

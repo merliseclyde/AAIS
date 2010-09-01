@@ -1,0 +1,209 @@
+
+\section{Radial Velocity Models in the Search for Exoplanets}
+\label{sec:exo}
+
+In a two-body system such as a star and planet, the pair rotate
+together about a point lying somewhere on the line connecting their
+centers of mass. If one of the bodies (the star) radiates light, the
+frequency of this light measured by a distant observer will
+ vary  cyclically with a period equal to the orbital period. This
+Dopplar effect is understood well enough that astronomers can
+translate between frequency shift and the star's velocity toward or
+away from earth.  
+
+If a star does not host any orbiting planets, then the radial velocity
+(RV) measurements $v_i$ will be roughly constant over any period of time,
+varying only due to the ``stellar jitter'' $s^2$, the random
+fluctuations in a star's luminosity. Under the zero-planet
+model, $\M_0$, the RV measurements are assumed to  have Gaussian distributions
+\begin{equation}\label{0p_Model}
+v_i \mid \M_0\ind \mathcal{N}\left(C,\sigma_i^2+s^2\right).
+\end{equation}
+with mean $C$, the constant center-of-mass velocity of the star
+relative to the earth, and variances $\sigma^2_i + s^2$.  The
+parameters $C$ and $s$ are both in the same units as the velocity
+measurements, typically meters per second ($m/s$).  The additional
+variance component $\sigma^2_i$ is a calculated error due to the
+measurement procedure {\tt more
+  details, ref, justification for additive form}.
+
+
+The observed radial velocities (RV) $v_i$ at time $t_i$
+for a single planet model, $\M_1$, are also assumed to be Gaussian
+distributed  with
+\begin{equation}\label{Velocity_Model}
+v_i \mid \M_1 \ind \mathcal{N}\left(C_1 +\bigtriangleup
+V(t_i|\phi_1),\sigma_i^2+s_1^2\right),
+\end{equation}
+where the velocity shift $\bigtriangleup
+V(t_i|\phi_1)$ due to the presence of a single planet is
+a  family of curves parameterized by the 5 dimensional vector
+$\phi_1 \equiv (K_1,P_1,e_1,\omega_1,\mu_1)$
+\begin{equation}\label{Velocity_1p_Model}
+\bigtriangleup V(t|\phi_1)=K_1[\cos(\omega_1+T(t))+e\cos(\omega_1)]
+\end{equation}
+where $T(t)$ is the ``true anomaly at time $t$'' given by
+\begin{equation}\label{true_anomaly}
+T(t)=2\arctan\left[\tan(\frac{E(t)}{2})\sqrt{\frac{1+e_1}{1-e_1}}\right].
+\end{equation}
+and $E(t)$ is called the ``eccentric anomaly at time $t$'', which is the
+solution to the transcendental equation
+\begin{equation}\label{transcendental_equation}
+E(t)-e_1\sin(E(t))=\mbox{mod}\left(\frac{2\pi}{P_1}t+\mu_1,2\pi\right).
+\end{equation}
+The five orbital parameters that comprise $\phi_1$ are the velocity
+semi-amplitude $K_1$, the orbital period $P_1$, the eccentricity $e_1$,
+$(0\leq e_1 \le 1)$, the argument of periastron $\omega_1$, $(0\le \omega
+\le 2\pi)$ and the mean anomaly at time $t=0$, $\mu_1$, $(0\le \mu_1
+\le 2\pi)$.  The parameters $C_1$ $K_1$ and $s_1$ have units $m/s$;
+the velocity semi-amplitude $K_1$ is usually restricted to be
+non-negative to avoid identification problems, while $C_1$ may be
+positive or negative.  The eccentricity parameter $e_1$ is unitless,
+with $e_1 = 0$ corresponding to a circular orbit, and larger $e_1$ leading
+to more eccentric orbits. Periastron is the point at which the planet
+is closest to the star and the argument of periastron $\omega_1$, measures
+the angle at which we observe the elliptical orbit.  The mean anomoly $\mu_1$ is
+an angular distance of a planet from periastron. 
+
+If there are $p\ge 1$ planets, the expected velocity is given by $C_p
++ \bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)$ with overall velocity shift
+$\bigtriangleup V$  approximated as the sum of the velocity
+shifts of the individual planets:
+\begin{equation}\label{Velocity_2p_Model}
+\bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)=\sum_{j=1}^p
+K_j[\cos(\omega_j+T_i(t_i))+e_j\cos(\omega_j)]
+\end{equation}
+where the planets' mutual gravitational interactions are assumed to be
+negligible.  With $p$ planets, there are a total of $2+5p$ parameters,
+$\theta_p = \{ \mathcal{C_p},s_p^2,\phi_1,\ldots,\phi_p\}$ for each of the
+models $\M_p$. Of course, we do not know how many planets there are
+\emph{a priori} - indeed, finding the number of planets $p$ and
+characterizing their oribital parameters is a major aim. 
+
+\subsection{Bayesian Methods for Identifying the Number of Planets}
+Determining the number of planets in a
+system is, from a statistical point of view, a model choice
+problem. Bayesian model selection requires calculation of marginal
+likelihoods of models or ``evidence'' provided by the data for each model:
+\begin{equation}\label{marginal_lik}
+m( \M_p) = \int_{\Theta_p}
+p(\v \mid \theta_p,\M_p) p(\theta_p \mid \M_p) d\theta_p
+\end{equation} 
+which entails integrating the sampling model of the
+data $\v = (v_1, \ldots v_n)^T$ with respect to the prior distribution
+of model specific parameters $\theta_p$.
+Bayes Factors for comparing a $p$ planet model to the $0$ planet model
+may be expressed  as
+\begin{equation}
+\BF(\M_p:\M_0)=\frac{m( \v \mid \M_p)}{m(\v \mid \M_0)}
+\end{equation}
+where the Bayes factor $\BF(\M_0,\M_0) = 1$,
+while the posterior probability of the $p$ planet model is of the
+form
+\begin{equation}
+  \label{eq:post-prob}
+  p(\M_p \mid \v) = \frac{\BF(\M_p:\M_o) O(\M_p: \M_0)} 
+{ \sum_{ j= 1}^{p_{\max}} \BF(\M_j:\M_o) O(\M_j: \M_0)}
+\end{equation}
+where $O(\M_p: \M_0)$ is the prior odds of having $p$ planets to $0$
+planets and $p_{\max}$ is the maximum number of planets for the
+system.  This requires specifying a prior distribution on $\theta_p$
+for each of the models in order to obtain marginal likelihoods and
+Bayes factors.
+
+\subsection{Priors Distributions}
+We adopt the prior distributions recommended by \cite{ford2006bms, bullard2009edc},
+which are based in part on their approximate realism, but also their
+mathematical tractability.  For all models, intercept parameter
+$C_p$ and stellar jitter parameter $s_p$, are taken as
+being {\it a priori} independent, where $C_p$ is uniform over a finite
+set $[C_{\min}, C_{\max} ] $
+\begin{subequations}
+\begin{align}
+\label{prior_C}
+p_C(C) & =\left\{\begin{aligned}
+\frac{1}{C_{\max}-C_{\min}} &~ \qquad\qquad\qquad\mbox{for } ~C_{\min}\leq C\leq C_{\max}\\
+0\quad\quad &~ \qquad\qquad\qquad\mbox{otherwise}  \\
+\end{aligned}
+\right. 
+\intertext{and  $\log(s_{\min} + s_p)$ has a   uniform distribution on
+the interval $(\log(s_{\min}), \log(s_{\max})]$, }
+\label{prior_sigma}
+p_{s}(s) &  = \left\{\begin{aligned}
+\frac{1}{ \log \left(1+\frac{s_{\max}}{s_{\min}}\right)} \cdot \frac{1}{s_{\min}+s}
+&~ 
+\quad\quad\mbox{for } ~0 < s \leq s_{\max} \\
+0 \quad\quad &~ \quad\quad\mbox{otherwise.}  \\
+\end{aligned} \right.
+\end{align}
+\end{subequations}
+The joint prior on $(C_p, s_p)$ may be viewed as  a
+modified independent Jeffrey's prior  as $C_{\min} \to -\infty$,
+$C_{\max} \to \infty$, $s_{\min} \to 0$, $s_{\max} \to \infty$, which leads
+to well defined posterior distributions and Bayes Factors even in the limit. 
+
+For each of the $p$ planet models, in the absence of other prior information, we take each $\phi_j$ to have
+independent identical prior distributions.
+Many of the parameters in $\phi_p$ allow informative marginal prior
+distributions to be specified, however, the nonlinear relationships
+induce strong correlations among many of the parameters, which leads
+to a difficult task for joint prior elicitation.  For circular orbits
+($e = 0$), $\omega$ and $\mu_0$ are in fact unidentifiable.  To
+simplify this task, we specify independent prior distribution for the
+components of each 
+$\phi_p$ in a transformed parameter space,
+$$
+\begin{aligned}
+  x & = e\cos\omega  \label{eq:poincare-x} & \quad &   y & =
+  e\sin\omega \label{eq:poincare-y} & \quad & z & = (\omega+\mu_0)
+  \mod 2\pi \\
+  \dot{P} & = \log P  & \quad &  \dot{K} & = \log K &  \quad & 
+\end{aligned}
+$$
+leading to  $\dot{\phi}_p \equiv (\dot{K}_p, \dot{P}_p, x_p, y_p, z_p)^T$.  The 
+Poincar\'e variables $x_p$ and $y_p$   greatly reduce the very
+strong correlations between $\mu_p$ and $\omega_p$, which  is particularly
+important for low eccentricity orbits, where the parameters are nearly
+unidentifiable.  The use
+of  $z$ further reduces correlations between the 
+parameters $\omega$ and $\mu_0$ when $e\ll1$, but has little effect
+for large $e$.  \citet{bullard2009edc} recommended using the log
+transformation of $P$ and $K$ 
+as  posterior distributions were  more Gaussian in these
+coordinates, which led to improved posterior simulation. 
+In the transformed parameter space, the prior distribution for $\phi$
+is 
+\begin{subequations}
+\begin{equation}\label{prior_1p}
+p_{\dot{\phi}}(\dot{\phi})=c_\phi \cdot\exp\dot{K}\cdot\frac{1}{1+\frac{\exp\dot{K}}{K_{\min}}}\cdot\frac{1}{\sqrt{x^2+y^2}}
+\end{equation}
+for $\log(K_{\min}) < \dot{K} \leq\log(K_{\max})$,
+$\log(P_{\min})\leq\dot{P}\leq\log(P_{\max})$, $x^2+y^2<1$, and $0\leq
+z\leq2\pi$,
+where the normalizing constant is 
+\begin{equation}\label{kappa_in_prior_1p}
+c_\phi
+=\frac{1}{\log\left(1+\frac{K_{max}}{K_{\min}}\right)}\cdot\frac{1}{K_{\min}}\cdot\frac{1}{\log\left(\frac{P_{\max}}{P_{\min}}\right)}\cdot\left(\frac{1}{2\pi}\right)^2. 
+\end{equation}
+\end{subequations}
+The constants in the prior distribution (see Table \ref{tab:hyper}) are set based upon the physical realities
+(e.g., an orbit with too small a period will result in the planet
+getting consumed by the star) \citep{bullard2009edc}
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|lr|lr|} \hline \hline
+$P_{\min}$ &  $1$ day &
+$P_{\max}$ &  $1,000$ years \\
+$K_{\min}$ &  $ 1$ m/s & 
+$K_{\max}$ &  $2128$ m/s \\
+$C_{min}$ &  $-2128$ m/s & 
+$C_{max}$ &   $2128$ m/s \\
+$s_{\min}$ &  $1$ m/s &
+$s_{\max}$ &  $2128$ m/s \\ \hline
+  \end{tabular}
+  \end{center}
+\caption{Prior hyperparameters for the distribution of $\phi_p$.}
+\label{tab:hyper}
+\end{table}
+ of the form given in \ref{prior_1p}
+with hyperparameters from Table \ref{tab:hyper}.
