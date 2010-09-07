@@ -1,5 +1,11 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.4)
 The top-level auxiliary file: AIS_MarLik.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: model.aux
+A level-1 auxiliary file: IS.aux
+A level-1 auxiliary file: sim.aux
+A level-1 auxiliary file: exo-examp.aux
+A level-1 auxiliary file: disc.aux
 The style file: imsart-nameyear.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sais_bib.bib
@@ -19,45 +25,46 @@ I was expecting a `,' or a `}'---line 451 of file sais_bib.bib
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Clyd:Geor:2004"
 Warning--I didn't find a database entry for "Clyd:etal:2005"
-You've used 26 entries,
+Warning--I didn't find a database entry for "Gewe:1989"
+You've used 25 entries,
             4166 wiz_defined-function locations,
-            939 strings with 9282 characters,
-and the built_in function-call counts, 31202 in all, are:
-= -- 3390
-> -- 425
-< -- 43
-+ -- 159
-- -- 151
-* -- 3607
-:= -- 5752
-add.period$ -- 72
-call.type$ -- 26
-change.case$ -- 121
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 821
-empty$ -- 2605
-format.name$ -- 578
-if$ -- 6307
+            943 strings with 9178 characters,
+and the built_in function-call counts, 29520 in all, are:
+= -- 3219
+> -- 405
+< -- 42
++ -- 153
+- -- 146
+* -- 3402
+:= -- 5418
+add.period$ -- 69
+call.type$ -- 25
+change.case$ -- 117
+chr.to.int$ -- 25
+cite$ -- 25
+duplicate$ -- 780
+empty$ -- 2461
+format.name$ -- 549
+if$ -- 5977
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 277
-num.names$ -- 117
-pop$ -- 452
+newline$ -- 266
+num.names$ -- 113
+pop$ -- 432
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 117
 quote$ -- 0
-skip$ -- 1890
+skip$ -- 1781
 stack$ -- 0
-substring$ -- 2710
-swap$ -- 271
-text.length$ -- 26
+substring$ -- 2536
+swap$ -- 255
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 541
+type$ -- 520
 warning$ -- 0
-while$ -- 96
+while$ -- 93
 width$ -- 0
-write$ -- 589
+write$ -- 566
 (There were 3 error messages)
