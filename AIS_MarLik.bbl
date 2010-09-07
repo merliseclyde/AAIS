@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{25}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -186,23 +186,6 @@
 \bjournal{Journal of the American Statistical Association}
 \bvolume{89}
 \bpages{278--288}.
-\end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{Lefebvre {\it
-  et~al.}}{2009}]{lefebvre2009path}
-\begin{barticle}[author]
-\bauthor{\bsnm{Lefebvre},~\bfnm{G.}\binits{G.}},
-  \bauthor{\bsnm{Steele},~\bfnm{R.}\binits{R.}},
-  \bauthor{\bsnm{Vandal},~\bfnm{A.~C.}\binits{A.~C.}},
-  \bauthor{\bsnm{Narayanan},~\bfnm{S.}\binits{S.}} \AND
-  \bauthor{\bsnm{Arnold},~\bfnm{D.~L.}\binits{D.~L.}}
-(\byear{2009}).
-\btitle{{Path Sampling to Compute Integrated Likelihoods: An Adaptive
-  Approach}}.
-\bjournal{Journal of Computational and Graphical Statistics}
-\bvolume{18}
-\bpages{415--437}.
 \end{barticle}
 \endbibitem
 

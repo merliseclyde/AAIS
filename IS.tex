@@ -4,16 +4,17 @@ Beyond conjugate models, the integrals defining the marginal
 likelihood in Equation (\ref{marginal_lik}) are generally intractable
 and must be estimated by numerical methods.  Importance sampling (IS)
 \citep{Gewe:1989} is a well known Monte Carlo technique for estimating
-such integrals.  Given an importance distribution $Q$ that is
-abolutely continuous with respect to the target posterior distribution
+integrals, where
 the marginal likelihood may be re-expressed as an expectation with
-respect to $Q$
+respect to  an importance distribution $Q$ that is
+abolutely continuous with respect to the target posterior distribution
 \begin{equation}\label{IS_for_marginal_lik}
-m(\M ) = \mathbb{E}_Q\left[ \frac{p(\v \mid \theta, \M)p(\theta \mid.
-    \M)} {q(\theta)}\right]
+m(\M ) = \mathbb{E}_Q\left[ \frac{p(\v \mid \theta, \M)p(\theta \mid 
+    \M)} {q(\theta)}\right].
 \end{equation}
-$q(\theta)$ is the associated probability density function for
-distribution $Q$ from which samples may be obtained
+The importance function $q(\theta)$ is the associated probability
+density function for 
+distribution $Q$ from which samples may be generated 
 relatively easily.
 Given a random sample of size $N$   $\theta^{(1)},
 \ldots, \theta^{(N)}$ from $Q$,
@@ -25,49 +26,32 @@ estimate of the marginal likelihood is provided by
 w^{(i)}
 \end{equation}
 where $w^{(i)}$ are known as the IS weights. 
-The distribution of the error
-$|\hat{m}(\M)-m(\M)|$ can be approximated via the central limit theorem
-\begin{equation}
-\mbox{Var}_q\left\{\hat{\Z}\right\}=\mathbb{E}_q\left\{\left(\hat{\Z}-\Z\right)^2\right\}=\frac{\sigma_q^2}{N}<\infty,
-\end{equation}
-when $\hat{\Z}$ has finite variance. Here
-\begin{equation}
-\sigma_q^2=\mbox{Var}_q\left\{\frac{L(\theta|y)p(\theta|\mathcal{M})}{q(\theta)}\right\}=\int_{R^d}\left(\frac{L(\theta|y)p(\theta|\mathcal{M})}{q(\theta)}-\Z\right)^2
-q(\theta)d\theta=\Z^2\mathbb{E}_q\left\{\left(\frac{\pi(\theta)-q(\theta)}{q(\theta)}\right)^2\right\}.
-\end{equation}
-If the importance density is such that $\sigma_q^2<\infty$, then via
-the central limit theorem
-\begin{equation}
-\frac{\hat{\Z}-\Z}{\sigma_q/\sqrt{N}}\rightarrow X
-\end{equation}
-as $N\rightarrow\infty$, where $X\sim \mathcal{N}(0,1)$. The above
-results then implies that
-$\hat{Z}-Z=\mathcal{O}(\frac{1}{\sqrt{N}})$.
-
-One can construct confidence intervals to assess the quality of a
-particular estimate of $\Z$ \citep{lefebvre2009path}. With a large
-degree of certainty, the interval $\hat{\Z}\pm3\sigma_q/\sqrt{N}$
-contains $\Z$ when $N$ is large and so the half length
-$3\sigma_q/\sqrt{N}$ indicates how accurate $\hat{\Z}$ is. Since
+The variance of the IS estimator is
+\begin{align}
+\mbox{Var}_Q\left[\hat{m}(\M) \right] & =\frac{\sigma_q^2}{N} 
+\intertext{where}
+\sigma_Q^2 &
+=\mbox{Var}_q\left\{\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}\right\}\\
+& =\int_{R^d}\left(\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}-m(\M)\right)^2
+q(\theta)d\theta\\
+& =m(\M)^2\mathbb{E}_Q\left\{\left(\frac{\pi(\theta
+ \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2\right\}.
+\intertext{Since
 $\sigma_q$ is unknown, a natural estimator of $\sigma_q^2$ is the
-usual consistent variance estimator
-\begin{equation}
-\sigma_q^2\simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^i-\hat{\Z}\right)^2.
-\end{equation}
+usual consistent variance estimator}
+\sigma_Q^2 & \simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^{(i)}-\hat{m}(\M)\right)^2.
+\end{align}
 
-The efficiency of importance sampling depends largely on how closely
-the importance function mimics the shape of the target,
-$L(y|\theta)p(\theta)$. A number of things can go wrong. If the
-importance function has thinner tails than the target, the estimate
+The efficiency of importance sampling depends largely on how close
+the importance function mimics the shape of the target distribution,
+$\pi(\theta \mid \v, \M) \propto p(\v \mid \theta, \M) p(\theta \mid
+\M)$.  If the
+importance function has lighter tails than the target, the estimate
 will tend to be unstable because the weights can be arbitrarily
 large; on the other hand if the importance function has much fatter
 tails than the target, too many of the $\theta_i$'s will be drawn
-from the tails, resulting in a seemingly stable but biased estimate.
-The best case is an importance function with slightly heavier tails
-than the target. Of course asymptotically it should not matter which
-importance function is used; for samples of practical size, though,
-a poor choice can be disastrous.
-
+from the tails, resulting in a seemingly stable estimate, but with
+many small weights.
 These problems are only compounded in high-dimensional settings
 where the target is often extremely complicated. Unless one is very
 lucky indeed it is usually impossible to get accurate results in
