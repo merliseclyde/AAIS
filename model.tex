@@ -7,7 +7,7 @@ together about a point lying somewhere on the line connecting their
 centers of mass. If one of the bodies (the star) radiates light, the
 frequency of this light measured by a distant observer will
  vary  cyclically with a period equal to the orbital period. This
-Dopplar effect is understood well enough that astronomers can
+Doppler shift effect is understood well enough that astronomers can
 translate between frequency shift and the star's velocity toward or
 away from earth.  
 
@@ -37,7 +37,7 @@ V(t_i|\phi_1),\sigma_i^2+s_1^2\right),
 \end{equation}
 where the velocity shift $\bigtriangleup
 V(t_i|\phi_1)$ due to the presence of a single planet is
-a  family of curves parameterized by the 5 dimensional vector
+a  family of curves parametrized by the 5 dimensional vector
 $\phi_1 \equiv (K_1,P_1,e_1,\omega_1,\mu_1)$
 \begin{equation}\label{Velocity_1p_Model}
 \bigtriangleup V(t|\phi_1)=K_1[\cos(\omega_1+T(t))+e\cos(\omega_1)]
@@ -58,15 +58,15 @@ $(0\leq e_1 \le 1)$, the argument of periastron $\omega_1$, $(0\le \omega
 \le 2\pi)$.  The parameters $C_1$ $K_1$ and $s_1$ have units $m/s$;
 the velocity semi-amplitude $K_1$ is usually restricted to be
 non-negative to avoid identification problems, while $C_1$ may be
-positive or negative.  The eccentricity parameter $e_1$ is unitless,
+positive or negative.  The eccentricity parameter $e_1$ is unit-less,
 with $e_1 = 0$ corresponding to a circular orbit, and larger $e_1$ leading
 to more eccentric orbits. Periastron is the point at which the planet
 is closest to the star and the argument of periastron $\omega_1$, measures
-the angle at which we observe the elliptical orbit.  The mean anomoly $\mu_1$ is
+the angle at which we observe the elliptical orbit.  The mean anomaly $\mu_1$ is
 an angular distance of a planet from periastron. 
 
-If there are $p\ge 1$ planets, the expected velocity is given by $C_p
-+ \bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)$ with overall velocity shift
+If there are $\P \ge 1$ planets, the expected velocity is given by $C_p
++ \bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)$ with the overall velocity shift
 $\bigtriangleup V$  approximated as the sum of the velocity
 shifts of the individual planets:
 \begin{equation}\label{Velocity_2p_Model}
@@ -75,10 +75,11 @@ K_j[\cos(\omega_j+T_i(t_i))+e_j\cos(\omega_j)]
 \end{equation}
 where the planets' mutual gravitational interactions are assumed to be
 negligible.  With $p$ planets, there are a total of $2+5p$ parameters,
-$\theta_p = \{ \mathcal{C_p},s_p^2,\phi_1,\ldots,\phi_p\}$ for each of the
-models $\M_p$. Of course, we do not know how many planets there are
-\emph{a priori} - indeed, finding the number of planets $p$ and
-characterizing their oribital parameters is a major aim. 
+$\theta_p = \{ \mathcal{C_p},s_p^2,\phi_1,\ldots,\phi_p\}$ for each of
+the models $\M_p$, $p \in \{0, 1, \ldots \P\}$. Of course, we do not
+know how many planets there are \emph{a priori} - indeed, finding the
+number of planets $p$ and characterizing their orbital parameters is
+a major aim.
 
 \subsection{Bayesian Methods for Identifying the Number of Planets}
 Determining the number of planets in a
@@ -142,16 +143,16 @@ modified independent Jeffrey's prior  as $C_{\min} \to -\infty$,
 $C_{\max} \to \infty$, $s_{\min} \to 0$, $s_{\max} \to \infty$, which leads
 to well defined posterior distributions and Bayes Factors even in the limit. 
 
-For each of the $p$ planet models, in the absence of other prior information, we take each $\phi_j$ to have
-independent identical prior distributions.
-Many of the parameters in $\phi_p$ allow informative marginal prior
-distributions to be specified, however, the nonlinear relationships
-induce strong correlations among many of the parameters, which leads
-to a difficult task for joint prior elicitation.  For circular orbits
-($e = 0$), $\omega$ and $\mu_0$ are in fact unidentifiable.  To
-simplify this task, we specify independent prior distribution for the
-components of each 
-$\phi_p$ in a transformed parameter space,
+For each of the $p$ planet models, in the absence of other prior
+information, we take each $\phi_j$ to have independent identical prior
+distributions.  Many of the parameters in $\phi_p$ allow informative
+marginal prior distributions to be specified, however, the nonlinear
+relationships induce strong correlations among many of the parameters,
+which leads to a difficult task for joint prior elicitation.  For
+circular orbits ($e = 0$), $\omega$ and $\mu_0$ are in fact
+unidentifiable.  To simplify this task, we specify independent prior
+distribution for the components of each $\phi_p$ in a transformed
+parameter space,
 $$
 \begin{aligned}
   x & = e\cos\omega  \label{eq:poincare-x} & \quad &   y & =
