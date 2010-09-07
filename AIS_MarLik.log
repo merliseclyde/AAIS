@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 SEP 2010 10:52
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 SEP 2010 11:08
 entering extended mode
 **\input AIS_MarLik.tex
 (./AIS_MarLik.tex (./imsart.cls
@@ -245,7 +245,7 @@ LaTeX Warning: Label `m1thanks' multiply defined.
 
 LaTeX Warning: Label `m2thanks' multiply defined.
 
-)
+(./intro.aux))
 \openout1 = `AIS_MarLik.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -343,23 +343,34 @@ Overfull \hbox (5.94238pt too wide) in paragraph at lines 74--99
 [1{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+\openout2 = `intro.aux'.
+
+ (./intro.tex
 
 Package natbib Warning: Citation `Clyd:Geor:2004' on page 2 undefined on input 
-line 145.
+line 37.
 
 
 Package natbib Warning: Citation `Clyd:etal:2005' on page 2 undefined on input 
-line 145.
+line 37.
 
-[2] [3]
-Overfull \hbox (32.21132pt too wide) in paragraph at lines 223--228
+) [2
+
+] [3]
+\openout2 = `model.aux'.
+
+ (./model.tex
+Overfull \hbox (32.21132pt too wide) in paragraph at lines 37--42
 \OT1/bch/m/n/10.95 fam-ily of curves pa-ram-e-ter-ized by the 5 di-men-sional v
 ec-tor $\OML/cmm/m/it/10.95 ^^^[] \OMS/cmsy/m/n/10.95 ^^Q \OT1/cmr/m/n/10.95 (\
 OML/cmm/m/it/10.95 K[]; P[]; e[]; ![]; ^^V[]\OT1/cmr/m/n/10.95 )$ 
  []
 
+[4
 
-Overfull \hbox (31.76224pt too wide) in paragraph at lines 254--258
+
+]
+Overfull \hbox (31.76224pt too wide) in paragraph at lines 68--72
 []\OT1/bch/m/n/10.95 If there are $\OML/cmm/m/it/10.95 p \OMS/cmsy/m/n/10.95 ^^
 U \OT1/cmr/m/n/10.95 1$ \OT1/bch/m/n/10.95 plan-ets, the ex-pected ve-loc-ity i
 s given by $\OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 + \OMS/cmsy/m/n/10.95 4\
@@ -368,7 +379,7 @@ OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]\OMS/cmsy/m/n/10
  []
 
 
-Overfull \hbox (30.95209pt too wide) in paragraph at lines 261--268
+Overfull \hbox (30.95209pt too wide) in paragraph at lines 75--82
 \OT1/bch/m/n/10.95 gi-ble. With $\OML/cmm/m/it/10.95 p$ \OT1/bch/m/n/10.95 plan
 -ets, there are a to-tal of $\OT1/cmr/m/n/10.95 2 + 5\OML/cmm/m/it/10.95 p$ \OT
 1/bch/m/n/10.95 pa-ram-e-ters, $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 
@@ -376,40 +387,40 @@ Overfull \hbox (30.95209pt too wide) in paragraph at lines 261--268
 n/10.95 g$
  []
 
-[4]
-Overfull \hbox (20.82855pt too wide) in paragraph at lines 324--324
-\OT1/bch/m/n/10.95 and $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s[] \OT1/cmr/
-m/n/10.95 + \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 has
- a uni-form dis-tri-bu-tion on the in-ter-val $\OT1/cmr/m/n/10.95 ([](\OML/cmm/
-m/it/10.95 s[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 (\
-OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )]$\OT1/bch/m/n/10.95 , 
- []
-
-
-Overfull \hbox (20.82855pt too wide) in paragraph at lines 324--324
-\OT1/bch/m/n/10.95 and $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s[] \OT1/cmr/
-m/n/10.95 + \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 has
- a uni-form dis-tri-bu-tion on the in-ter-val $\OT1/cmr/m/n/10.95 ([](\OML/cmm/
-m/it/10.95 s[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 (\
-OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )]$\OT1/bch/m/n/10.95 , 
- []
-
 [5]
+Overfull \hbox (20.82855pt too wide) in paragraph at lines 138--138
+\OT1/bch/m/n/10.95 and $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s[] \OT1/cmr/
+m/n/10.95 + \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 has
+ a uni-form dis-tri-bu-tion on the in-ter-val $\OT1/cmr/m/n/10.95 ([](\OML/cmm/
+m/it/10.95 s[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 (\
+OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )]$\OT1/bch/m/n/10.95 , 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+Overfull \hbox (20.82855pt too wide) in paragraph at lines 138--138
+\OT1/bch/m/n/10.95 and $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s[] \OT1/cmr/
+m/n/10.95 + \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 has
+ a uni-form dis-tri-bu-tion on the in-ter-val $\OT1/cmr/m/n/10.95 ([](\OML/cmm/
+m/it/10.95 s[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 (\
+OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )]$\OT1/bch/m/n/10.95 , 
+ []
+
+[6]) [7]
+\openout2 = `IS.aux'.
+
+ (./IS.tex
+
+Package natbib Warning: Citation `Gewe:1989' on page 8 undefined on input line 
+6.
 
 
-Package natbib Warning: Citation `Gewe:1989' on page 6 undefined on input line 
-402.
-
-
-Overfull \hbox (2.45683pt too wide) in paragraph at lines 399--407
+Overfull \hbox (2.45683pt too wide) in paragraph at lines 3--11
  \OT1/bch/b/n/10.95 3.Importance Sam-pling for Marginal Like-li-hood Es-ti-ma-t
 ion.[][] \OT1/bch/m/n/10.95 Be-yond
  []
 
-[6]
-Overfull \hbox (4.8285pt too wide) in paragraph at lines 422--426
+
+Overfull \hbox (4.8285pt too wide) in paragraph at lines 26--30
 \OT1/bch/m/n/10.95 where $\OML/cmm/m/it/10.95 w[]$ \OT1/bch/m/n/10.95 are known
  as the IS weights. The dis-tri-bu-tion of the er-ror $\OMS/cmsy/m/n/10.95 j[]\
 OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.9
@@ -417,15 +428,18 @@ OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.9
  []
 
 
-Overfull \hbox (80.5755pt too wide) detected at line 433
+Overfull \hbox (80.5755pt too wide) detected at line 37
 []\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = [][] [] = [][] [][] \OML/cmm/m
 /it/10.95 q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 )\OML/
 cmm/m/it/10.95 d^^R \OT1/cmr/m/n/10.95 = [][]\U/msb/m/n/10.95 E[] [] \OML/cmm/m
 /it/10.95 :
  []
 
-[7]
-Overfull \hbox (17.80089pt too wide) in paragraph at lines 479--485
+[8
+
+
+]
+Overfull \hbox (17.80089pt too wide) in paragraph at lines 83--89
 []\OT1/bch/m/n/10.95 Let $\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 ^^R\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 de-note the pos-te-rior d
 is-tri-bu-tion, which is pro-por-tional to $\OML/cmm/m/it/10.95 L\OT1/cmr/m/n/1
@@ -435,7 +449,7 @@ is-tri-bu-tion, which is pro-por-tional to $\OML/cmm/m/it/10.95 L\OT1/cmr/m/n/1
  []
 
 
-Overfull \hbox (13.29126pt too wide) detected at line 494
+Overfull \hbox (13.29126pt too wide) detected at line 98
 []\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/
 m/n/10.95 ) \OMS/cmsy/m/n/10.95 / \OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 (\O
 ML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/
@@ -445,15 +459,15 @@ L/cmm/m/it/10.95 < ^^U[] < ^^U[] < [] < ^^U[] \OT1/cmr/m/n/10.95 = 1\OML/cmm/m/
 it/10.95 :
  []
 
-LaTeX Font Info:    Try loading font information for OMS+bch on input line 501.
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 105.
 
 (/usr/share/texmf/tex/latex/psnfss/omsbch.fd
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 501.
- [8] [9] [10] [11] [12] [13]
-Overfull \hbox (31.93779pt too wide) in paragraph at lines 779--790
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+ [9] [10] [11] [12] [13] [14]
+Overfull \hbox (31.93779pt too wide) in paragraph at lines 383--394
 \OT1/bch/m/n/10.95 Substituting $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 ^^R[]
 ; w[]\OMS/cmsy/m/n/10.95 g[]$ \OT1/bch/m/n/10.95 and the lo-cal mix-ture pa-ram
 -e-ters, $\OML/cmm/m/it/10.95 []; []; ^^V[]; \OT1/cmr/m/n/10.95 ^^F[]\OML/cmm
@@ -461,35 +475,42 @@ Overfull \hbox (31.93779pt too wide) in paragraph at lines 779--790
  []
 
 
-Overfull \hbox (2.59906pt too wide) in paragraph at lines 805--811
+Overfull \hbox (2.59906pt too wide) in paragraph at lines 409--415
  \OT1/bch/m/n/10.95 4.3.3.\OT1/bch/m/it/10.95 Component-Deletion.[][] \OT1/bch/
 m/n/10.95 As men-tioned above, when sim-u-lat-ing draws
  []
 
 
-Overfull \hbox (4.52481pt too wide) in paragraph at lines 813--828
+Overfull \hbox (4.52481pt too wide) in paragraph at lines 417--432
 \OT1/bch/m/n/10.95 don't need to worry about that, be-cause on one side the pro
 -posed component-
  []
 
-[14] [15] [16] <Fig/flared_helix_target.png, id=406, 421.575pt x 316.18124pt>
+[15] [16] [17]) [18]
+\openout2 = `sim.aux'.
+
+ (./sim.tex
+<Fig/flared_helix_target.png, id=441, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_target.png Graphic file (type png)
 
-<use Fig/flared_helix_target.png> [17]
-<Fig/flared_helix_scatter.png, id=443, 421.575pt x 316.18124pt>
+<use Fig/flared_helix_target.png> [19
+
+
+ <./Fig/flared_helix_target.png>]
+<Fig/flared_helix_scatter.png, id=452, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_scatter.png Graphic file (type png)
 
 <use Fig/flared_helix_scatter.png>
-<Fig/AIS_3d_felix_scatter.png, id=444, 420.06938pt x 316.18124pt>
+<Fig/AIS_3d_felix_scatter.png, id=453, 420.06938pt x 316.18124pt>
 File: Fig/AIS_3d_felix_scatter.png Graphic file (type png)
 
 <use Fig/AIS_3d_felix_scatter.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 999--1006
+Overfull \hbox (12.0pt too wide) in paragraph at lines 64--71
  [][] 
  []
 
-[18 <./Fig/flared_helix_target.png>]
-Overfull \hbox (24.72449pt too wide) in paragraph at lines 1045--1056
+[20 <./Fig/flared_helix_scatter.png> <./Fig/AIS_3d_felix_scatter.png>]
+Overfull \hbox (24.72449pt too wide) in paragraph at lines 110--121
 \OT1/bch/m/n/10.95 mal dis-tri-bu-tion, $\OML/cmm/m/it/10.95 sk\OMS/cmsy/m/n/10
 .95 N\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^Aj\OML/cmm/m/it/10.95 ^^V; ^^[; 
 \OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 de-notes the skew-normal dis-tri-bu-t
@@ -498,33 +519,39 @@ ion, $\OMS/cmsy/m/n/10.95 S\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^Aj\OML/cmm
  []
 
 
-Overfull \hbox (11.10573pt too wide) in paragraph at lines 1045--1056
+Overfull \hbox (11.10573pt too wide) in paragraph at lines 110--121
 \OT1/bch/m/n/10.95 laps a sec-ond sharper mode, and di-men-sion 7 has three dis
 -tinct, well-separated
  []
 
-[19 <./Fig/flared_helix_scatter.png> <./Fig/AIS_3d_felix_scatter.png>]
-<Fig/seven_outer_product_scatter.png, id=475, 421.575pt x 316.18124pt>
+[21] <Fig/seven_outer_product_scatter.png, id=488, 421.575pt x 316.18124pt>
 File: Fig/seven_outer_product_scatter.png Graphic file (type png)
 
 <use Fig/seven_outer_product_scatter.png>
-<Fig/AIS_7d_outter_scatter.png, id=476, 421.575pt x 316.18124pt>
+<Fig/AIS_7d_outter_scatter.png, id=489, 421.575pt x 316.18124pt>
 File: Fig/AIS_7d_outter_scatter.png Graphic file (type png)
 
 <use Fig/AIS_7d_outter_scatter.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1079--1086
+Overfull \hbox (12.0pt too wide) in paragraph at lines 144--151
  [][] 
  []
 
-[20] <Fig/scatter_1p_data1.png, id=497, 509.65407pt x 344.78813pt>
+) [22 <./Fig/seven_outer_product_scatter.png> <./Fig/AIS_7d_outter_scatter.png>
+]
+\openout2 = `exo-examp.aux'.
+
+ (./exo-examp.tex
+<Fig/scatter_1p_data1.png, id=500, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data1.png Graphic file (type png)
 
-<use Fig/scatter_1p_data1.png> [21 <./Fig/seven_outer_product_scatter.png> <./F
-ig/AIS_7d_outter_scatter.png>]
-<Fig/scatter_1p_data2.png, id=519, 509.65407pt x 344.78813pt>
+<use Fig/scatter_1p_data1.png>
+<Fig/scatter_1p_data2.png, id=501, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data2.png Graphic file (type png)
 
-<use Fig/scatter_1p_data2.png> [22 <./Fig/scatter_1p_data1.png>]
+<use Fig/scatter_1p_data2.png> [23
+
+
+]
 <Fig/scatter1_2p_data2.png, id=538, 509.65407pt x 344.78813pt>
 File: Fig/scatter1_2p_data2.png Graphic file (type png)
 
@@ -533,80 +560,91 @@ File: Fig/scatter1_2p_data2.png Graphic file (type png)
 File: Fig/scatter2_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter2_2p_data2.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1216--1222
+Overfull \hbox (12.0pt too wide) in paragraph at lines 112--118
  [][] 
  []
 
 <Fig/rv_comparison_data2.png, id=540, 421.575pt x 316.18124pt>
 File: Fig/rv_comparison_data2.png Graphic file (type png)
 
-<use Fig/rv_comparison_data2.png> [23 <./Fig/scatter_1p_data2.png>]
-Overfull \hbox (5.38719pt too wide) in paragraph at lines 1279--1286
+<use Fig/rv_comparison_data2.png> [24 <./Fig/scatter_1p_data1.png>] [25 <./Fig/
+scatter_1p_data2.png>]
+Overfull \hbox (5.38719pt too wide) in paragraph at lines 175--182
 []\OT1/bch/m/n/10.95 We an-a-lyze the as-so-ci-ated RV data set us-ing our AAIS
  method, the marginal
  []
 
-<Fig/hd37124_1p_fit.png, id=558, 633.11531pt x 438.8897pt>
+<Fig/hd37124_1p_fit.png, id=573, 633.11531pt x 438.8897pt>
 File: Fig/hd37124_1p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_1p_fit.png>
-<Fig/hd37124_2p_fit.png, id=559, 664.73344pt x 431.36156pt>
+<Fig/hd37124_2p_fit.png, id=574, 664.73344pt x 431.36156pt>
 File: Fig/hd37124_2p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_2p_fit.png>
-<Fig/hd37124_3p_fit.png, id=560, 597.73312pt x 380.92313pt>
+<Fig/hd37124_3p_fit.png, id=575, 597.73312pt x 380.92313pt>
 File: Fig/hd37124_3p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_3p_fit.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1319--1327
+Overfull \hbox (12.0pt too wide) in paragraph at lines 215--223
  [][] 
  []
 
-[24 <./Fig/scatter1_2p_data2.png> <./Fig/scatter2_2p_data2.png>]
-Overfull \hbox (5.38719pt too wide) in paragraph at lines 1335--1347
+[26 <./Fig/scatter1_2p_data2.png> <./Fig/scatter2_2p_data2.png>]
+Overfull \hbox (5.38719pt too wide) in paragraph at lines 231--243
 []\OT1/bch/m/n/10.95 We an-a-lyze the as-so-ci-ated RV data set us-ing our AAIS
  method, the marginal
  []
 
-<Fig/uma47_1p_fit.png, id=581, 439.6425pt x 303.38344pt>
+<Fig/uma47_1p_fit.png, id=594, 439.6425pt x 303.38344pt>
 File: Fig/uma47_1p_fit.png Graphic file (type png)
 
-<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=582, 385.44pt x 289.08pt>
+<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=595, 385.44pt x 289.08pt>
 File: Fig/uma47_2p_fit.png Graphic file (type png)
 
 <use Fig/uma47_2p_fit.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1377--1384
+Overfull \hbox (12.0pt too wide) in paragraph at lines 273--280
  [][] 
  []
 
-[25 <./Fig/rv_comparison_data2.png>] [26]
+) [27 <./Fig/rv_comparison_data2.png>]
 
-LaTeX Warning: Text page 27 contains only floats.
+LaTeX Warning: Text page 28 contains only floats.
 
-[27 <./Fig/hd37124_1p_fit.png> <./Fig/hd37124_2p_fit.png> <./Fig/hd37124_3p_fit
-.png>] (./AIS_MarLik.bbl [28 <./Fig/uma47_1p_fit.png> <./Fig/uma47_2p_fit.png>]
+[28 <./Fig/hd37124_1p_fit.png> <./Fig/hd37124_2p_fit.png> <./Fig/hd37124_3p_fit
+.png>] [29 <./Fig/uma47_1p_fit.png> <./Fig/uma47_2p_fit.png>]
+\openout2 = `disc.aux'.
+
+ (./disc.tex)
+[30
+
+
+] (./AIS_MarLik.bbl
 Missing character: There is no ¡ in font bchrc7t!
 Missing character: There is no ¯ in font bchrc7t!
-) [29]
+ [31
+
+])
 
 Package natbib Warning: There were undefined citations.
 
-[30] (./AIS_MarLik.aux)
+[32] (./AIS_MarLik.aux (./intro.aux) (./model.aux) (./IS.aux) (./sim.aux)
+(./exo-examp.aux) (./disc.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5247 strings out of 94500
- 67075 string characters out of 1176767
- 132354 words of memory out of 1000000
- 8133 multiletter control sequences out of 10000+50000
+ 5280 strings out of 94500
+ 67370 string characters out of 1176767
+ 131417 words of memory out of 1000000
+ 8134 multiletter control sequences out of 10000+50000
  41864 words of font info for 93 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
- 35i,19n,38p,447b,360s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 35i,19n,38p,470b,388s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 638 PDF objects out of 300000
- 166 named destinations out of 131072
+ 647 PDF objects out of 300000
+ 168 named destinations out of 131072
  300 words of extra memory for PDF output out of 65536
 </usr/share/texmf/fonts/type1/bluesky/cm/cmss9.pfb></usr/share/texmf/fonts/ty
 pe1/bluesky/cm/cmss8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></u
@@ -618,11 +656,11 @@ texmf/fonts/type1/bluesky/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/blue
 sky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/shar
 e/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/
 cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/tex
-mf/fonts/type1/bluesky/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
-sy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf/f
+mf/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
+mtt9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/f
 onts/type1/bluesky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.
 pfb>{/usr/share/texmf/fonts/enc/dvips/psnfss/8r.enc}</usr/share/texmf/fonts/typ
 e1/bitstrea/charter/bchr8a.pfb></usr/share/texmf/fonts/type1/bluesky/cmextra/cm
 bsy7.pfb></usr/share/texmf/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/
 texmf/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on AIS_MarLik.pdf (30 pages, 475220 bytes).
+Output written on AIS_MarLik.pdf (32 pages, 476849 bytes).
