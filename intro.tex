@@ -29,10 +29,10 @@ making in such sequential sampling problems.
 
 The primary question of whether there are no planets or one or more
 may be poised as a Bayesian model selection problem, where the
-collection of models under consideration are the zero-planet mode
+collection of models under consideration are the zero-planet model
 $\M_0$, one-planet $\M_1$, two-planet $\M_2$, etc.  In Bayesian
 statistics, the posterior probability of a model $\M_j$ requires
-accurately calculating the integrated or marginal likelihood ( see
+accurately calculating the integrated or marginal likelihood (see
 \citet{Clyd:Geor:2004} for a general overview or
 \citet{Clyd:etal:2005} for some of the issues that arise in
 astronomy).  In the exoplanet application, each model $\M_p$ has
@@ -51,30 +51,30 @@ challenging on its own due to the multi-modal nature of the posterior
 distribution.  
 
 
-Out of available methods for numerical integration,
-importance sampling (IS) generally produces the best estimates of
-marginal likelihoods in terms of bias and variance \citep{Christian's
+Out of available methods for numerical integration, importance
+sampling (IS) generally produces the best estimates of marginal
+likelihoods in terms of bias and variance \citep{Christian's
   comparisons?}. The key to building an efficient IS algorithm is to
 design an importance function that mimics the integrand.  Building
 such a function can be quite challenging even in lower to modest
-dimensional settings, with the multi-modal posterior distributions
+dimensional settings; with the multi-modal posterior distributions
 that arise in the exoplanet setting the task is all the more
-ambitious!  In this paper, we propose a novel adaptive method for constructing an
-importance function using a mixture of Student-$t$ distributions that
-evolves to the target posterior distribution.  The paper is organized
-as follows.  We begin by presenting an overview of the radial velocity
-models for exoplanet detection in Section
-\ref{sec:exo} and discuss the scientific issues that inspired this
-work. In Section \ref{sec:IS} we review importance sampling in the
-context of calculating marginal likelihoods for Bayesian model
-selection. In Section \ref{sec:AAIS} we present the Adaptive Annealed
-Importance Sampling method developed for the exoplanet problem. This
-method integrates several key features of other methods: mixture
-models, annealing, and adaptation via a sequence of distributions to
-build a flexible importance distribution that mimics the posterior
-distribution, but incorporates ideas successfully used in
-trans-dimensional methods to adapt the number of kernels in the
-mixture by utilizing split and merge moves.  In Section
+ambitious!  In this paper, we propose a novel adaptive method for
+constructing an importance function using a mixture of Student-$t$
+distributions that gradually evolves to the target posterior
+distribution.  The paper is organized as follows.  We begin by
+presenting an overview of the radial velocity models for exoplanet
+detection in Section \ref{sec:exo} and discuss the scientific issues
+that inspired this work. In Section \ref{sec:IS} we review importance
+sampling in the context of calculating marginal likelihoods for
+Bayesian model selection. In Section \ref{sec:AAIS} we present the
+Adaptive Annealed Importance Sampling method developed for the
+exoplanet problem. This method integrates several key features of
+other methods: mixture models, annealing, and adaptation via a
+sequence of distributions to build a flexible importance distribution
+that mimics the posterior distribution, but incorporates ideas
+successfully used in trans-dimensional methods to adapt the number of
+kernels in the mixture by utilizing split and merge moves.  In Section
 \ref{sec:simulation} we present two simulation studies that
 demonstrate the efficiency of the method compared to other approaches.
 The first involves a challenging flared helix in three dimensions,
