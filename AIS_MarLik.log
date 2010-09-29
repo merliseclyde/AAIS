@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  29 SEP 2010 11:55
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  29 SEP 2010 16:43
 entering extended mode
 **\input AIS_MarLik.tex
 (./AIS_MarLik.tex (./imsart.cls
@@ -383,11 +383,6 @@ cmm/m/it/10.95 ^^[[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10
 \openout2 = `IS.aux'.
 
  (./IS.tex
-
-Package natbib Warning: Citation `Gewe:1989' on page 9 undefined on input line 
-6.
-
-
 Overfull \hbox (2.45683pt too wide) in paragraph at lines 3--11
  \OT1/bch/b/n/10.95 3.Importance Sam-pling for Marginal Like-li-hood Es-ti-ma-t
 ion.[][] \OT1/bch/m/n/10.95 Be-yond
@@ -455,18 +450,18 @@ Overfull \hbox (4.52481pt too wide) in paragraph at lines 401--416
 \openout2 = `sim.aux'.
 
  (./sim.tex
-<Fig/flared_helix_target.png, id=457, 421.575pt x 316.18124pt>
+<Fig/flared_helix_target.png, id=460, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_target.png Graphic file (type png)
 
 <use Fig/flared_helix_target.png> [20
 
 
  <./Fig/flared_helix_target.png>]
-<Fig/flared_helix_scatter.png, id=467, 421.575pt x 316.18124pt>
+<Fig/flared_helix_scatter.png, id=470, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_scatter.png Graphic file (type png)
 
 <use Fig/flared_helix_scatter.png>
-<Fig/AIS_3d_felix_scatter.png, id=468, 420.06938pt x 316.18124pt>
+<Fig/AIS_3d_felix_scatter.png, id=471, 420.06938pt x 316.18124pt>
 File: Fig/AIS_3d_felix_scatter.png Graphic file (type png)
 
 <use Fig/AIS_3d_felix_scatter.png>
@@ -489,11 +484,11 @@ Overfull \hbox (11.10573pt too wide) in paragraph at lines 110--121
 -tinct, well-separated
  []
 
-[22] <Fig/seven_outer_product_scatter.png, id=503, 421.575pt x 316.18124pt>
+[22] <Fig/seven_outer_product_scatter.png, id=506, 421.575pt x 316.18124pt>
 File: Fig/seven_outer_product_scatter.png Graphic file (type png)
 
 <use Fig/seven_outer_product_scatter.png>
-<Fig/AIS_7d_outter_scatter.png, id=504, 421.575pt x 316.18124pt>
+<Fig/AIS_7d_outter_scatter.png, id=507, 421.575pt x 316.18124pt>
 File: Fig/AIS_7d_outter_scatter.png Graphic file (type png)
 
 <use Fig/AIS_7d_outter_scatter.png>
@@ -506,22 +501,22 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 144--151
 \openout2 = `exo-examp.aux'.
 
  (./exo-examp.tex
-<Fig/scatter_1p_data1.png, id=515, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data1.png, id=518, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data1.png Graphic file (type png)
 
 <use Fig/scatter_1p_data1.png>
-<Fig/scatter_1p_data2.png, id=516, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data2.png, id=519, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data2.png Graphic file (type png)
 
 <use Fig/scatter_1p_data2.png> [24
 
 
 ]
-<Fig/scatter1_2p_data2.png, id=553, 509.65407pt x 344.78813pt>
+<Fig/scatter1_2p_data2.png, id=556, 509.65407pt x 344.78813pt>
 File: Fig/scatter1_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter1_2p_data2.png>
-<Fig/scatter2_2p_data2.png, id=554, 509.65407pt x 344.78813pt>
+<Fig/scatter2_2p_data2.png, id=557, 509.65407pt x 344.78813pt>
 File: Fig/scatter2_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter2_2p_data2.png>
@@ -529,7 +524,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 112--118
  [][] 
  []
 
-<Fig/rv_comparison_data2.png, id=555, 421.575pt x 316.18124pt>
+<Fig/rv_comparison_data2.png, id=558, 421.575pt x 316.18124pt>
 File: Fig/rv_comparison_data2.png Graphic file (type png)
 
 <use Fig/rv_comparison_data2.png> [25 <./Fig/scatter_1p_data1.png>] [26 <./Fig/
@@ -539,15 +534,15 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 175--182
  method, the marginal
  []
 
-<Fig/hd37124_1p_fit.png, id=588, 633.11531pt x 438.8897pt>
+<Fig/hd37124_1p_fit.png, id=591, 633.11531pt x 438.8897pt>
 File: Fig/hd37124_1p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_1p_fit.png>
-<Fig/hd37124_2p_fit.png, id=589, 664.73344pt x 431.36156pt>
+<Fig/hd37124_2p_fit.png, id=592, 664.73344pt x 431.36156pt>
 File: Fig/hd37124_2p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_2p_fit.png>
-<Fig/hd37124_3p_fit.png, id=590, 597.73312pt x 380.92313pt>
+<Fig/hd37124_3p_fit.png, id=593, 597.73312pt x 380.92313pt>
 File: Fig/hd37124_3p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_3p_fit.png>
@@ -561,10 +556,10 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 231--243
  method, the marginal
  []
 
-<Fig/uma47_1p_fit.png, id=609, 439.6425pt x 303.38344pt>
+<Fig/uma47_1p_fit.png, id=612, 439.6425pt x 303.38344pt>
 File: Fig/uma47_1p_fit.png Graphic file (type png)
 
-<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=610, 385.44pt x 289.08pt>
+<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=613, 385.44pt x 289.08pt>
 File: Fig/uma47_2p_fit.png Graphic file (type png)
 
 <use Fig/uma47_2p_fit.png>
@@ -589,27 +584,23 @@ Missing character: There is no ¡ in font bchrc7t!
 Missing character: There is no ¯ in font bchrc7t!
  [32
 
-])
-
-Package natbib Warning: There were undefined citations.
-
-[33] (./AIS_MarLik.aux (./intro.aux) (./model.aux) (./IS.aux) (./sim.aux)
-(./exo-examp.aux) (./disc.aux))
+]) [33] (./AIS_MarLik.aux (./intro.aux) (./model.aux) (./IS.aux) (./sim.aux) (.
+/exo-examp.aux) (./disc.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5309 strings out of 94500
- 67620 string characters out of 1176767
- 134709 words of memory out of 1000000
+ 5310 strings out of 94500
+ 67634 string characters out of 1176767
+ 134735 words of memory out of 1000000
  8146 multiletter control sequences out of 10000+50000
  41696 words of font info for 92 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
- 35i,19n,38p,470b,391s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 35i,19n,38p,470b,395s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 662 PDF objects out of 300000
- 176 named destinations out of 131072
+ 665 PDF objects out of 300000
+ 177 named destinations out of 131072
  300 words of extra memory for PDF output out of 65536
 </usr/share/texmf/fonts/type1/bluesky/cm/cmss9.pfb></usr/share/texmf/fonts/ty
 pe1/bluesky/cm/cmss8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></us
@@ -627,4 +618,4 @@ nts/type1/bluesky/cm/cmsy8.pfb>{/usr/share/texmf/fonts/enc/dvips/psnfss/8r.enc}
 </usr/share/texmf/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf/fon
 ts/type1/bluesky/cmextra/cmbsy7.pfb></usr/share/texmf/fonts/type1/bitstrea/char
 ter/bchb8a.pfb></usr/share/texmf/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on AIS_MarLik.pdf (33 pages, 474955 bytes).
+Output written on AIS_MarLik.pdf (33 pages, 475603 bytes).

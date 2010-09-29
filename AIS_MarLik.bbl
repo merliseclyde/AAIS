@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -187,6 +187,18 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
   sampling to path sampling}}.
 \bjournal{Statistical Science}
 \bpages{163--185}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Geweke}{1989}]{Gewe:1989}
+\begin{barticle}[author]
+\bauthor{\bsnm{Geweke},~\bfnm{John}\binits{J.}}
+(\byear{1989}).
+\btitle{Bayesian Inference in Econometric Models Using {M}onte {C}arlo
+  Integration}.
+\bjournal{Econometrica}
+\bvolume{57}
+\bpages{pp. 1317-1339}.
 \end{barticle}
 \endbibitem
 

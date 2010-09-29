@@ -9,46 +9,44 @@ A level-1 auxiliary file: disc.aux
 The style file: imsart-nameyear.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sais_bib.bib
-Warning--I didn't find a database entry for "Gewe:1989"
-You've used 28 entries,
+You've used 29 entries,
             4166 wiz_defined-function locations,
-            958 strings with 9716 characters,
-and the built_in function-call counts, 34841 in all, are:
-= -- 3758
-> -- 473
-< -- 46
-+ -- 175
-- -- 167
-* -- 4015
-:= -- 6465
-add.period$ -- 78
-call.type$ -- 28
-change.case$ -- 130
-chr.to.int$ -- 28
-cite$ -- 28
-duplicate$ -- 912
-empty$ -- 2933
-format.name$ -- 642
-if$ -- 7037
+            966 strings with 9891 characters,
+and the built_in function-call counts, 35465 in all, are:
+= -- 3833
+> -- 482
+< -- 47
++ -- 178
+- -- 170
+* -- 4075
+:= -- 6562
+add.period$ -- 81
+call.type$ -- 29
+change.case$ -- 134
+chr.to.int$ -- 29
+cite$ -- 29
+duplicate$ -- 933
+empty$ -- 2986
+format.name$ -- 650
+if$ -- 7172
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 303
-num.names$ -- 131
-pop$ -- 510
+newline$ -- 314
+num.names$ -- 136
+pop$ -- 521
 preamble$ -- 1
-purify$ -- 130
+purify$ -- 134
 quote$ -- 0
-skip$ -- 2120
+skip$ -- 2155
 stack$ -- 0
-substring$ -- 3064
-swap$ -- 303
-text.length$ -- 28
+substring$ -- 3094
+swap$ -- 307
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 588
+type$ -- 609
 warning$ -- 0
-while$ -- 108
+while$ -- 112
 width$ -- 0
-write$ -- 638
-(There was 1 warning)
+write$ -- 661
