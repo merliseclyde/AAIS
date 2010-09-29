@@ -66,20 +66,25 @@ constructing an importance function using a mixture of Student-$t$
 distributions that gradually evolves to the target posterior
 distribution.  This algorithm falls in the class of adaptive  Monte
 Carlo methods \citep[see][for an overview and papers appearing in the
-special issue on sequential Monte Carlo]{fern:2008}.  The paper is organized as
-follows.   We begin by
-presenting an overview of the radial velocity models for exoplanet
-detection in Section \ref{sec:exo} and discuss the scientific issues
-that inspired this work. In Section \ref{sec:IS} we review importance
-sampling in the context of calculating marginal likelihoods for
-Bayesian model selection. In Section \ref{sec:AAIS} we present the
-Adaptive Annealed Importance Sampling method developed for the
-exoplanet problem. This method integrates several key features of
-other methods: mixture models, annealing, and adaptation via a
-sequence of distributions to build a flexible importance distribution
-that mimics the posterior distribution, but incorporates ideas
-successfully used in trans-dimensional methods to adapt the number of
-kernels in the mixture by utilizing split and merge moves.  In Section
+special issue on sequential Monte Carlo]{fern:2008}.  This adaptive
+importance sampler permits accurate determination of posterior model
+probabilities,  distributions of parameters of interest, as well as
+sequential updating as data acrue.
+
+
+The paper is organized as follows.  We begin by presenting an overview
+of the radial velocity models for exoplanet detection in Section
+\ref{sec:exo} and discuss the scientific issues that inspired this
+work. In Section \ref{sec:IS} we review importance sampling in the
+context of calculating marginal likelihoods for Bayesian model
+selection. In Section \ref{sec:AAIS} we present the Adaptive Annealed
+Importance Sampling method developed for the exoplanet problem. This
+method integrates several key features of other methods: mixture
+models, annealing, and adaptation via a sequence of distributions to
+build a flexible importance distribution that mimics the posterior
+distribution, but incorporates ideas successfully used in
+trans-dimensional methods to adapt the number of kernels in the
+mixture by utilizing split and merge moves.  In Section
 \ref{sec:simulation} we present two simulation studies that
 demonstrate the efficiency of the method compared to other approaches.
 The first involves a challenging flared helix in three dimensions,
