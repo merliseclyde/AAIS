@@ -57,19 +57,20 @@ solution to the transcendental equation
 E(t)-\e_1\sin(E(t))=\mbox{mod}\left(\frac{2\pi}{\P_1}t+\mu_1,2\pi\right).
 \end{equation}
 The five orbital parameters that comprise $\phi_1$ are the velocity
-semi-amplitude $\K_1$, the orbital period $\P_1$, the eccentricity $\e_1$,
-$(0\leq \e_1 \le 1)$, the argument of periastron $\omega_1$, $(0\le \omega_1
-\le 2\pi)$ and the mean anomaly at time $t=0$, $\mu_1$, $(0\le \mu_1
-\le 2\pi)$.  The parameters $\C_1$ $\K_1$ and $\sj_1$ have units $m/s$;
-the velocity semi-amplitude $\K_1$ is usually restricted to be
-non-negative to avoid identification problems, while $\C_1$ may be
-positive or negative.  The eccentricity parameter $\e_1$ is unit-less,
-with $\e_1 = 0$ corresponding to a circular orbit, and larger $\e_1$ leading
-to more eccentric orbits. Periastron is the point at which the planet
-is closest to the star and the argument of periastron $\omega_1$, measures
-the angle at which we observe the elliptical orbit.  The mean anomaly $\mu_1$ is
-an angular distance of a planet from periastron.  \uhoh{Add figure
-  illustrating?}
+semi-amplitude $\K_1$, the orbital period $\P_1$, the eccentricity
+$\e_1$, $(0\leq \e_1 \le 1)$, the argument of periastron $\omega_1$,
+$(0\le \omega_1 \le 2\pi)$ and the mean anomaly at time $t=0$,
+$\mu_1$, $(0\le \mu_1 \le 2\pi)$.  The parameters $\C_1$ $\K_1$ and
+$\sj_1$ have units $m/s$; the velocity semi-amplitude $\K_1$ is
+usually restricted to be non-negative to avoid identification
+problems, while the velocity offset $\C_1$ may be positive or
+negative.  The eccentricity parameter $\e_1$ is unit-less, with $\e_1
+= 0$ corresponding to a circular orbit, and larger $\e_1$ leading to
+more eccentric orbits. Periastron is the point at which the planet is
+closest to the star and the argument of periastron $\omega_1$,
+measures the angle at which we observe the elliptical orbit.  The mean
+anomaly $\mu_1$ is an angular distance of a planet from periastron.
+\uhoh{Add figure illustrating?}
 
 If there are $P \ge 1$ planets, the expected velocity is $\C_p
 + \bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)$ with the overall velocity shift
@@ -84,7 +85,7 @@ negligible.  With $p$ planets, there are a total of $2+5p$ parameters,
 denoted as 
 $\theta_p = \{ \mathcal{C}_p,\sj_p^2,\phi_1,\ldots,\phi_p\}$ for each of
 the models $\M_p$, $p \in \{0, 1, \ldots P\}$. Of course, we do not
-know how many planets there are \emph{a priori} - indeed, finding the
+know how many planets there are \emph{a priori} -- indeed, finding the
 number of planets $p$ and characterizing their orbital parameters is
 a major aim.
 
@@ -113,14 +114,14 @@ form
   p(\M_p \mid \v) = \frac{\BF(\M_p:\M_o) O(\M_p: \M_0)} 
 { \sum_{ j= 1}^{P} \BF(\M_j:\M_o) O(\M_j: \M_0)}
 \end{equation}
-where $O(\M_p: \M_0)$ is the prior odds of having $p$ planets to $0$
+where $O(\M_p: \M_0)$ is the prior odds of $p$ planets to $0$
 planets and $P$ is the maximum number of planets for the
 system.  This requires specifying a prior distribution on $\theta_p$
 for each of the models in order to obtain marginal likelihoods and
 Bayes factors.
 
 \subsection{Priors Distributions}
-Many of the parameters in $\phi_p$ allow informative marginal prior
+Many of the parameters in $\theta_p$ allow informative marginal prior
 distributions to be specified, although specifying joint distributions
 is more difficult.  While distributions may be tuned for specific
 applications, \citeauthor{ford2006bms} and \citep{SAMSI:2006}
@@ -157,11 +158,11 @@ to well defined posterior distributions and Bayes Factors even in the limit.
 However, informative upper limits on the stellar jitter are
 often available, which may aid in the rejection of models that are too
 simple to capture the observed periodicities in the data.   This is a
-particular advantage of the Bayesian approach.
+particular advantage of the Bayesian approach over frequentist methods.
 
 
-For components of $\phi_p$, they suggest $\e_p \sim U(0,1)$, $\omega_p \sim U(0, 2
-\pi)$ and $\mu_p \sim U(0, 2 \pi)$, which take into account the known
+For components of $\phi_p$, the recommended priors are  $\e_p \sim \U(0,1)$, $\omega_p \sim \U(0, 2
+\pi)$ and $\mu_p \sim \U(0, 2 \pi)$, which take into account the known
 marginal constraints.  For period, they recommend that log period have
 a uniform distribution over the range $1$ day to $1,000$ years.  The
 lower limit corresponds to the smallest oribital period of known
@@ -170,12 +171,29 @@ certain stars), while the upper limit exceeds the period of known
 exoplanets, while still within the limits where the planet's orbit would not be
 disrupted by outside perturbations to the system.  Our prior for $\K_p$
 is based on the SAMSI Exoplanet Working Group recommendation, where
-$\K_p + \K_{\min} \sim  U(\K_{\min}, \K_{\min} + \K_{\max})$ and 
-$\K_{\max}$ corresponds to a maximum 
+$\K_p + \K_{\min} \sim  \U(\K_{\min}, \K_{\min} + \K_{\max})$ and 
+$\K_{\max} = 2128$ corresponds to a maximum 
 planet-star mass ratio of 0.01;  the lower bound corresponds to the
 current minimum detection bounds ($1$ m/s); the prior in
 \citet{ford2006bms} is of the same form, although they allow the upper
-bound to depend on period.
+bound to depend on period.  Table \ref{tab:hyper} summarizes the
+constants used in the prior distributions.
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular} {|ll|lr|lr|} \hline \hline
+\multicolumn{2}{|c}{Model Parameter} &
+\multicolumn{2}{|c|}{Hyperparameters}  \\ \hline
+Period & $\P_p$ & $\P_{\min}$ &  $1$ day & $\P_{\max}$ &  $1,000$ years \\
+Velocity Semi-Amplitude &$\K_p$ & $\K_{\min}$ &  $ 1$ m/s &  $\K_{\max}$ &  $2128$ m/s \\
+Velocity Offset & $\C_p$ & $\C_{min}$ &  $-2128$ m/s & $\C_{max}$ &   $2128$ m/s \\
+Steller Jitter & $\sj_p$  &$\sj_{\min}$ &  $1$ m/s & $\sj_{\max}$ &  $2128$ m/s \\ \hline
+  \end{tabular}
+  \end{center}
+\caption{Hyperparameters for the the refernce prior distributions of
+  $\phi_p$ from \citet{ford2006bms}.}
+\label{tab:hyper}
+\end{table} 
+
 
 
 
@@ -183,7 +201,7 @@ The nonlinear relationships induce strong correlations among
 many of the parameters, which leads to a difficulties for posterior
 inference.  For circular orbits ($e = 0$), $\omega$ and $\mu_0$ are in
 fact unidentifiable.   To simplify posterior inference using
-stochastic sampling, we work in a transformed parameters space:
+stochastic sampling, we work in a transformed parameter space:
 $$
 \begin{aligned}
   x_p & = \e_p\cos\omega_p  \label{eq:poincare-x} & \quad &   y_p & =
@@ -215,33 +233,10 @@ c_\phi
 =\frac{1}{\log\left(1+\frac{\K_{max}}{\K_{\min}}\right)}\cdot\frac{1}{\K_{\min}}\cdot\frac{1}{\log\left(\frac{\P_{\max}}{\P_{\min}}\right)}\cdot\left(\frac{1}{2\pi}\right)^2. 
 \end{equation}
 \end{subequations}
-For any of the $p > 1$ planet models, there is an inherent difficulty  due
-to the arbitrary labeling of planets.  To avoid this lack of
-identification, we {\it a priori} restrict the periods so that
-$\P_{\min} \le \P_1 \le
-P_2 \le \ldots \le  P_p \le \P_{\max}$, so that the $\log(\P_j)$ may be
-viewed as the order statistics from the above distribution. 
 
-The constants in the prior distribution were (see Table
-\ref{tab:hyper}) are set based upon the physical  
-realities (e.g., an orbit with too small a period will result in the
-planet getting consumed by the star) 
-\begin{table}[h]
-  \begin{center}
-  \begin{tabular} {|lr|lr|} \hline \hline
-$\P_{\min}$ &  $1$ day &
-$\P_{\max}$ &  $1,000$ years \\
-$\K_{\min}$ &  $ 1$ m/s & 
-$\K_{\max}$ &  $2128$ m/s \\
-$\C_{min}$ &  $-2128$ m/s & 
-$\C_{max}$ &   $2128$ m/s \\
-$\sj_{\min}$ &  $1$ m/s &
-$\sj_{\max}$ &  $2128$ m/s \\ \hline
-  \end{tabular}
-  \end{center}
-\caption{Reference prior hyperparameters for the distribution of
-  $\phi_p$ from \citet{ford2006bms}.}
-\label{tab:hyper}
-\end{table}
- of the form given in \ref{prior_1p}
-with hyperparameters from Table \ref{tab:hyper}.
+For any of the $p > 1$ planet models, there is an inherent difficulty  due
+to the arbitrary ``labeling'' of planets in the model.  To address this lack of
+identification, we {\it a priori} restrict the periods so that
+$\P_{\min} \le \P_1 \le P_2 \le \ldots \le  P_p \le \P_{\max}$.  
+
+
