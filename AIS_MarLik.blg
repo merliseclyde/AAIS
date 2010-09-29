@@ -9,62 +9,46 @@ A level-1 auxiliary file: disc.aux
 The style file: imsart-nameyear.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: sais_bib.bib
-Repeated entry---line 69 of file sais_bib.bib
- : @article{biernacki2003degeneracy
- :                                 ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 433 of file sais_bib.bib
- :   
- :   publisher={American Economic Association}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 451 of file sais_bib.bib
- :   
- :   organization={Society for Industrial \& Applied}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Clyd:Geor:2004"
-Warning--I didn't find a database entry for "Clyd:etal:2005"
 Warning--I didn't find a database entry for "Gewe:1989"
-You've used 25 entries,
+You've used 28 entries,
             4166 wiz_defined-function locations,
-            943 strings with 9178 characters,
-and the built_in function-call counts, 29520 in all, are:
-= -- 3219
-> -- 405
-< -- 42
-+ -- 153
-- -- 146
-* -- 3402
-:= -- 5418
-add.period$ -- 69
-call.type$ -- 25
-change.case$ -- 117
-chr.to.int$ -- 25
-cite$ -- 25
-duplicate$ -- 780
-empty$ -- 2461
-format.name$ -- 549
-if$ -- 5977
+            958 strings with 9716 characters,
+and the built_in function-call counts, 34841 in all, are:
+= -- 3758
+> -- 473
+< -- 46
++ -- 175
+- -- 167
+* -- 4015
+:= -- 6465
+add.period$ -- 78
+call.type$ -- 28
+change.case$ -- 130
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 912
+empty$ -- 2933
+format.name$ -- 642
+if$ -- 7037
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 266
-num.names$ -- 113
-pop$ -- 432
+newline$ -- 303
+num.names$ -- 131
+pop$ -- 510
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 130
 quote$ -- 0
-skip$ -- 1781
+skip$ -- 2120
 stack$ -- 0
-substring$ -- 2536
-swap$ -- 255
-text.length$ -- 25
+substring$ -- 3064
+swap$ -- 303
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 520
+type$ -- 588
 warning$ -- 0
-while$ -- 93
+while$ -- 108
 width$ -- 0
-write$ -- 566
-(There were 3 error messages)
+write$ -- 638
+(There was 1 warning)

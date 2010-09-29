@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{28}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -36,16 +36,6 @@
 \end{bbook}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Bullard}{2009}]{bullard2009edc}
-\begin{bphdthesis}[author]
-\bauthor{\bsnm{Bullard},~\bfnm{F.}\binits{F.}}
-(\byear{2009}).
-\btitle{{Exoplanet Detection: a Comparison of Three Statistics or How Long
-  Should It Take to Find a Small Planet?}}
-\btype{PhD thesis}, \bschool{Duke University}.
-\end{bphdthesis}
-\endbibitem
-
 \bibitem[\protect\citeauthoryear{Cappe {\it et~al.}}{2004}]{cappe2004pmc}
 \begin{barticle}[author]
 \bauthor{\bsnm{Cappe},~\bfnm{O.}\binits{O.}},
@@ -73,6 +63,39 @@
 \bvolume{18}
 \bpages{447--459}.
 \end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Clyde and George}{2004}]{clyd:geor:2004}
+\begin{barticle}[author]
+\bauthor{\bsnm{Clyde},~\bfnm{Merlise~A.}\binits{M.~A.}} \AND
+  \bauthor{\bsnm{George},~\bfnm{Edward~I.}\binits{E.~I.}}
+(\byear{2004}).
+\btitle{Model uncertainty}.
+\bjournal{Statist. Sci}
+\bvolume{19}
+\bpages{81--94}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Clyde {\it et~al.}}{2007}]{clyd:etal:2007}
+\begin{binproceedings}[author]
+\bauthor{\bsnm{Clyde},~\bfnm{M.~A.}\binits{M.~A.}},
+  \bauthor{\bsnm{Berger},~\bfnm{J.~O.}\binits{J.~O.}},
+  \bauthor{\bsnm{Bullard},~\bfnm{F.}\binits{F.}},
+  \bauthor{\bsnm{Ford},~\bfnm{E.~B.}\binits{E.~B.}},
+  \bauthor{\bsnm{Jefferys},~\bfnm{W.~H.}\binits{W.~H.}},
+  \bauthor{\bsnm{Luo},~\bfnm{R.}\binits{R.}},
+  \bauthor{\bsnm{Paulo},~\bfnm{R.}\binits{R.}} \AND
+  \bauthor{\bsnm{Loredo},~\bfnm{T.}\binits{T.}}
+(\byear{2007}).
+\btitle{Current Challenges in Bayesian Model Choice}.
+In \bbooktitle{Statistical Challenges in Modern Astronomy IV, {ASP} Conference
+  Series}
+(\beditor{\bfnm{G.~J.}\binits{G.~J.}~\bsnm{Babu}} \AND
+  \beditor{\bfnm{E.~D.}\binits{E.~D.}~\bsnm{Feigelson}}, eds.)
+\bvolume{71}
+\bpages{224-240}.
+\end{binproceedings}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Cornebise, Moulines and
@@ -112,7 +135,7 @@
   \bauthor{\bsnm{Doucet},~\bfnm{A.}\binits{A.}} \AND
   \bauthor{\bsnm{Jasra},~\bfnm{A.}\binits{A.}}
 (\byear{2007}).
-\btitle{{Sequential monte carlo for bayesian computation}}.
+\btitle{{Sequential monte carlo for {B}ayesian computation}}.
 \bjournal{Bayesian Statistics}
 \bvolume{8}
 \bpages{115--148}.
@@ -130,14 +153,29 @@
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Ford and Gregory}{2006}]{ford2006bms}
+\bibitem[\protect\citeauthoryear{Fernhead}{2008}]{fern:2008}
 \begin{barticle}[author]
+\bauthor{\bsnm{Fernhead},~\bfnm{Paul}\binits{P.}}
+(\byear{2008}).
+\btitle{Editorial: Special issue on adaptive {M}onte {C}arlo methods}.
+\bjournal{Statistics and Computing}
+\bvolume{18}
+\bpages{341--342}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Ford and Gregory}{2007}]{ford2006bms}
+\begin{binproceedings}[author]
 \bauthor{\bsnm{Ford},~\bfnm{E.~B.}\binits{E.~B.}} \AND
   \bauthor{\bsnm{Gregory},~\bfnm{P.~C.}\binits{P.~C.}}
-(\byear{2006}).
-\btitle{{Bayesian Model Selection and Extrasolar Planet Detection}}.
-\bjournal{Arxiv preprint astro-ph/0608328}.
-\end{barticle}
+(\byear{2007}).
+\btitle{{B}ayesian Model Selection and Extrasolar Planet Detection}.
+In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
+  Series}
+(\beditor{\bfnm{G.~J.}\binits{G.~J.}~\bsnm{Babu}} \AND
+  \beditor{\bfnm{E.~D.}\binits{E.~D.}~\bsnm{Feilgelson}}, eds.)
+\bvolume{371}.
+\end{binproceedings}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Gelman and Meng}{1998}]{gelman1998simulating}
@@ -174,6 +212,16 @@
 \bjournal{Monthly Notices of the Royal Astronomical Society}
 \bvolume{9999}.
 \end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Group}{2006}]{SAMSI:2006}
+\begin{btechreport}[author]
+\bauthor{\bsnm{Group},~\bfnm{SAMSI Exoplanets~Working}\binits{S.~E.~W.}}
+(\byear{2006}).
+\btitle{Priors for Radial Velocity Model Parameters}
+\btype{Technical Report},
+\binstitution{Statistical and Applied Mathematical Sciences Institute}.
+\end{btechreport}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Kong, Liu and Wong}{1994}]{kong1994sequential}

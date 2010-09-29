@@ -1,30 +1,30 @@
 \section{Introduction}
 
-Since the beginning of recorded time we have wondered whether we are
-alone or whether there are other planets that might support life. The
-scientific quest for extrasolar or exoplanets (planets beyond our own
-solar system) began in the mid 19th century, but it was only as recent
-as 1992 that astronomers have been able to confirm the existence of
-other planetary systems.  Since then {\tt describe resources,
-  telescopes, etc} have been devoted to identifying stars with
-orbiting planets, and in particular, those that might have earth-like
-planets. As of June 2010 over 450 exoplanets have been detected, the
-majority using techniques that rely on measurements of a star's radial
-velocity.  The presence of a planet orbiting a star will lead to a
-periodic ``wobble'' in the the star's radial velocity, while if there
-are no planets present the expected velocity is constant although
-measurements fluctuate because of stellar jitter and other sources of
-noise.  Based on a short sequence of noisy measurements, the challenge
-is to determine whether there are no planets or one, two or more
-planets, and if there are planets present to characterize their orbital
-parameters.  {\tt cite work of Gregory and Ford, but mention
-  limitations?}  If the data do not provide strong evidence either in
-favor or against the presence of planets, additional observations may
-be needed to provide confirmation.  Determining which stars to observe
-and when to schedule scarce telescope time optimally is critical given
-limited resources; Bayesian methods in particular are ideally suited
-for updating information/evidence and decision
-making in such sequential sampling problems.
+Since the beginning of recorded time humans wondered whether we are
+alone in the universe or whether there are other planets that might
+support life. The scientific quest for extrasolar or exoplanets
+(planets beyond our own solar system) began in the mid 19th century,
+but it was only as recent as 1992 that astronomers were  able to
+confirm the existence of other planetary systems.  Since then
+\uhoh{describe resources, telescopes, etc} have been devoted to
+identifying stars with orbiting planets, and in particular, those that
+might host earth-like planets. As of June 2010 over 450 exoplanets
+have been detected, the majority using techniques that rely on
+measurements of a star's radial velocity.  The presence of a planet
+orbiting a star will lead to a periodic ``wobble'' in the the star's
+radial velocity, while if there are no planets present the expected
+velocity is constant although measurements fluctuate because of
+stellar jitter and other sources.  Based on a short sequence
+of noisy measurements, the challenge is to determine whether there are
+no planets or one, two or more planets, and if there are planets
+present to characterize their orbital parameters.  If the data do not
+provide strong evidence either in favor or against the presence of
+planets, additional observations may be needed to provide
+confirmation.  Determining which stars to observe and when to schedule
+scarce telescope time optimally is critical given limited resources;
+Bayesian methods in particular are ideally suited for updating
+information/evidence and decision making in such sequential sampling
+problems.
 
 
 The primary question of whether there are no planets or one or more
@@ -33,8 +33,8 @@ collection of models under consideration are the zero-planet model
 $\M_0$, one-planet $\M_1$, two-planet $\M_2$, etc.  In Bayesian
 statistics, the posterior probability of a model $\M_j$ requires
 accurately calculating the integrated or marginal likelihood (see
-\citet{Clyd:Geor:2004} for a general overview or
-\citet{Clyd:etal:2005} for some of the issues that arise in
+\citet{clyd:geor:2004} for a general overview or
+\citet{clyd:etal:2007,ford2006bms} for some of the issues that arise in
 astronomy).  In the exoplanet application, each model $\M_p$ has
 $2+5p$ parameters where $p$ is the number of planets, so even the
 simplest single planet model requires a seven dimensional integral
@@ -48,12 +48,14 @@ Reversible Jump-Markov Chain Monte Carlo (RJ-MCMC) algorithms is near
 impossible; just designing an efficient MCMC algorithm for sampling
 from posterior distributions for a model with one planet is
 challenging on its own due to the multi-modal nature of the posterior
-distribution.  
+distribution \citep{ford2006bms}.   Even if an efficient MCMC
+algorithm may be designed, estimates of the  marginal likelihood from
+the output are typically unstable.
 
 
 Out of available methods for numerical integration, importance
 sampling (IS) generally produces the best estimates of marginal
-likelihoods in terms of bias and variance \citep{Christian's
+likelihoods in terms of bias and variance \uhoh{reference Christian's
   comparisons?}. The key to building an efficient IS algorithm is to
 design an importance function that mimics the integrand.  Building
 such a function can be quite challenging even in lower to modest
@@ -62,7 +64,10 @@ that arise in the exoplanet setting the task is all the more
 ambitious!  In this paper, we propose a novel adaptive method for
 constructing an importance function using a mixture of Student-$t$
 distributions that gradually evolves to the target posterior
-distribution.  The paper is organized as follows.  We begin by
+distribution.  This algorithm falls in the class of adaptive  Monte
+Carlo methods \citep[see][for an overview and papers appearing in the
+special issue on sequential Monte Carlo]{fern:2008}.  The paper is organized as
+follows.   We begin by
 presenting an overview of the radial velocity models for exoplanet
 detection in Section \ref{sec:exo} and discuss the scientific issues
 that inspired this work. In Section \ref{sec:IS} we review importance

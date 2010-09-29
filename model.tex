@@ -42,14 +42,14 @@ V(t_i|\phi_1),\s_i^2+\sj_1^2\right),
 \end{equation}
 where the velocity shift $\bigtriangleup
 V(t_i|\phi_1)$ due to the presence of a single planet is
-a  family of curves parametrized by the 5 dimensional vector
+a  family of curves parametrized by 
 $\phi_1 \equiv (\K_1,\P_1,\e_1,\omega_1,\mu_1)$
 \begin{equation}\label{Velocity_1p_Model}
-\bigtriangleup V(t|\phi_1)=\K_1[\cos(\omega_1+T(t))+\e \cos(\omega_1)]
+\bigtriangleup V(t|\phi_1)=\K_1[\cos(\omega_1+T(t))+\e_1 \cos(\omega_1)]
 \end{equation}
 where $T(t)$ is the ``true anomaly at time $t$'' given by
 \begin{equation}\label{true_anomaly}
-T(t)=2\arctan\left[\tan(\frac{E(t)}{2})\sqrt{\frac{1+e_1}{1-e_1}}\right].
+T(t)=2\arctan\left[\tan\left(\frac{E(t)}{2}\right)\sqrt{\frac{1+\e_1}{1-\e_1}}\right].
 \end{equation}
 and $E(t)$ is called the ``eccentric anomaly at time $t$'', which is the
 solution to the transcendental equation
@@ -58,7 +58,7 @@ E(t)-\e_1\sin(E(t))=\mbox{mod}\left(\frac{2\pi}{\P_1}t+\mu_1,2\pi\right).
 \end{equation}
 The five orbital parameters that comprise $\phi_1$ are the velocity
 semi-amplitude $\K_1$, the orbital period $\P_1$, the eccentricity $\e_1$,
-$(0\leq \e_1 \le 1)$, the argument of periastron $\omega_1$, $(0\le \omega
+$(0\leq \e_1 \le 1)$, the argument of periastron $\omega_1$, $(0\le \omega_1
 \le 2\pi)$ and the mean anomaly at time $t=0$, $\mu_1$, $(0\le \mu_1
 \le 2\pi)$.  The parameters $\C_1$ $\K_1$ and $\sj_1$ have units $m/s$;
 the velocity semi-amplitude $\K_1$ is usually restricted to be
@@ -68,7 +68,8 @@ with $\e_1 = 0$ corresponding to a circular orbit, and larger $\e_1$ leading
 to more eccentric orbits. Periastron is the point at which the planet
 is closest to the star and the argument of periastron $\omega_1$, measures
 the angle at which we observe the elliptical orbit.  The mean anomaly $\mu_1$ is
-an angular distance of a planet from periastron. 
+an angular distance of a planet from periastron.  \uhoh{Add figure
+  illustrating?}
 
 If there are $P \ge 1$ planets, the expected velocity is $\C_p
 + \bigtriangleup V(t_i|\phi_1,\ldots,\phi_p)$ with the overall velocity shift
@@ -119,9 +120,13 @@ for each of the models in order to obtain marginal likelihoods and
 Bayes factors.
 
 \subsection{Priors Distributions}
-We adopt the prior distributions recommended by \cite{ford2006bms, bullard2009edc},
-which are based in part on their approximate realism, but also their
-mathematical tractability.  In all models, the intercept parameter
+Many of the parameters in $\phi_p$ allow informative marginal prior
+distributions to be specified, although specifying joint distributions
+is more difficult.  While distributions may be tuned for specific
+applications, \citeauthor{ford2006bms} and \citep{SAMSI:2006}
+recommended the following independent ``reference'' priors as a starting
+point for Bayesian analyses of radial velocity models. 
+In all models, the velocity offset (intercept) parameter
 $\C_p$ and stellar jitter parameter $\sj_p$, are taken as
 being {\it a priori} independent, where $\C_p$ is uniform over a finite
 set $[\C_{\min}, \C_{\max} ] $
@@ -149,25 +154,36 @@ The joint prior on $(\C_p, \sj_p)$ may be viewed as  a
 modified independent Jeffrey's prior  as $\C_{\min} \to -\infty$,
 $\C_{\max} \to \infty$, $\sj_{\min} \to 0$, $\sj_{\max} \to \infty$, which leads
 to well defined posterior distributions and Bayes Factors even in the limit. 
-However, informative prior distributions on the stellar jitter are
+However, informative upper limits on the stellar jitter are
 often available, which may aid in the rejection of models that are too
-simple to capture the observed periodicities in the data.
+simple to capture the observed periodicities in the data.   This is a
+particular advantage of the Bayesian approach.
+
+
+For components of $\phi_p$, they suggest $\e_p \sim U(0,1)$, $\omega_p \sim U(0, 2
+\pi)$ and $\mu_p \sim U(0, 2 \pi)$, which take into account the known
+marginal constraints.  For period, they recommend that log period have
+a uniform distribution over the range $1$ day to $1,000$ years.  The
+lower limit corresponds to the smallest oribital period of known
+exoplanets (which is lightly larger than the theoretical limit for
+certain stars), while the upper limit exceeds the period of known
+exoplanets, while still within the limits where the planet's orbit would not be
+disrupted by outside perturbations to the system.  Our prior for $\K_p$
+is based on the SAMSI Exoplanet Working Group recommendation, where
+$\K_p + \K_{\min} \sim  U(\K_{\min}, \K_{\min} + \K_{\max})$ and 
+$\K_{\max}$ corresponds to a maximum 
+planet-star mass ratio of 0.01;  the lower bound corresponds to the
+current minimum detection bounds ($1$ m/s); the prior in
+\citet{ford2006bms} is of the same form, although they allow the upper
+bound to depend on period.
 
 
 
-In the absence of other prior
-information, we take each $\phi_j$ to have independent identical prior
-distributions.  Many of the parameters in $\phi_p$ allow informative
-marginal prior distributions to be specified, however, the nonlinear
-relationships induce strong correlations among many of the parameters,
-which leads to a difficult task for joint prior elicitation.  For
-circular orbits ($e = 0$), $\omega$ and $\mu_0$ are in fact
-unidentifiable.  \citet{bullard2009edc} recommended using the log
-transformation of $P$ and $K$ 
-as  posterior distributions were  more Gaussian in these
-coordinates, which led to improved posterior simulation.   To simplify this task, we specify independent prior
-distribution using the Poincar\'e variables after transformation of
-the components of each $\phi_p$,
+The nonlinear relationships induce strong correlations among
+many of the parameters, which leads to a difficulties for posterior
+inference.  For circular orbits ($e = 0$), $\omega$ and $\mu_0$ are in
+fact unidentifiable.   To simplify posterior inference using
+stochastic sampling, we work in a transformed parameters space:
 $$
 \begin{aligned}
   x_p & = \e_p\cos\omega_p  \label{eq:poincare-x} & \quad &   y_p & =
@@ -176,16 +192,16 @@ $$
   \dot{\P}_p & = \log \P_p  & \quad &  \dot{\K}_p & = \log \K &  \quad & 
 \end{aligned}
 $$
-leading to  $\dot{\phi}_p \equiv (\dot{\K}_p, \dot{\P}_p, x_p, y_p, z_p)^T$.  The 
-Poincar\'e variables $x_p$ and $y_p$   greatly reduce the very
-strong correlations between $\mu_p$ and $\omega_p$, which  is particularly
-important for low eccentricity orbits, where the parameters are nearly
-unidentifiable.  The use
-of  $z_p$ further reduces correlations between the 
-parameters $\omega_p$ and $\mu_p$ when $\e_p \ll 1$, but has little effect
-for large $\e_p$. 
-In the transformed parameter space, the prior distribution for $\phi_p$
-is 
+leading to $\dot{\phi}_p \equiv (\dot{\K}_p, \dot{\P}_p, x_p, y_p,
+z_p)^T$.  The Poincar\'e variables $x_p$ and $y_p$ greatly reduce the
+very strong correlations between $\mu_p$ and $\omega_p$, which is
+particularly important for low eccentricity orbits, where the
+parameters are nearly unidentifiable.  The use of $z_p$ further
+reduces correlations between the parameters $\omega_p$ and $\mu_p$
+when $\e_p \ll 1$, but has little effect for large $\e_p$.  
+Posterior distributions for were more Gaussian in these coordinates, which led to
+improved posterior simulation.  In the transformed parameter space,
+the prior distribution for $\phi_p$ is
 \begin{subequations}
 \begin{equation}\label{prior_1p}
 p_{\dot{\phi}_p}(\dot{\phi}_p)=c_\phi \cdot\exp\dot{\K}_p\cdot\frac{1}{1+\frac{\exp\dot{\K}_p}{\K_{\min}}}\cdot\frac{1}{\sqrt{x_p^2+y_p^2}}
@@ -206,12 +222,13 @@ $\P_{\min} \le \P_1 \le
 P_2 \le \ldots \le  P_p \le \P_{\max}$, so that the $\log(\P_j)$ may be
 viewed as the order statistics from the above distribution. 
 
-The constants in the prior distribution (see Table \ref{tab:hyper}) are set based upon the physical realities
-(e.g., an orbit with too small a period will result in the planet
-getting consumed by the star) \citep{bullard2009edc}
+The constants in the prior distribution were (see Table
+\ref{tab:hyper}) are set based upon the physical  
+realities (e.g., an orbit with too small a period will result in the
+planet getting consumed by the star) 
 \begin{table}[h]
   \begin{center}
-  \begin{tabular}{|lr|lr|} \hline \hline
+  \begin{tabular} {|lr|lr|} \hline \hline
 $\P_{\min}$ &  $1$ day &
 $\P_{\max}$ &  $1,000$ years \\
 $\K_{\min}$ &  $ 1$ m/s & 
@@ -222,7 +239,8 @@ $\sj_{\min}$ &  $1$ m/s &
 $\sj_{\max}$ &  $2128$ m/s \\ \hline
   \end{tabular}
   \end{center}
-\caption{Prior hyperparameters for the distribution of $\phi_p$.}
+\caption{Reference prior hyperparameters for the distribution of
+  $\phi_p$ from \citet{ford2006bms}.}
 \label{tab:hyper}
 \end{table}
  of the form given in \ref{prior_1p}
