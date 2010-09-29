@@ -10,52 +10,50 @@ respect to  an importance distribution $Q$ that is
 abolutely continuous with respect to the target posterior distribution
 \begin{equation}\label{IS_for_marginal_lik}
 m(\M ) = \mathbb{E}_Q\left[ \frac{p(\v \mid \theta, \M)p(\theta \mid 
-    \M)} {q(\theta)}\right].
+    \M)} {q(\theta)}\right]
 \end{equation}
-The importance function $q(\theta)$ is the associated probability
+and the ``importance function'' $q(\theta)$ is the associated probability
 density function for 
-distribution $Q$ from which samples may be generated 
-relatively easily.
-Given a random sample of size $N$   $\theta^{(1)},
-\ldots, \theta^{(N)}$ from $Q$,
+distribution $Q$.  Ideally it should be straight-forward to generate 
+a sample of size $N$,  $\theta^{(1)},
+\ldots, \theta^{(N)}$ from $Q$, leading to 
 an  unbiased and simulation consistent Monte Carlo
-estimate of the marginal likelihood is provided by
+estimate of the marginal likelihood
 \begin{equation}\label{IS_solution_marlik}
 \hat{m}(\M)=\frac{1}{N} \sum_{i=1}^N\frac{p(\v \mid \theta^{(i)},
   \M) p(\theta^{(i)}\mid \M)} {q(\theta^{(i)})} = \frac{1}{N}\sum_{i=1}^N
-w^{(i)}
+w^{(i)} = \bar{w}
 \end{equation}
 where $w^{(i)}$ are known as the IS weights. 
 The variance of the IS estimator is
+\begin{subequations}
 \begin{align}
 \mbox{Var}_Q\left[\hat{m}(\M) \right] & =\frac{\sigma_q^2}{N} 
 \intertext{where}
-\sigma_Q^2 &
+\sigma_q^2 &
 =\mbox{Var}_q\left\{\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}\right\}\\
-& =\int_{R^d}\left(\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}-m(\M)\right)^2
-q(\theta)d\theta\\
-& =m(\M)^2\mathbb{E}_Q\left\{\left(\frac{\pi(\theta
- \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2\right\}.
-\intertext{Since
-$\sigma_q$ is unknown, a natural estimator of $\sigma_q^2$ is the
-usual consistent variance estimator}
-\sigma_Q^2 & \simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^{(i)}-\hat{m}(\M)\right)^2.
+%& =\int_{R^d}\left(\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}-m(\M)\right)^2
+%q(\theta)d\theta\\
+& =m(\M)^2\int \left(\frac{\pi(\theta
+ \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2 \, q(\theta)\, d\theta
+\intertext{
+where  a consistent estimator of $\sigma_q^2$ is the
+usual variance}
+\hat{\sigma}_q^2 & \simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^{(i)}-\bar{w}\right)^2.
 \end{align}
+\end{subequations}
 
-The efficiency of importance sampling depends largely on how close
-the importance function mimics the shape of the target distribution,
-$\pi(\theta \mid \v, \M) \propto p(\v \mid \theta, \M) p(\theta \mid
-\M)$.  If the
-importance function has lighter tails than the target, the estimate
-will tend to be unstable because the weights can be arbitrarily
-large; on the other hand if the importance function has much fatter
-tails than the target, too many of the $\theta_i$'s will be drawn
-from the tails, resulting in a seemingly stable estimate, but with
-many small weights.
-These problems are only compounded in high-dimensional settings
-where the target is often extremely complicated. Unless one is very
-lucky indeed it is usually impossible to get accurate results in
-real-life situations with dimension greater than 3.
+The efficiency of importance sampling depends largely on how close the
+importance function mimics the shape of the target distribution,
+$\pi(\theta \mid \v, \M)$ which is proportional to $p(\v \mid \theta,
+\M) p(\theta \mid \M)$.  If the importance function has lighter tails
+than the target, the estimate will tend to be unstable because the
+weights can be arbitrarily large; on the other hand if the importance
+function has much fatter tails than the target, too many of the
+$\theta_i$'s will be drawn from the tails, resulting in a seemingly
+stable estimate, but with many small weights.  These problems are only
+compounded in high-dimensional settings.
+
 
 \section{Annealed Adaptive IS Method for Constructing Importance
   Function} \label{sec:AAIS}
