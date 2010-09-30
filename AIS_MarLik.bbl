@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{37}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -142,6 +142,20 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, {ASP} Conference
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Douc {\it
+  et~al.}}{2006}]{Douc:Guil:Mari:Robe:2006}
+\begin{btechreport}[author]
+\bauthor{\bsnm{Douc},~\bfnm{R.}\binits{R.}},
+  \bauthor{\bsnm{Guillin},~\bfnm{A.}\binits{A.}},
+  \bauthor{\bsnm{Marin},~\bfnm{J.~M.}\binits{J.~M.}} \AND
+  \bauthor{\bsnm{Robert},~\bfnm{C.~P.}\binits{C.~P.}}
+(\byear{2006}).
+\btitle{Convergence of adaptive mixtures of importance sampling schemes}
+\btype{Technical Report},
+\binstitution{Ceremade - Université Paris-Dauphine}.
+\end{btechreport}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Evans}{1991}]{evans1991chaining}
 \begin{barticle}[author]
 \bauthor{\bsnm{Evans},~\bfnm{M.}\binits{M.}}
@@ -202,6 +216,19 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Givens and Raftery}{1996}]{Give:Raft:1996}
+\begin{barticle}[author]
+\bauthor{\bsnm{Givens},~\bfnm{Geof~H.}\binits{G.~H.}} \AND
+  \bauthor{\bsnm{Raftery},~\bfnm{Adrian~E.}\binits{A.~E.}}
+(\byear{1996}).
+\btitle{Local adaptive importance sampling for multivariate densities with
+  strong nonlinear relationships}.
+\bjournal{J.~Am. Stat. Assoc.}
+\bvolume{91}
+\bpages{132--141}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Gregory}{2005}]{gregory2005bayesian}
 \begin{barticle}[author]
 \bauthor{\bsnm{Gregory},~\bfnm{P.~C.}\binits{P.~C.}}
@@ -236,6 +263,16 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{btechreport}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Hesterberg}{1995}]{Hest:1995}
+\begin{barticle}[author]
+\bauthor{\bsnm{Hesterberg},~\bfnm{Tim}\binits{T.}}
+(\byear{1995}).
+\btitle{Weighted average importance sampling and defensive mixture
+  distributions}.
+\bjournal{Technometrics}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Kong, Liu and Wong}{1994}]{kong1994sequential}
 \begin{barticle}[author]
 \bauthor{\bsnm{Kong},~\bfnm{A.}\binits{A.}},
@@ -249,6 +286,15 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Liu}{2001}]{Liu:2001}
+\begin{bbook}[author]
+\bauthor{\bsnm{Liu},~\bfnm{J.}\binits{J.}}
+(\byear{2001}).
+\btitle{Monte Carlo Strategies in Scientific Computing}.
+\bpublisher{Springer-Verlag}.
+\end{bbook}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Neal}{2001}]{neal2001ais}
 \begin{barticle}[author]
 \bauthor{\bsnm{Neal},~\bfnm{R.~M.}\binits{R.~M.}}
@@ -257,6 +303,18 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \bjournal{Statistics and Computing}
 \bvolume{11}
 \bpages{125--139}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Oh and Berger}{1992}]{Oh:Berg:1992}
+\begin{barticle}[author]
+\bauthor{\bsnm{Oh},~\bfnm{Man-Suk}\binits{M.-S.}} \AND
+  \bauthor{\bsnm{Berger},~\bfnm{James~O.}\binits{J.~O.}}
+(\byear{1992}).
+\btitle{Adaptive importance sampling in {M}onte {C}arlo integration}.
+\bjournal{Journal of Statistical Computation and Simulation}
+\bvolume{41}
+\bpages{143--168}.
 \end{barticle}
 \endbibitem
 
@@ -272,6 +330,18 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{Owen and Zhou}{2000}]{Owen:Zhou:2000}
+\begin{barticle}[author]
+\bauthor{\bsnm{Owen},~\bfnm{Art}\binits{A.}} \AND
+  \bauthor{\bsnm{Zhou},~\bfnm{Yi}\binits{Y.}}
+(\byear{2000}).
+\btitle{Safe and effective importance sampling}.
+\bjournal{J.~Am. Stat. Assoc.}
+\bvolume{95}
+\bpages{135--143}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{Peel and McLachlan}{2000}]{peel2000rmm}
 \begin{barticle}[author]
 \bauthor{\bsnm{Peel},~\bfnm{D.}\binits{D.}} \AND
@@ -281,6 +351,18 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \bjournal{Statistics and Computing}
 \bvolume{10}
 \bpages{339--348}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Raghavan and Cox}{1998}]{Ragh:Cox:1998}
+\begin{barticle}[author]
+\bauthor{\bsnm{Raghavan},~\bfnm{Nandini}\binits{N.}} \AND
+  \bauthor{\bsnm{Cox},~\bfnm{Dennis~D.}\binits{D.~D.}}
+(\byear{1998}).
+\btitle{Adaptive mixture importance sampling}.
+\bjournal{Journal of Statistical Computation and Simulation}
+\bvolume{60}
+\bpages{237--259}.
 \end{barticle}
 \endbibitem
 
@@ -367,10 +449,21 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{West}{1993}]{west1993mixture}
+\bibitem[\protect\citeauthoryear{West}{1993a}]{West:1993}
+\begin{barticle}[author]
+\bauthor{\bsnm{West},~\bfnm{Mike}\binits{M.}}
+(\byear{1993}a).
+\btitle{Approximating posterior distributions by mixtures}.
+\bjournal{J.~Roy. Stat. Soc. {\rm B}}
+\bvolume{55}
+\bpages{409--422}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{West}{1993b}]{west1993mixture}
 \begin{barticle}[author]
 \bauthor{\bsnm{West},~\bfnm{M.}\binits{M.}}
-(\byear{1993}).
+(\byear{1993}b).
 \btitle{{Mixture Models, Monte Carlo, Bayesian Updating, and Dynamic Models}}.
 \bjournal{Computing Science and Statistics}
 \bpages{325--325}.

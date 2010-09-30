@@ -8,45 +8,57 @@ A level-1 auxiliary file: exo-examp.aux
 A level-1 auxiliary file: disc.aux
 The style file: imsart-nameyear.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Database file #1: sais_bib.bib
-You've used 29 entries,
+Database file #1: statjour.bib
+Database file #2: sais_bib.bib
+Database file #3: mc.bib
+Repeated entry---line 877 of file mc.bib
+ : @article{Clyd:Geor:2004
+ :                        ,
+I'm skipping whatever remains of this entry
+Database file #4: ms.bib
+Repeated entry---line 922 of file ms.bib
+ : @article{Clyd:Geor:2004
+ :                        ,
+I'm skipping whatever remains of this entry
+You've used 37 entries,
             4166 wiz_defined-function locations,
-            966 strings with 9891 characters,
-and the built_in function-call counts, 35465 in all, are:
-= -- 3833
-> -- 482
-< -- 47
-+ -- 178
-- -- 170
-* -- 4075
-:= -- 6562
-add.period$ -- 81
-call.type$ -- 29
-change.case$ -- 134
-chr.to.int$ -- 29
-cite$ -- 29
-duplicate$ -- 933
-empty$ -- 2986
-format.name$ -- 650
-if$ -- 7172
-int.to.chr$ -- 1
+            1417 strings with 15584 characters,
+and the built_in function-call counts, 42498 in all, are:
+= -- 4626
+> -- 582
+< -- 59
++ -- 217
+- -- 207
+* -- 4822
+:= -- 7770
+add.period$ -- 101
+call.type$ -- 37
+change.case$ -- 170
+chr.to.int$ -- 36
+cite$ -- 37
+duplicate$ -- 1137
+empty$ -- 3588
+format.name$ -- 774
+if$ -- 8645
+int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 314
-num.names$ -- 136
-pop$ -- 521
+newline$ -- 397
+num.names$ -- 175
+pop$ -- 643
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 170
 quote$ -- 0
-skip$ -- 2155
+skip$ -- 2563
 stack$ -- 0
-substring$ -- 3094
-swap$ -- 307
-text.length$ -- 29
+substring$ -- 3584
+swap$ -- 361
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 609
+type$ -- 773
 warning$ -- 0
-while$ -- 112
+while$ -- 143
 width$ -- 0
-write$ -- 661
+write$ -- 840
+(There were 2 error messages)

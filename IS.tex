@@ -36,24 +36,79 @@ The variance of the IS estimator is
 %q(\theta)d\theta\\
 & =m(\M)^2\int \left(\frac{\pi(\theta
  \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2 \, q(\theta)\, d\theta
-\intertext{
-where  a consistent estimator of $\sigma_q^2$ is the
-usual variance}
+\intertext{and}
 \hat{\sigma}_q^2 & \simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^{(i)}-\bar{w}\right)^2.
 \end{align}
+is a consistent estimator of $\sigma_q^2$.
 \end{subequations}
 
-The efficiency of importance sampling depends largely on how close the
-importance function mimics the shape of the target distribution,
-$\pi(\theta \mid \v, \M)$ which is proportional to $p(\v \mid \theta,
-\M) p(\theta \mid \M)$.  If the importance function has lighter tails
-than the target, the estimate will tend to be unstable because the
-weights can be arbitrarily large; on the other hand if the importance
-function has much fatter tails than the target, too many of the
-$\theta_i$'s will be drawn from the tails, resulting in a seemingly
-stable estimate, but with many small weights.  These problems are only
-compounded in high-dimensional settings.
+The efficiency of importance sampling depends largely on how ``close'' the
+importance function is to the posterior distribution $\pi(\theta \mid
+\v, \M)$ which is proportional to $p(\v \mid \theta, \M) p(\theta \mid
+\M)$.   Since the target $p(\theta \mid \v
+\M)$ is known only up to the normalizing constant $m(\M)$, the
+effective sample size (ESS) based on the normalized weights
+$\tilde{w}_t = w_t/ \bar{w}$,
+\begin{equation}
+  \label{eq:ESS}
+  \text{ESS} \equiv \frac{N}{1 + \text{var}_q(\tilde{w}_i)}
+\end{equation}
+provides a rule of thumb for judging how different the proposal
+distribution $Q$ is from the target distribution \cite[page
+34]{Liu:2001}.  Ideally with $q( \theta) \propto p(\v \mid \theta, \M)
+p(\theta \mid \M)$, the effective sample size is $N$.
 
+If the importance function has lighter tails
+than the target, the IS estimate will tend to be unstable because the
+weights can be arbitrarily large.  Heavy tails can  be obtained
+by using multivariate t density (four degrees
+of freedom is one default choice) with location equal to the  maximum
+likelihood  estimate and scale matrix based on the inverse Fisher
+information, which often works well for unimodal targets.
+For multi-modal or posteriors exhibiting strong nonlinear structure, a
+single multivariate t distribution is not adequate. Instead better
+approximations to $\pi(\theta \mid \M, \v)$ may be constructed using mixtures of
+parametric densities (such as a $t$ with 4 degrees of freedom)
+\begin{equation}
+  \label{eq:mixIS}
+  q(\cdot) = \sum_k \omega_j t_4(\cdot; \mu_j, \alpha \Sigma_j),
+\end{equation}
+where $\omega_j$ are mixture weights, $\mu_j$ is a location parameter
+and $\alpha \Sigma_j$ is the scale matrix for the $j$th mixture
+component.  A ``defensive mixture'' may be obtained by including the
+prior density as one of the mixture components \citep{Hest:1995}.
+\citet{Owen:Zhou:2000} suggest the use of mixtures and control
+variates to reduce the infinite variance that may arise when $q$ is a
+close match to the target, but decreases to zero faster than the
+target. 
+
+On the other hand if the importance
+function has much fatter tails than the target ($q$ may be too over-dispersed relative to the posterior
+or just a poor match in some regions), there may be an overabundance
+of small weights.  \citet{Liu:2001} suggests
+rejection control as a way of avoiding small weights.  As samples from
+$q$ are obtained,  adaptive refinement of the IS proposal
+$q$ to match the target is possible, leading to
+adaptive important sampling (AIS); such adaptive importance sampling
+schemes using mixtures have been proposed by
+\citet{West:1993,Oh:Berg:1992,Give:Raft:1996,Ragh:Cox:1998} and more
+recently by \citet{Douc:Guil:Mari:Robe:2006}, among others.
+
+Finally, AAIS has connections to a bunch of existing adaptive IS
+methods in the literature, for example,
+\cite{evans1991chaining,oh1993imf,cappe2008ais,cappe2004pmc,west1993mixture,ardia2008adaptive},
+to name just a few. The most distinguishing point lies in that our
+method adopts the annealing strategy, which is well recognized as a
+powerful approach to search separated, especially peaky, modes in
+the posterior. From the mixture modeling point of view, the proposed
+mixture adaptation technique can be seen as an intermediate between
+the completely non-parametric method in \cite{west1993mixture} and
+the EM based semi-parametric methods, which is used in the adaptive
+mixture importance sampling (AMIS) approach \citep{cappe2008ais}.
+The AMIS approach employs a fixed number of mixture components,
+while our method and the nonparametric method
+\citep{west1993mixture} can let the data speak for themselves how
+many components should be contained in the mixture.
 
 \section{Annealed Adaptive IS Method for Constructing Importance
   Function} \label{sec:AAIS}
@@ -503,18 +558,3 @@ transition kernels (see details in
 \cite{del2007sequential,del2006sequential}), and the IS, instead of
 MCMC, for particle generation.
 
-Finally, AAIS has connections to a bunch of existing adaptive IS
-methods in the literature, for example,
-\cite{evans1991chaining,oh1993imf,cappe2008ais,cappe2004pmc,west1993mixture,ardia2008adaptive},
-to name just a few. The most distinguishing point lies in that our
-method adopts the annealing strategy, which is well recognized as a
-powerful approach to search separated, especially peaky, modes in
-the posterior. From the mixture modeling point of view, the proposed
-mixture adaptation technique can be seen as an intermediate between
-the completely non-parametric method in \cite{west1993mixture} and
-the EM based semi-parametric methods, which is used in the adaptive
-mixture importance sampling (AMIS) approach \citep{cappe2008ais}.
-The AMIS approach employs a fixed number of mixture components,
-while our method and the nonparametric method
-\citep{west1993mixture} can let the data speak for themselves how
-many components should be contained in the mixture.
