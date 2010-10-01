@@ -71,44 +71,58 @@ equal to the maximum likelihood estimate and scale matrix based on the
 inverse Fisher information, which often works well for unimodal
 targets for low to modest dimensional problems. For multi-modal or
 posteriors exhibiting strong nonlinear structure, a single
-multivariate t distribution is not adequate.  As any continuous probability density
-function can be approximated by a  mixture model, an importance
-function $q$  may be constructed using a non-parametric density
-estimate using a 
-mixture of parametric densities
-\citep{Oh:Berg:1992,Oh:Berg:1993,West:1993}, such as a 
-  $t$ with $\delta$ degrees of freedom
+multivariate t distribution is not adequate.  As any continuous
+probability density function can be approximated by a mixture model,
+an importance function $q$ may be constructed using a non-parametric
+density estimate using a mixture of parametric densities
+\citep{Oh:Berg:1992,Oh:Berg:1993,West:1993}, such as a $t$ with
+$\delta$ degrees of freedom
 \begin{equation}
   \label{eq:mixIS}
-  q(\cdot) = \sum_k \omega_j t_\delta(\cdot; \mu_j, \Sigma_j),
+  q(\cdot) = \sum_k \alpha_j t_\delta(\cdot; \mu_j, \Sigma_j),
 \end{equation}
 where $\omega_j$ are mixture weights, $\mu_j$ is a location parameter
-and $\Sigma_j$ is the scale matrix for the $j$th mixture
-component.    As samples from $q$ are
-obtained, adaptive refinement of the IS proposal $q$ to match the
-target is possible, leading to adaptive important sampling (AIS).  The
-number of components in the mixture in \citeauthor{Oh:Berg:1993} are
-fixed at the number of modes in the posterior, which
-assumes that one can identify the  important modes of the posterior
-distribution.  \citeauthor{West:1993} adds a  new component at each
-iteration,  with each new point being the center of a new Studnet $t$
-density, but with a ``global'' scale matrix estimated from  the
-previous draws.  If
-the importance function has much fatter tails than the target ($q$ may
-be too over-dispersed relative to the posterior or just a poor match
-in some regions), leading to an overabundance of small weights.
-\citet{Give:Raft:1996} also use a mixture of Student $t$ densities,
-but utilize individual estimates of the scale matrix in each kernel,
-providing ``local'' adaptation. \citet{Owen:Zhou:2000} suggest the use of control
-variates  to reduce the infinite variance
-that may arise when $q$ is a close match to the target, but decreases
-to zero faster than the target.  \citet{Liu:2001} suggests rejection
-control as a way of avoiding small weights. 
-more recently by \citet{Douc:Guil:Mari:Robe:2006}, among others.
+and $\Sigma_j$ is the scale matrix for the $j$th mixture component.
+As samples from $q$ are obtained, adaptive refinement of the IS
+proposal $q$ to match the target is possible, leading to adaptive
+important sampling (AIS).  The number of components in the mixture in
+\citeauthor{Oh:Berg:1993} are fixed at the number of modes in the
+posterior, which assumes that one can identify the important modes of
+the posterior distribution, but the weights, locations and scale
+matrices adapted to minimze the coefficient of variation of the
+weights, which can be seen as maximizing the \ESS.
+\citeauthor{West:1993} allows the number of components to grow with
+each new point being the center of a new Student $t$ density, but with
+a ``global'' scale matrix estimated from the previous draws.  The
+number of components is determined by monitoring the relative entropy
+of the normalized weights.  Even with a mixture model, the importance
+function may have much fatter tails than the target where $q$ may be
+too over-dispersed relative to the posterior locally, leading to an
+overabundance of small weights.  To address this,
+\citet{Give:Raft:1996} use a mixture of Student $t$ densities, but
+utilize individual estimates of the scale matrix in each kernel,
+providing ``local'' adaptation. \citet{Owen:Zhou:2000} suggest the use
+of control variates to reduce the infinite variance that may arise
+when $q$ is a close match to the target, but decreases to zero faster
+than the target.  \citet{Liu:2001} suggests rejection control as a way
+of avoiding small weights.    
+
+Population Monte Carlo \citep{cappe2004pmc} may be viewed as an
+iterated version of these approaches where a new population of draws
+are obtained at each iteration from an importance function, which may
+adapt based on the previously sampled populations.  This allows the
+introduction of MCMC updates as with sequential importance
+samplers and particle filters
+\citep{MacE:Clyd:Liu:1999,Pitt:Shep:1999} with adaptive IS.
+\citet{Douc:Guil:Mari:Robe:2006} derive  sufficient convergence
+conditions for adaptive mixtures of importance sampling (AMIS)
+and show that a Rao-Blackwellized version is
+optimal asymptotically in terms of Kullback-Leibler divergence between
+the limiting importance function and the target.
 
 Finally, AAIS has connections to a bunch of existing adaptive IS
 methods in the literature, for example,
-\cite{evans1991chaining,oh1993imf,cappe2008ais,cappe2004pmc,west1993mixture,ardia2008adaptive},
+\cite{evans1991chaining,cappe2008ais,,ardia2008adaptive},
 to name just a few. The most distinguishing point lies in that our
 method adopts the annealing strategy, which is well recognized as a
 powerful approach to search separated, especially peaky, modes in the
@@ -280,10 +294,7 @@ effective sample size, which is defined to be
 \ESS=\frac{1}{\sum_{n=1}^N w_n^2}.
 \end{equation}
 Note that these importance weights are associated with the random
-sample drawn from $q_t(\theta)$. The \ESS was originally proposed by
-\cite{kong1994sequential} to measure the overall efficiency of an IS
-algorithm. Heuristically it measures how many i.i.d samples are
-equivalent to the $N$ weighted samples. The \ESS is related to the
+sample drawn from $q_t(\theta)$. The \ESS\ is related to the
 coefficient of variation (CV) of the importance weights (see
 \cite{kong1994sequential}), which finds applications in
 \cite{ardia2008adaptive,cappe2008ais,cornebise2008adaptive}. It's

@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{35}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -327,28 +327,16 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Oh and Berger}{1993a}]{Oh:Berg:1993}
+\bibitem[\protect\citeauthoryear{Oh and Berger}{1993}]{Oh:Berg:1993}
 \begin{barticle}[author]
 \bauthor{\bsnm{Oh},~\bfnm{Man-Suk}\binits{M.-S.}} \AND
   \bauthor{\bsnm{Berger},~\bfnm{James~O.}\binits{J.~O.}}
-(\byear{1993}a).
+(\byear{1993}).
 \btitle{Integration of Multimodal Functions by Monte Carlo Importance
   Sampling}.
 \bjournal{Journal of the American Statistical Association}
 \bvolume{88}
 \bpages{pp. 450-456}.
-\end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{Oh and Berger}{1993b}]{oh1993imf}
-\begin{barticle}[author]
-\bauthor{\bsnm{Oh},~\bfnm{M.~S.}\binits{M.~S.}} \AND
-  \bauthor{\bsnm{Berger},~\bfnm{J.~O.}\binits{J.~O.}}
-(\byear{1993}b).
-\btitle{{Integration of multimodal functions by Monte Carlo importance
-  sampling}}.
-\bjournal{Journal of the American Statistical Association}
-\bpages{450--456}.
 \end{barticle}
 \endbibitem
 

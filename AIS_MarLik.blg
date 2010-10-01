@@ -11,44 +11,46 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: statjour.bib
 Database file #2: sais_bib.bib
 Database file #3: mc.bib
-You've used 36 entries,
+Warning--I didn't find a database entry for "oh1993imf"
+You've used 35 entries,
             4166 wiz_defined-function locations,
-            1350 strings with 14473 characters,
-and the built_in function-call counts, 42503 in all, are:
-= -- 4615
-> -- 583
-< -- 60
-+ -- 222
-- -- 210
-* -- 4857
-:= -- 7811
-add.period$ -- 100
-call.type$ -- 36
-change.case$ -- 168
+            1347 strings with 14368 characters,
+and the built_in function-call counts, 41592 in all, are:
+= -- 4508
+> -- 569
+< -- 58
++ -- 215
+- -- 204
+* -- 4758
+:= -- 7659
+add.period$ -- 97
+call.type$ -- 35
+change.case$ -- 163
 chr.to.int$ -- 33
-cite$ -- 36
-duplicate$ -- 1125
-empty$ -- 3573
-format.name$ -- 785
-if$ -- 8615
-int.to.chr$ -- 4
+cite$ -- 35
+duplicate$ -- 1099
+empty$ -- 3499
+format.name$ -- 766
+if$ -- 8424
+int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 390
-num.names$ -- 169
-pop$ -- 633
+newline$ -- 380
+num.names$ -- 164
+pop$ -- 616
 preamble$ -- 1
-purify$ -- 168
+purify$ -- 163
 quote$ -- 0
-skip$ -- 2570
+skip$ -- 2522
 stack$ -- 0
-substring$ -- 3623
-swap$ -- 362
-text.length$ -- 36
+substring$ -- 3560
+swap$ -- 355
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 757
+type$ -- 736
 warning$ -- 0
-while$ -- 139
+while$ -- 135
 width$ -- 0
-write$ -- 821
+write$ -- 799
+(There was 1 warning)

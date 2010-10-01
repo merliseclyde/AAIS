@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 OCT 2010 12:40
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 OCT 2010 14:58
 entering extended mode
 **\input AIS_MarLik.tex
 (./AIS_MarLik.tex (./imsart.cls
@@ -255,21 +255,21 @@ LaTeX Warning: Label `m2thanks' multiply defined.
 (./disc.aux))
 \openout1 = `AIS_MarLik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Try loading font information for OT1+bch on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+bch on input line 38.
  (/usr/share/texmf/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 )
@@ -307,42 +307,42 @@ loading : Context Support Macros / PDF (2004.03.26)
 \MPnumerator=\count123
 \everyMPtoPDFconversion=\toks29
 )
-Package hyperref Info: Link coloring ON on input line 39.
+Package hyperref Info: Link coloring ON on input line 38.
  (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
  (./AIS_MarLik.out)
 (./AIS_MarLik.out)
 \openout3 = `AIS_MarLik.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 44.
+(Font)              <10.95> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 44.
+(Font)              <8> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 44.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
+(Font)              <6> on input line 43.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 43.
  (/usr/share/texmf/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 44.
+(Font)              <5> on input line 43.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 43.
 \@address@1=\toks30
 \@address@2=\toks31
 \@address@3=\toks32
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 100.
+(Font)              <9> on input line 99.
 
-Overfull \hbox (5.94238pt too wide) in paragraph at lines 92--118
+Overfull \hbox (5.94238pt too wide) in paragraph at lines 91--117
  \OT1/bch/m/n/9 we pro-pose an adap-tive an-nealed im-por-tance sam-pling al-go
 -rithm (AAIS) 
  []
@@ -399,7 +399,13 @@ OML/cmm/m/it/10.95 d^^R[]
 [9
 
 
-] [10]
+]
+Overfull \hbox (5.42186pt too wide) in paragraph at lines 109--124
+\OT1/bch/m/n/10.95 adap-tive mix-ture im-por-tance sam-pling (AMIS) ap-proach (
+[][]Capp[]e \OT1/bch/m/it/10.95 et al.[][]\OT1/bch/m/n/10.95 , [][]2008[][]).
+ []
+
+[10]
 Overfull \hbox (17.80089pt too wide) in paragraph at lines 132--138
 []\OT1/bch/m/n/10.95 Let $\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 ^^R\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 de-note the pos-te-rior d
@@ -428,7 +434,7 @@ File: omsbch.fd
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
  [11] [12] [13] [14] [15] [16]
-Overfull \hbox (31.93779pt too wide) in paragraph at lines 428--439
+Overfull \hbox (31.93779pt too wide) in paragraph at lines 425--436
 \OT1/bch/m/n/10.95 Substituting $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 ^^R[]
 ; w[]\OMS/cmsy/m/n/10.95 g[]$ \OT1/bch/m/n/10.95 and the lo-cal mix-ture pa-ram
 -e-ters, $\OML/cmm/m/it/10.95 []; []; ^^V[]; \OT1/cmr/m/n/10.95 ^^F[]\OML/cmm
@@ -436,13 +442,13 @@ Overfull \hbox (31.93779pt too wide) in paragraph at lines 428--439
  []
 
 
-Overfull \hbox (2.59906pt too wide) in paragraph at lines 454--460
+Overfull \hbox (2.59906pt too wide) in paragraph at lines 451--457
  \OT1/bch/m/n/10.95 4.3.3.\OT1/bch/m/it/10.95 Component-Deletion.[][] \OT1/bch/
 m/n/10.95 As men-tioned above, when sim-u-lat-ing draws
  []
 
 
-Overfull \hbox (4.52481pt too wide) in paragraph at lines 462--477
+Overfull \hbox (4.52481pt too wide) in paragraph at lines 459--474
 \OT1/bch/m/n/10.95 don't need to worry about that, be-cause on one side the pro
 -posed component-
  []
@@ -451,18 +457,18 @@ Overfull \hbox (4.52481pt too wide) in paragraph at lines 462--477
 \openout2 = `sim.aux'.
 
  (./sim.tex
-<Fig/flared_helix_target.png, id=479, 421.575pt x 316.18124pt>
+<Fig/flared_helix_target.png, id=470, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_target.png Graphic file (type png)
 
 <use Fig/flared_helix_target.png> [20
 
 
  <./Fig/flared_helix_target.png>]
-<Fig/flared_helix_scatter.png, id=489, 421.575pt x 316.18124pt>
+<Fig/flared_helix_scatter.png, id=480, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_scatter.png Graphic file (type png)
 
 <use Fig/flared_helix_scatter.png>
-<Fig/AIS_3d_felix_scatter.png, id=490, 420.06938pt x 316.18124pt>
+<Fig/AIS_3d_felix_scatter.png, id=481, 420.06938pt x 316.18124pt>
 File: Fig/AIS_3d_felix_scatter.png Graphic file (type png)
 
 <use Fig/AIS_3d_felix_scatter.png>
@@ -485,11 +491,11 @@ Overfull \hbox (11.10573pt too wide) in paragraph at lines 110--121
 -tinct, well-separated
  []
 
-[22] <Fig/seven_outer_product_scatter.png, id=525, 421.575pt x 316.18124pt>
+[22] <Fig/seven_outer_product_scatter.png, id=516, 421.575pt x 316.18124pt>
 File: Fig/seven_outer_product_scatter.png Graphic file (type png)
 
 <use Fig/seven_outer_product_scatter.png>
-<Fig/AIS_7d_outter_scatter.png, id=526, 421.575pt x 316.18124pt>
+<Fig/AIS_7d_outter_scatter.png, id=517, 421.575pt x 316.18124pt>
 File: Fig/AIS_7d_outter_scatter.png Graphic file (type png)
 
 <use Fig/AIS_7d_outter_scatter.png>
@@ -502,22 +508,22 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 144--151
 \openout2 = `exo-examp.aux'.
 
  (./exo-examp.tex
-<Fig/scatter_1p_data1.png, id=537, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data1.png, id=528, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data1.png Graphic file (type png)
 
 <use Fig/scatter_1p_data1.png>
-<Fig/scatter_1p_data2.png, id=538, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data2.png, id=529, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data2.png Graphic file (type png)
 
 <use Fig/scatter_1p_data2.png> [24
 
 
 ]
-<Fig/scatter1_2p_data2.png, id=575, 509.65407pt x 344.78813pt>
+<Fig/scatter1_2p_data2.png, id=566, 509.65407pt x 344.78813pt>
 File: Fig/scatter1_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter1_2p_data2.png>
-<Fig/scatter2_2p_data2.png, id=576, 509.65407pt x 344.78813pt>
+<Fig/scatter2_2p_data2.png, id=567, 509.65407pt x 344.78813pt>
 File: Fig/scatter2_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter2_2p_data2.png>
@@ -525,7 +531,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 112--118
  [][] 
  []
 
-<Fig/rv_comparison_data2.png, id=577, 421.575pt x 316.18124pt>
+<Fig/rv_comparison_data2.png, id=568, 421.575pt x 316.18124pt>
 File: Fig/rv_comparison_data2.png Graphic file (type png)
 
 <use Fig/rv_comparison_data2.png> [25 <./Fig/scatter_1p_data1.png>] [26 <./Fig/
@@ -535,15 +541,15 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 175--182
  method, the marginal
  []
 
-<Fig/hd37124_1p_fit.png, id=610, 633.11531pt x 438.8897pt>
+<Fig/hd37124_1p_fit.png, id=601, 633.11531pt x 438.8897pt>
 File: Fig/hd37124_1p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_1p_fit.png>
-<Fig/hd37124_2p_fit.png, id=611, 664.73344pt x 431.36156pt>
+<Fig/hd37124_2p_fit.png, id=602, 664.73344pt x 431.36156pt>
 File: Fig/hd37124_2p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_2p_fit.png>
-<Fig/hd37124_3p_fit.png, id=612, 597.73312pt x 380.92313pt>
+<Fig/hd37124_3p_fit.png, id=603, 597.73312pt x 380.92313pt>
 File: Fig/hd37124_3p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_3p_fit.png>
@@ -557,10 +563,10 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 231--243
  method, the marginal
  []
 
-<Fig/uma47_1p_fit.png, id=631, 439.6425pt x 303.38344pt>
+<Fig/uma47_1p_fit.png, id=622, 439.6425pt x 303.38344pt>
 File: Fig/uma47_1p_fit.png Graphic file (type png)
 
-<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=632, 385.44pt x 289.08pt>
+<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=623, 385.44pt x 289.08pt>
 File: Fig/uma47_2p_fit.png Graphic file (type png)
 
 <use Fig/uma47_2p_fit.png>
@@ -595,16 +601,16 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5323 strings out of 94500
- 67869 string characters out of 1176767
- 135133 words of memory out of 1000000
- 8156 multiletter control sequences out of 10000+50000
+ 5321 strings out of 94500
+ 67844 string characters out of 1176767
+ 135097 words of memory out of 1000000
+ 8155 multiletter control sequences out of 10000+50000
  41696 words of font info for 92 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
  35i,19n,38p,470b,391s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 684 PDF objects out of 300000
- 180 named destinations out of 131072
+ 675 PDF objects out of 300000
+ 179 named destinations out of 131072
  300 words of extra memory for PDF output out of 65536
 </usr/share/texmf/fonts/type1/bluesky/cm/cmss9.pfb></usr/share/texmf/fonts/ty
 pe1/bluesky/cm/cmss8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></us
@@ -622,4 +628,4 @@ nts/type1/bluesky/cm/cmsy8.pfb>{/usr/share/texmf/fonts/enc/dvips/psnfss/8r.enc}
 </usr/share/texmf/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf/fon
 ts/type1/bluesky/cmextra/cmbsy7.pfb></usr/share/texmf/fonts/type1/bitstrea/char
 ter/bchb8a.pfb></usr/share/texmf/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on AIS_MarLik.pdf (33 pages, 482564 bytes).
+Output written on AIS_MarLik.pdf (33 pages, 480187 bytes).
