@@ -15,50 +15,48 @@ Repeated entry---line 877 of file mc.bib
  : @article{Clyd:Geor:2004
  :                        ,
 I'm skipping whatever remains of this entry
-Database file #4: ms.bib
-Repeated entry---line 922 of file ms.bib
- : @article{Clyd:Geor:2004
- :                        ,
-I'm skipping whatever remains of this entry
-You've used 37 entries,
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "Kong:Liu:Wong:1994"
+Warning--I didn't find a database entry for "Oh:Berg:1993"
+You've used 34 entries,
             4166 wiz_defined-function locations,
-            1417 strings with 15584 characters,
-and the built_in function-call counts, 42498 in all, are:
-= -- 4626
-> -- 582
-< -- 59
-+ -- 217
-- -- 207
-* -- 4822
-:= -- 7770
-add.period$ -- 101
-call.type$ -- 37
-change.case$ -- 170
-chr.to.int$ -- 36
-cite$ -- 37
-duplicate$ -- 1137
-empty$ -- 3588
-format.name$ -- 774
-if$ -- 8645
+            1342 strings with 14210 characters,
+and the built_in function-call counts, 40237 in all, are:
+= -- 4365
+> -- 550
+< -- 55
++ -- 205
+- -- 195
+* -- 4601
+:= -- 7397
+add.period$ -- 94
+call.type$ -- 34
+change.case$ -- 157
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 1068
+empty$ -- 3388
+format.name$ -- 739
+if$ -- 8157
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 397
-num.names$ -- 175
-pop$ -- 643
+newline$ -- 368
+num.names$ -- 160
+pop$ -- 599
 preamble$ -- 1
-purify$ -- 170
+purify$ -- 157
 quote$ -- 0
-skip$ -- 2563
+skip$ -- 2435
 stack$ -- 0
-substring$ -- 3584
-swap$ -- 361
-text.length$ -- 37
+substring$ -- 3442
+swap$ -- 345
+text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 773
+type$ -- 715
 warning$ -- 0
-while$ -- 143
+while$ -- 131
 width$ -- 0
-write$ -- 840
-(There were 2 error messages)
+write$ -- 775
+(There was 1 error message)

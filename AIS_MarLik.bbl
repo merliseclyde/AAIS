@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{34}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -25,15 +25,6 @@
 \bvolume{61}
 \bpages{373--382}.
 \end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{Bishop}{2005}]{bishop2005neural}
-\begin{bbook}[author]
-\bauthor{\bsnm{Bishop},~\bfnm{C.~M.}\binits{C.~M.}}
-(\byear{2005}).
-\btitle{{Neural networks for pattern recognition}}.
-\bpublisher{Oxford Univ Pr}.
-\end{bbook}
 \endbibitem
 
 \bibitem[\protect\citeauthoryear{Cappe {\it et~al.}}{2004}]{cappe2004pmc}
@@ -263,13 +254,16 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{btechreport}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Hesterberg}{1995}]{Hest:1995}
+\bibitem[\protect\citeauthoryear{Kloek and Dijk}{1978}]{Kloe:vanD:1978}
 \begin{barticle}[author]
-\bauthor{\bsnm{Hesterberg},~\bfnm{Tim}\binits{T.}}
-(\byear{1995}).
-\btitle{Weighted average importance sampling and defensive mixture
-  distributions}.
-\bjournal{Technometrics}.
+\bauthor{\bsnm{Kloek},~\bfnm{T.}\binits{T.}} \AND
+  \bauthor{\bsnm{Dijk},~\bfnm{H.~K.~van}\binits{H.~K.~v.}}
+(\byear{1978}).
+\btitle{Bayesian Estimates of Equation System Parameters: An Application of
+  Integration by Monte Carlo}.
+\bjournal{Econometrica}
+\bvolume{46}
+\bpages{1--19}.
 \end{barticle}
 \endbibitem
 
@@ -351,18 +345,6 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \bjournal{Statistics and Computing}
 \bvolume{10}
 \bpages{339--348}.
-\end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{Raghavan and Cox}{1998}]{Ragh:Cox:1998}
-\begin{barticle}[author]
-\bauthor{\bsnm{Raghavan},~\bfnm{Nandini}\binits{N.}} \AND
-  \bauthor{\bsnm{Cox},~\bfnm{Dennis~D.}\binits{D.~D.}}
-(\byear{1998}).
-\btitle{Adaptive mixture importance sampling}.
-\bjournal{Journal of Statistical Computation and Simulation}
-\bvolume{60}
-\bpages{237--259}.
 \end{barticle}
 \endbibitem
 
@@ -467,19 +449,6 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \btitle{{Mixture Models, Monte Carlo, Bayesian Updating, and Dynamic Models}}.
 \bjournal{Computing Science and Statistics}
 \bpages{325--325}.
-\end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{Zeevi and Meir}{1997}]{zeevi1997det}
-\begin{barticle}[author]
-\bauthor{\bsnm{Zeevi},~\bfnm{A.~J.}\binits{A.~J.}} \AND
-  \bauthor{\bsnm{Meir},~\bfnm{R.}\binits{R.}}
-(\byear{1997}).
-\btitle{{Density estimation through convex combinations of densities:
-  approximation and estimation bounds}}.
-\bjournal{Neural Networks}
-\bvolume{10}
-\bpages{99--110}.
 \end{barticle}
 \endbibitem
 

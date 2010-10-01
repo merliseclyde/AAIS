@@ -95,12 +95,13 @@ system is, from a statistical point of view, a model choice
 problem. Bayesian model selection requires calculation of marginal
 likelihoods of models or ``evidence'' provided by the data for each model:
 \begin{equation}\label{marginal_lik}
-m( \M_p) = \int_{\Theta_p}
+m( \M_p) \propto p(\v \mid \M_p) = \int_{\Theta_p}
 p(\v \mid \theta_p,\M_p) p(\theta_p \mid \M_p) d\theta_p
 \end{equation} 
 which entails integrating the sampling model of the
 data $\v = (v_1, \ldots v_n)^T$ with respect to the prior distribution
-of model specific parameters $\theta_p$.
+of model specific parameters $\theta_p$ to obtain the marginal
+density $p(\v \mid \M_p)$ of the data under model $\M_p$.
 Bayes Factors for comparing a $p$ planet model to the $0$ planet model
 may be expressed  as
 \begin{equation}
