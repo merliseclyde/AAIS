@@ -11,52 +11,44 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: statjour.bib
 Database file #2: sais_bib.bib
 Database file #3: mc.bib
-Repeated entry---line 877 of file mc.bib
- : @article{Clyd:Geor:2004
- :                        ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "Kong:Liu:Wong:1994"
-Warning--I didn't find a database entry for "Oh:Berg:1993"
-You've used 34 entries,
+You've used 36 entries,
             4166 wiz_defined-function locations,
-            1342 strings with 14210 characters,
-and the built_in function-call counts, 40237 in all, are:
-= -- 4365
-> -- 550
-< -- 55
-+ -- 205
-- -- 195
-* -- 4601
-:= -- 7397
-add.period$ -- 94
-call.type$ -- 34
-change.case$ -- 157
+            1350 strings with 14473 characters,
+and the built_in function-call counts, 42503 in all, are:
+= -- 4615
+> -- 583
+< -- 60
++ -- 222
+- -- 210
+* -- 4857
+:= -- 7811
+add.period$ -- 100
+call.type$ -- 36
+change.case$ -- 168
 chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 1068
-empty$ -- 3388
-format.name$ -- 739
-if$ -- 8157
-int.to.chr$ -- 2
+cite$ -- 36
+duplicate$ -- 1125
+empty$ -- 3573
+format.name$ -- 785
+if$ -- 8615
+int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 368
-num.names$ -- 160
-pop$ -- 599
+newline$ -- 390
+num.names$ -- 169
+pop$ -- 633
 preamble$ -- 1
-purify$ -- 157
+purify$ -- 168
 quote$ -- 0
-skip$ -- 2435
+skip$ -- 2570
 stack$ -- 0
-substring$ -- 3442
-swap$ -- 345
-text.length$ -- 34
+substring$ -- 3623
+swap$ -- 362
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 715
+type$ -- 757
 warning$ -- 0
-while$ -- 131
+while$ -- 139
 width$ -- 0
-write$ -- 775
-(There was 1 error message)
+write$ -- 821

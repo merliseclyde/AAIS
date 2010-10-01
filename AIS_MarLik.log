@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 OCT 2010 12:25
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.8.3)  1 OCT 2010 12:40
 entering extended mode
 **\input AIS_MarLik.tex
 (./AIS_MarLik.tex (./imsart.cls
@@ -383,37 +383,24 @@ cmm/m/it/10.95 ^^[[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10
 \openout2 = `IS.aux'.
 
  (./IS.tex
-
-Package natbib Warning: Citation `' on page 9 undefined on input line 7.
-
-
 Overfull \hbox (2.45683pt too wide) in paragraph at lines 3--12
  \OT1/bch/b/n/10.95 3.Importance Sam-pling for Marginal Like-li-hood Es-ti-ma-t
 ion.[][] \OT1/bch/m/n/10.95 Be-yond
  []
 
 
-Package natbib Warning: Citation `Kong:Liu:Wong:1994' on page 9 undefined on in
-put line 49.
+Overfull \hbox (3.84569pt too wide) detected at line 41
+\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = [][] [] = \OML/cmm/m/it/10.95 m\
+OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 )[] [] [][]  \OML/cm
+m/m/it/10.95 q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 ) \
+OML/cmm/m/it/10.95 d^^R[]
+ []
 
 [9
 
 
-]
-
-Package natbib Warning: Citation `Oh:Berg:1992' on page 10 undefined on input l
-ine 82.
-
-
-Package natbib Warning: Citation `Oh:Berg:1993' on page 10 undefined on input l
-ine 82.
-
-
-Package natbib Warning: Citation `Oh:Berg:1993' on page 10 undefined on input l
-ine 93.
-
-[10]
-Overfull \hbox (17.80089pt too wide) in paragraph at lines 135--141
+] [10]
+Overfull \hbox (17.80089pt too wide) in paragraph at lines 132--138
 []\OT1/bch/m/n/10.95 Let $\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 ^^R\OT1/cmr/m/n/10.95 )$ \OT1/bch/m/n/10.95 de-note the pos-te-rior d
 is-tri-bu-tion, which is pro-por-tional to $\OML/cmm/m/it/10.95 L\OT1/cmr/m/n/1
@@ -423,7 +410,7 @@ is-tri-bu-tion, which is pro-por-tional to $\OML/cmm/m/it/10.95 L\OT1/cmr/m/n/1
  []
 
 
-Overfull \hbox (13.29126pt too wide) detected at line 150
+Overfull \hbox (13.29126pt too wide) detected at line 147
 []\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R\OT1/cmr/
 m/n/10.95 ) \OMS/cmsy/m/n/10.95 / \OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 (\O
 ML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/
@@ -433,15 +420,15 @@ L/cmm/m/it/10.95 < ^^U[] < ^^U[] < [] < ^^U[] \OT1/cmr/m/n/10.95 = 1\OML/cmm/m/
 it/10.95 :
  []
 
-LaTeX Font Info:    Try loading font information for OMS+bch on input line 157.
+LaTeX Font Info:    Try loading font information for OMS+bch on input line 154.
 
 (/usr/share/texmf/tex/latex/psnfss/omsbch.fd
 File: omsbch.fd 
 )
 LaTeX Font Info:    Font shape `OMS/bch/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
  [11] [12] [13] [14] [15] [16]
-Overfull \hbox (31.93779pt too wide) in paragraph at lines 431--442
+Overfull \hbox (31.93779pt too wide) in paragraph at lines 428--439
 \OT1/bch/m/n/10.95 Substituting $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 ^^R[]
 ; w[]\OMS/cmsy/m/n/10.95 g[]$ \OT1/bch/m/n/10.95 and the lo-cal mix-ture pa-ram
 -e-ters, $\OML/cmm/m/it/10.95 []; []; ^^V[]; \OT1/cmr/m/n/10.95 ^^F[]\OML/cmm
@@ -449,13 +436,13 @@ Overfull \hbox (31.93779pt too wide) in paragraph at lines 431--442
  []
 
 
-Overfull \hbox (2.59906pt too wide) in paragraph at lines 457--463
+Overfull \hbox (2.59906pt too wide) in paragraph at lines 454--460
  \OT1/bch/m/n/10.95 4.3.3.\OT1/bch/m/it/10.95 Component-Deletion.[][] \OT1/bch/
 m/n/10.95 As men-tioned above, when sim-u-lat-ing draws
  []
 
 
-Overfull \hbox (4.52481pt too wide) in paragraph at lines 465--480
+Overfull \hbox (4.52481pt too wide) in paragraph at lines 462--477
 \OT1/bch/m/n/10.95 don't need to worry about that, be-cause on one side the pro
 -posed component-
  []
@@ -464,18 +451,18 @@ Overfull \hbox (4.52481pt too wide) in paragraph at lines 465--480
 \openout2 = `sim.aux'.
 
  (./sim.tex
-<Fig/flared_helix_target.png, id=474, 421.575pt x 316.18124pt>
+<Fig/flared_helix_target.png, id=479, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_target.png Graphic file (type png)
 
 <use Fig/flared_helix_target.png> [20
 
 
  <./Fig/flared_helix_target.png>]
-<Fig/flared_helix_scatter.png, id=484, 421.575pt x 316.18124pt>
+<Fig/flared_helix_scatter.png, id=489, 421.575pt x 316.18124pt>
 File: Fig/flared_helix_scatter.png Graphic file (type png)
 
 <use Fig/flared_helix_scatter.png>
-<Fig/AIS_3d_felix_scatter.png, id=485, 420.06938pt x 316.18124pt>
+<Fig/AIS_3d_felix_scatter.png, id=490, 420.06938pt x 316.18124pt>
 File: Fig/AIS_3d_felix_scatter.png Graphic file (type png)
 
 <use Fig/AIS_3d_felix_scatter.png>
@@ -498,11 +485,11 @@ Overfull \hbox (11.10573pt too wide) in paragraph at lines 110--121
 -tinct, well-separated
  []
 
-[22] <Fig/seven_outer_product_scatter.png, id=520, 421.575pt x 316.18124pt>
+[22] <Fig/seven_outer_product_scatter.png, id=525, 421.575pt x 316.18124pt>
 File: Fig/seven_outer_product_scatter.png Graphic file (type png)
 
 <use Fig/seven_outer_product_scatter.png>
-<Fig/AIS_7d_outter_scatter.png, id=521, 421.575pt x 316.18124pt>
+<Fig/AIS_7d_outter_scatter.png, id=526, 421.575pt x 316.18124pt>
 File: Fig/AIS_7d_outter_scatter.png Graphic file (type png)
 
 <use Fig/AIS_7d_outter_scatter.png>
@@ -515,22 +502,22 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 144--151
 \openout2 = `exo-examp.aux'.
 
  (./exo-examp.tex
-<Fig/scatter_1p_data1.png, id=532, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data1.png, id=537, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data1.png Graphic file (type png)
 
 <use Fig/scatter_1p_data1.png>
-<Fig/scatter_1p_data2.png, id=533, 509.65407pt x 344.78813pt>
+<Fig/scatter_1p_data2.png, id=538, 509.65407pt x 344.78813pt>
 File: Fig/scatter_1p_data2.png Graphic file (type png)
 
 <use Fig/scatter_1p_data2.png> [24
 
 
 ]
-<Fig/scatter1_2p_data2.png, id=570, 509.65407pt x 344.78813pt>
+<Fig/scatter1_2p_data2.png, id=575, 509.65407pt x 344.78813pt>
 File: Fig/scatter1_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter1_2p_data2.png>
-<Fig/scatter2_2p_data2.png, id=571, 509.65407pt x 344.78813pt>
+<Fig/scatter2_2p_data2.png, id=576, 509.65407pt x 344.78813pt>
 File: Fig/scatter2_2p_data2.png Graphic file (type png)
 
 <use Fig/scatter2_2p_data2.png>
@@ -538,7 +525,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 112--118
  [][] 
  []
 
-<Fig/rv_comparison_data2.png, id=572, 421.575pt x 316.18124pt>
+<Fig/rv_comparison_data2.png, id=577, 421.575pt x 316.18124pt>
 File: Fig/rv_comparison_data2.png Graphic file (type png)
 
 <use Fig/rv_comparison_data2.png> [25 <./Fig/scatter_1p_data1.png>] [26 <./Fig/
@@ -548,15 +535,15 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 175--182
  method, the marginal
  []
 
-<Fig/hd37124_1p_fit.png, id=605, 633.11531pt x 438.8897pt>
+<Fig/hd37124_1p_fit.png, id=610, 633.11531pt x 438.8897pt>
 File: Fig/hd37124_1p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_1p_fit.png>
-<Fig/hd37124_2p_fit.png, id=606, 664.73344pt x 431.36156pt>
+<Fig/hd37124_2p_fit.png, id=611, 664.73344pt x 431.36156pt>
 File: Fig/hd37124_2p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_2p_fit.png>
-<Fig/hd37124_3p_fit.png, id=607, 597.73312pt x 380.92313pt>
+<Fig/hd37124_3p_fit.png, id=612, 597.73312pt x 380.92313pt>
 File: Fig/hd37124_3p_fit.png Graphic file (type png)
 
 <use Fig/hd37124_3p_fit.png>
@@ -570,10 +557,10 @@ Overfull \hbox (5.38719pt too wide) in paragraph at lines 231--243
  method, the marginal
  []
 
-<Fig/uma47_1p_fit.png, id=626, 439.6425pt x 303.38344pt>
+<Fig/uma47_1p_fit.png, id=631, 439.6425pt x 303.38344pt>
 File: Fig/uma47_1p_fit.png Graphic file (type png)
 
-<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=627, 385.44pt x 289.08pt>
+<use Fig/uma47_1p_fit.png> <Fig/uma47_2p_fit.png, id=632, 385.44pt x 289.08pt>
 File: Fig/uma47_2p_fit.png Graphic file (type png)
 
 <use Fig/uma47_2p_fit.png>
@@ -601,27 +588,23 @@ Missing character: There is no © in font bchr7t!
 ]
 Missing character: There is no ¡ in font bchrc7t!
 Missing character: There is no ¯ in font bchrc7t!
-)
-
-Package natbib Warning: There were undefined citations.
-
-[33] (./AIS_MarLik.aux (./intro.aux) (./model.aux) (./IS.aux) (./sim.aux)
-(./exo-examp.aux) (./disc.aux))
+) [33] (./AIS_MarLik.aux (./intro.aux) (./model.aux) (./IS.aux) (./sim.aux) (./
+exo-examp.aux) (./disc.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5326 strings out of 94500
- 67884 string characters out of 1176767
- 134981 words of memory out of 1000000
- 8157 multiletter control sequences out of 10000+50000
+ 5323 strings out of 94500
+ 67869 string characters out of 1176767
+ 135133 words of memory out of 1000000
+ 8156 multiletter control sequences out of 10000+50000
  41696 words of font info for 92 fonts, out of 500000 for 2000
  580 hyphenation exceptions out of 1000
- 35i,19n,38p,470b,395s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 35i,19n,38p,470b,391s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 680 PDF objects out of 300000
- 182 named destinations out of 131072
+ 684 PDF objects out of 300000
+ 180 named destinations out of 131072
  300 words of extra memory for PDF output out of 65536
 </usr/share/texmf/fonts/type1/bluesky/cm/cmss9.pfb></usr/share/texmf/fonts/ty
 pe1/bluesky/cm/cmss8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></us
@@ -639,4 +622,4 @@ nts/type1/bluesky/cm/cmsy8.pfb>{/usr/share/texmf/fonts/enc/dvips/psnfss/8r.enc}
 </usr/share/texmf/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf/fon
 ts/type1/bluesky/cmextra/cmbsy7.pfb></usr/share/texmf/fonts/type1/bitstrea/char
 ter/bchb8a.pfb></usr/share/texmf/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on AIS_MarLik.pdf (33 pages, 481428 bytes).
+Output written on AIS_MarLik.pdf (33 pages, 482564 bytes).

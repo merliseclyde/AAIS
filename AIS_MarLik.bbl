@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{36}
 
 \bibitem[\protect\citeauthoryear{Ardia, Hoogerheide and van
   Dijk}{2008}]{ardia2008adaptive}
@@ -61,8 +61,8 @@
 \bauthor{\bsnm{Clyde},~\bfnm{Merlise~A.}\binits{M.~A.}} \AND
   \bauthor{\bsnm{George},~\bfnm{Edward~I.}\binits{E.~I.}}
 (\byear{2004}).
-\btitle{Model uncertainty}.
-\bjournal{Statist. Sci}
+\btitle{Model Uncertainty}.
+\bjournal{Stat. Sci.}
 \bvolume{19}
 \bpages{81--94}.
 \end{barticle}
@@ -267,12 +267,27 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Kong, Liu and Wong}{1994}]{kong1994sequential}
+\bibitem[\protect\citeauthoryear{Kong, Liu and
+  Wong}{1994a}]{Kong:Liu:Wong:1994}
+\begin{barticle}[author]
+\bauthor{\bsnm{Kong},~\bfnm{Augustine}\binits{A.}},
+  \bauthor{\bsnm{Liu},~\bfnm{Jun~S.}\binits{J.~S.}} \AND
+  \bauthor{\bsnm{Wong},~\bfnm{Wing~Hung}\binits{W.~H.}}
+(\byear{1994}a).
+\btitle{Sequential Imputations and Bayesian Missing Data Problems}.
+\bjournal{Journal of the American Statistical Association}
+\bvolume{89}
+\bpages{pp. 278-288}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Kong, Liu and
+  Wong}{1994b}]{kong1994sequential}
 \begin{barticle}[author]
 \bauthor{\bsnm{Kong},~\bfnm{A.}\binits{A.}},
   \bauthor{\bsnm{Liu},~\bfnm{J.~S.}\binits{J.~S.}} \AND
   \bauthor{\bsnm{Wong},~\bfnm{W.~H.}\binits{W.~H.}}
-(\byear{1994}).
+(\byear{1994}b).
 \btitle{{Sequential imputations and Bayesian missing data problems}}.
 \bjournal{Journal of the American Statistical Association}
 \bvolume{89}
@@ -312,11 +327,24 @@ In \bbooktitle{Statistical Challenges in Modern Astronomy IV, ASP Conference
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{Oh and Berger}{1993}]{oh1993imf}
+\bibitem[\protect\citeauthoryear{Oh and Berger}{1993a}]{Oh:Berg:1993}
+\begin{barticle}[author]
+\bauthor{\bsnm{Oh},~\bfnm{Man-Suk}\binits{M.-S.}} \AND
+  \bauthor{\bsnm{Berger},~\bfnm{James~O.}\binits{J.~O.}}
+(\byear{1993}a).
+\btitle{Integration of Multimodal Functions by Monte Carlo Importance
+  Sampling}.
+\bjournal{Journal of the American Statistical Association}
+\bvolume{88}
+\bpages{pp. 450-456}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Oh and Berger}{1993b}]{oh1993imf}
 \begin{barticle}[author]
 \bauthor{\bsnm{Oh},~\bfnm{M.~S.}\binits{M.~S.}} \AND
   \bauthor{\bsnm{Berger},~\bfnm{J.~O.}\binits{J.~O.}}
-(\byear{1993}).
+(\byear{1993}b).
 \btitle{{Integration of multimodal functions by Monte Carlo importance
   sampling}}.
 \bjournal{Journal of the American Statistical Association}

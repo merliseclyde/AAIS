@@ -4,7 +4,7 @@ Beyond conjugate models, the integrals defining the marginal
 likelihood in Equation (\ref{marginal_lik}) are generally intractable
 and must be estimated by numerical methods.  Importance sampling (IS)
 is a well known Monte Carlo technique for calculating the integrals
-that arise in Bayesian inference \citep{Kloe:vanD:1978, Gewe:1989,}. In
+that arise in Bayesian inference \citep{Kloe:vanD:1978, Gewe:1989}. In
 the case of (\ref{marginal_lik}), the marginal likelihood may be
 re-expressed as an expectation with respect to an importance
 distribution $Q$ that is abolutely continuous with respect to the
@@ -27,22 +27,19 @@ w_i = \bar{w}
 \end{equation}
 where $w_i$ are known as the IS weights. 
 The variance of the IS estimator is
-\begin{subequations}
-\begin{align}
-\mbox{Var}_Q\left[\hat{p}(\v) \right] & =\frac{\sigma_q^2}{N} 
-\intertext{where}
-\sigma_q^2 &
-=\mbox{Var}_q\left\{\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}\right\}\\
+\begin{equation*}
+\mbox{Var}_Q\left[\hat{p}(\v) \right]  =\frac{\sigma_q^2}{N} 
+\end{equation*} where
+\begin{equation*}
+  \label{eq:ISvar}
+\sigma_q^2 
+=\mbox{Var}_q\left\{\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}\right\}
 %& =\int_{R^d}\left(\frac{p(\v \mid \theta, \M)p(\theta|\M)}{q(\theta)}-m(\M)\right)^2
 %q(\theta)d\theta\\
  =m(\M)^2\int \left(\frac{\pi(\theta
- \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2 \, q(\theta)\, d\theta
-%\intertext{and}
-%\hat{\sigma}_q^2 & \simeq\frac{1}{N}\sum\limits_{i=1}^N\left(w^{(i)}-\bar{w}\right)^2.
-\end{align}
-%is a consistent estimator of $\sigma_q^2$.
-\end{subequations}
-which depends on how ``close'' the
+ \mid \v, \M)-q(\theta)}{q(\theta)}\right)^2 \, q(\theta)\, d\theta  
+\end{equation*}
+ depends on how ``close'' the
 importance function $q$ is to the posterior distribution $\pi(\theta \mid
 \v)$.
 For estimation of arbitrary functions,
@@ -51,7 +48,7 @@ a measure of the efficiency of the importance sampler
 based on the normalized weights
 $w^*_i = w_i/ p(\v)$,
 \begin{equation*}
-  \ESS \equiv \frac{N}{1 + \text{var}_q[w^*_i)]}.
+  \ESS \equiv \frac{N}{1 + \text{var}_q[w^*_i]}.
 \end{equation*}
 In general, this is impossible to obtain, but they show that
 $\text{var}_q[w^*_i]$ is equal to  the square of the coefficient of
