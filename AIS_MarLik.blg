@@ -11,10 +11,12 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: statjour.bib
 Database file #2: sais_bib.bib
 Database file #3: mc.bib
-Warning--I didn't find a database entry for "oh1993imf"
+Warning--I didn't find a database entry for "MacE:Clyd:Liu:1999"
+Warning--I didn't find a database entry for "Pitt:Shep:1999"
+Warning--I didn't find a database entry for ""
 You've used 35 entries,
             4166 wiz_defined-function locations,
-            1347 strings with 14368 characters,
+            1350 strings with 14423 characters,
 and the built_in function-call counts, 41592 in all, are:
 = -- 4508
 > -- 569
@@ -53,4 +55,4 @@ warning$ -- 0
 while$ -- 135
 width$ -- 0
 write$ -- 799
-(There was 1 warning)
+(There were 3 warnings)
